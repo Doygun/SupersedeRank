@@ -1,0 +1,62 @@
+{
+  "manifest_kind": "base_query_eligible_manifest",
+  "derived_from": "atomic_replacement_manifest (same CVE assignment; events filtered, CVEs never re-split)",
+  "eligibility_rule": "at least one changed BASE metric between the replaced and replacing vector",
+  "atomic_events_total": 3649,
+  "threat_only_atomic_events": 70,
+  "excluded_events": 93,
+  "excluded_by_detail": {
+    "SUPPLEMENTAL_ONLY_CHANGE": 15,
+    "THREAT_ONLY_CHANGE": 70,
+    "ENVIRONMENTAL_ONLY_CHANGE": 7,
+    "NO_BASE_COMPONENT_CHANGE": 1
+  },
+  "excluded_by_split": {
+    "train": 49,
+    "dev": 6,
+    "test": 38
+  },
+  "counts": {
+    "train": {
+      "cves": 1533,
+      "events": 1719
+    },
+    "dev": {
+      "cves": 273,
+      "events": 312
+    },
+    "test": {
+      "cves": 1356,
+      "events": 1506
+    },
+    "future_event": {
+      "cves": 18,
+      "events": 19
+    }
+  },
+  "main_split_events": 3537,
+  "by_version": {
+    "train": {
+      "3.1": 1530,
+      "2.0": 53,
+      "3.0": 11,
+      "4.0": 125
+    },
+    "dev": {
+      "3.1": 281,
+      "2.0": 7,
+      "3.0": 4,
+      "4.0": 20
+    },
+    "test": {
+      "4.0": 148,
+      "3.1": 1348,
+      "2.0": 8,
+      "3.0": 2
+    },
+    "future_event": {
+      "3.1": 18,
+      "4.0": 1
+    }
+  }
+}

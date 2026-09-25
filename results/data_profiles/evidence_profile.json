@@ -1,0 +1,48 @@
+{
+  "corpus_scope": "main_cves_all_chains",
+  "total_evidence": 9015,
+  "cves": 3162,
+  "by_role": {
+    "replaced_old": 3556,
+    "replacing_new": 3387,
+    "chain_context": 2072
+  },
+  "by_split": {
+    "dev": 775,
+    "train": 4323,
+    "test": 3917
+  },
+  "left_censored": 384,
+  "by_version": {
+    "2.0": 172,
+    "3.1": 7858,
+    "3.0": 54,
+    "4.0": 931
+  },
+  "by_source_key_top": {
+    "134c704f-9b21-4f2e-91b3-4a467353bcc0": 2250,
+    "NVD": 2244,
+    "disclosure@vulncheck.com": 1021,
+    "audit@patchstack.com": 492,
+    "cna@vuldb.com": 365,
+    "secalert@redhat.com": 337,
+    "psirt@adobe.com": 230,
+    "security@wordfence.com": 220,
+    "secure@microsoft.com": 163,
+    "security-advisories@github.com": 153
+  },
+  "base_score_missing": 1,
+  "threat_metric_present": 74,
+  "reported_score_type": {
+    "NOT_AVAILABLE_IN_HISTORY": 4310,
+    "CVSS-B": 4661,
+    "CVSS-BT": 43,
+    "ROUNDING_BOUNDARY_EQUIVALENT": 1
+  },
+  "text_forbidden_word_hits": 0,
+  "text_length_chars": {
+    "min": 121,
+    "max": 260
+  },
+  "eligible_events": 3556
+}

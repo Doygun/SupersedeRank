@@ -1,0 +1,1582 @@
+
+====================================================================================================
+GENEL OZET
+====================================================================================================
+Dosya sayisi: 322
+Change sayisi: 1,590,753
+Detail sayisi: 3,249,766
+Changed detail sayisi: 148,651
+Normalize edilince ayni kalan Changed detail: 5,054
+Birden fazla detail iceren change: 525,682
+Hem Removed hem Added iceren change: 18,909
+Bozuk detail sayisi: 0
+Dosya okuma hatasi: 0
+
+====================================================================================================
+ACTION + DETAIL TYPE DAGILIMI
+====================================================================================================
+Added	Reference	1375590
+Added	Affected	413075
+Added	Reference Type	212721
+Added	CVSS V3.1	210145
+Added	CWE	208612
+Added	CPE Configuration	197326
+Added	SSVC	185606
+Added	Description	156330
+Changed	Reference Type	83190
+Removed	Reference	38353
+Added	CVSS V4.0	36961
+Changed	CPE Configuration	29967
+Changed	Description	25593
+Removed	CVSS V3.1	14678
+Added	CVSS V2	13900
+Removed	Reference Type	13636
+Added	Translation	6566
+Removed	CWE	4857
+Changed	CVSS V4.0 Score	4614
+Changed	SSVC	4439
+Added	CVSS V3	3741
+Added	Tag	3314
+Removed	CPE Configuration	1126
+Added	Date Added	660
+Added	Vulnerability Name	660
+Added	Due Date	660
+Added	Required Action	660
+Removed	CVSS V4.0	592
+Removed	CVSS V3	587
+Changed	Vulnerability Name	563
+Removed	Translation	338
+Changed	Translation	219
+Removed	Tag	199
+Removed	CVSS V2	109
+Removed	SSVC	57
+Changed	Due Date	22
+[EKSIK]	CPE Configuration	15
+Changed	Required Action	14
+Added	CVSS V2 Metadata	11
+Changed	Evaluator Description	8
+Changed	Evaluator Impact	7
+Changed	Evaluator Solution	6
+Changed	Source	6
+Removed	Evaluator Impact	4
+Removed	Due Date	4
+Removed	Vulnerability Name	4
+Removed	Date Added	4
+Removed	Required Action	4
+Changed	Date Added	3
+Added	Evaluator Description	3
+Removed	CVSS V2 Metadata	2
+Removed	Evaluator Description	2
+Added	CWE CVMAP Excluded	2
+[EKSIK]	Description	1
+
+====================================================================================================
+CHANGED DETAIL TYPE DAGILIMI
+====================================================================================================
+Reference Type	83190	normalize_edilince_ayni=0
+CPE Configuration	29967	normalize_edilince_ayni=288
+Description	25593	normalize_edilince_ayni=3951
+CVSS V4.0 Score	4614	normalize_edilince_ayni=0
+SSVC	4439	normalize_edilince_ayni=79
+Vulnerability Name	563	normalize_edilince_ayni=498
+Translation	219	normalize_edilince_ayni=217
+Due Date	22	normalize_edilince_ayni=0
+Required Action	14	normalize_edilince_ayni=3
+Evaluator Description	8	normalize_edilince_ayni=5
+Evaluator Impact	7	normalize_edilince_ayni=7
+Evaluator Solution	6	normalize_edilince_ayni=6
+Source	6	normalize_edilince_ayni=0
+Date Added	3	normalize_edilince_ayni=0
+
+====================================================================================================
+CHANGED EVENT NAME + DETAIL TYPE
+====================================================================================================
+Initial Analysis	Reference Type	68483
+CVE Modified	Description	25550
+CPE Deprecation Remap	CPE Configuration	23650
+Modified Analysis	Reference Type	12865
+Data Remediation	CVSS V4.0 Score	4614
+CVE Modified	SSVC	4439
+Modified Analysis	CPE Configuration	4083
+Reanalysis	CPE Configuration	2234
+Reanalysis	Reference Type	926
+Reference Tag Update	Reference Type	916
+CVE CISA KEV Update	Vulnerability Name	563
+CVE Translated	Translation	219
+Initial Analysis	Description	35
+CVE CISA KEV Update	Due Date	22
+CVE CISA KEV Update	Required Action	14
+Modified Analysis	Description	8
+Modified Analysis	Evaluator Impact	7
+Modified Analysis	Evaluator Description	7
+Modified Analysis	Evaluator Solution	6
+CVE Source Update	Source	6
+CVE CISA KEV Update	Date Added	3
+Reanalysis	Evaluator Description	1
+
+====================================================================================================
+CHANGED YEAR + DETAIL TYPE
+====================================================================================================
+2024	Reference Type	60141
+2024	CPE Configuration	12421
+2024	Description	3979
+2024	Vulnerability Name	41
+2024	Evaluator Description	8
+2024	Evaluator Impact	7
+2024	Evaluator Solution	6
+2024	Source	6
+2024	Required Action	5
+2024	Due Date	4
+2024	Date Added	2
+2025	Reference Type	22769
+2025	CPE Configuration	9682
+2025	Description	3662
+2025	Vulnerability Name	86
+2025	Due Date	17
+2025	Required Action	7
+2026	Description	17952
+2026	CPE Configuration	7864
+2026	CVSS V4.0 Score	4614
+2026	SSVC	4439
+2026	Vulnerability Name	436
+2026	Reference Type	280
+2026	Translation	219
+2026	Required Action	2
+2026	Date Added	1
+2026	Due Date	1
+
+====================================================================================================
+CHANGED SOURCE + DETAIL TYPE - ILK 200
+====================================================================================================
+nvd@nist.gov	Reference Type	83190
+nvd@nist.gov	CPE Configuration	29967
+audit@patchstack.com	Description	11477
+nvd@nist.gov	CVSS V4.0 Score	4614
+134c704f-9b21-4f2e-91b3-4a467353bcc0	SSVC	4437
+cve@mitre.org	Description	1400
+product-security@apple.com	Description	1357
+secure@microsoft.com	Description	1278
+security@mozilla.org	Description	1000
+iletisim@usom.gov.tr	Description	726
+cna@vuldb.com	Description	685
+security@wordfence.com	Description	680
+9119a7d8-5eab-497f-8521-727c672e3725	Vulnerability Name	563
+disclosure@vulncheck.com	Description	517
+productcert@siemens.com	Description	395
+security-advisories@github.com	Description	391
+416baaa9-dc9f-4396-8d5f-8c081fb06d67	Description	358
+security@apache.org	Description	301
+secure@intel.com	Description	225
+nvd@nist.gov	Translation	219
+zdi-disclosures@trendmicro.com	Description	209
+psirt@adobe.com	Description	203
+ics-cert@hq.dhs.gov	Description	179
+309f9ea4-e3e9-4c6c-b79d-e8eb01244f2c	Description	154
+secalert@redhat.com	Description	145
+help@fluidattacks.com	Description	121
+psirt@fortinet.com	Description	121
+security@huntr.dev	Description	119
+secalert_us@oracle.com	Description	107
+psirt@esri.com	Description	95
+psirt@us.ibm.com	Description	95
+psirt@autodesk.com	Description	93
+security@joomla.org	Description	87
+cna@mongodb.com	Description	81
+psirt@cisco.com	Description	81
+cna@sap.com	Description	80
+sirt@juniper.net	Description	78
+6b3ad84c-e1a6-4bf7-a703-f496b71e49db	Description	65
+Mitsubishielectric.Psirt@yd.MitsubishiElectric.co.jp	Description	59
+cvd@cert.pl	Description	59
+f5sirt@f5.com	Description	57
+dsap-vuln-management@google.com	Description	55
+cve-coordination@google.com	Description	55
+5d1c2695-1a31-4499-88ae-e847036fd7e3	Description	55
+security_alert@emc.com	Description	53
+vultures@jpcert.or.jp	Description	47
+report@snyk.io	Description	46
+psirt@amd.com	Description	45
+contact@wpscan.com	Description	44
+nvd@nist.gov	Description	43
+security@acronis.com	Description	42
+security@synology.com	Description	42
+twcert@cert.org.tw	Description	40
+9b29abf9-4ab0-4765-b253-1875cd9b441e	Description	39
+support@hackerone.com	Description	37
+f86ef6dc-4d3a-42ad-8f28-e6d5547a5007	Description	36
+cybersecurity@ch.abb.com	Description	35
+ff5b8ace-8b95-4078-9743-eac1ca5451de	Description	33
+prodsec@nozominetworks.com	Description	33
+security@android.com	Description	31
+vulnerabilities@zephyrproject.org	Description	31
+security@zoom.us	Description	31
+3c1d8aa1-5a33-4ea4-8992-aadd6440af75	Description	31
+vulnerability@ncsc.ch	Description	31
+f23511db-6c3e-4e32-a477-6aa17d310630	Description	30
+cve-coordination@incibe.es	Description	29
+info@cert.vde.com	Description	29
+cret@cert.org	Description	29
+security-alert@hpe.com	Description	28
+33c584b5-0579-4c06-b2a0-8d8329fcab9c	Description	28
+psirt@sick.de	Description	27
+mobile.security@samsung.com	Description	26
+9119a7d8-5eab-497f-8521-727c672e3725	Description	26
+sirt@brocade.com	Description	25
+psirt@honeywell.com	Description	23
+9119a7d8-5eab-497f-8521-727c672e3725	Due Date	22
+security@vmware.com	Description	22
+security@grafana.com	Description	21
+product-security@axis.com	Description	21
+csirt@divd.nl	Description	20
+cve@jetbrains.com	Description	20
+security@m-files.com	Description	20
+emo@eclipse.org	Description	19
+product-security@silabs.com	Description	19
+2fdefc65-d750-4b8d-96ee-6e2c0c42dbfe	Description	19
+product-cna@github.com	Description	18
+psirt@solarwinds.com	Description	18
+psirt-info@cyber.jp.nec.com	Description	17
+c4f26cc8-17ff-4c99-b5e2-38fc1793eacc	Description	17
+91579145-5d7b-4cc5-b925-a0262ff19630	Description	17
+psirt@moxa.com	Description	16
+cybersecurity@hitachienergy.com	Description	16
+cna@python.org	Description	15
+security@devolutions.net	Description	15
+security@progress.com	Description	15
+jordan@liggitt.net	Description	15
+cve@gitlab.com	Description	14
+cve@takeonme.org	Description	14
+9119a7d8-5eab-497f-8521-727c672e3725	Required Action	14
+vdisclose@cert-in.org.in	Description	14
+chrome-cve-admin@google.com	Description	14
+cybersecurity@se.com	Description	14
+meissner@suse.de	Description	14
+talos-cna@cisco.com	Description	13
+secure@citrix.com	Description	13
+cna@cyber.gov.il	Description	13
+psirt@paloaltonetworks.com	Description	13
+openssl-security@openssl.org	Description	13
+3f572a00-62e2-4423-959a-7ea25eff1638	Description	13
+security@zyxel.com.tw	Description	12
+infosec@edk2.groups.io	Description	12
+arm-security@arm.com	Description	11
+ff89ba41-3aa1-4d27-914a-91399e9639e5	Description	11
+0fc0942c-577d-436f-ae8e-945763c79b02	Description	10
+3DS.Information-Security@3ds.com	Description	10
+patrick@puiterwijk.org	Description	10
+security@opentext.com	Description	10
+security@php.net	Description	10
+psirt@hcl.com	Description	10
+security@puppet.com	Description	10
+mlhess@drupal.org	Description	10
+office@cyberdanube.com	Description	10
+7f6e188d-c52a-4a19-8674-3c3fa7d1fc7f	Description	10
+f98c90f0-e9bd-4fa7-911b-51993f3571fd	Description	10
+security@atlassian.com	Description	9
+security@qnapsecurity.com.tw	Description	9
+security@ubuntu.com	Description	9
+security@openanolis.org	Description	9
+productsecurity@jci.com	Description	9
+trellixpsirt@trellix.com	Description	9
+cve@rapid7.com	Description	9
+f4fb688c-4412-4426-b4b8-421ecf27b14a	Description	9
+a59d8014-47c4-4630-ab43-e1b13cbe58e3	Description	9
+nvd@nist.gov	Evaluator Description	8
+prodsec@splunk.com	Description	8
+psirt@huawei.com	Description	8
+54bf65a7-a193-42d2-b1ba-8e150d3c35e1	Description	8
+3ff69d7a-14f2-4f67-a097-88dee7810d18	Description	8
+a6d3dc9e-0591-4a13-bce7-0f5b31ff6158	Description	8
+09832df1-09c1-45b4-8a85-16c601d30feb	Description	8
+5f57b9bf-260d-4433-bf07-b6a79e9bb7d4	Description	8
+a2826606-91e7-4eb6-899e-8484bd4575d5	Description	8
+security@checkmk.com	Description	7
+nvd@nist.gov	Evaluator Impact	7
+hirt@hitachi.co.jp	Description	7
+sep@nlnetlabs.nl	Description	7
+security@hashicorp.com	Description	7
+eb41dac7-0af8-4f84-9f6d-0272772514f4	Description	7
+paddle-security@baidu.com	Description	7
+15ede60e-6fda-426e-be9c-e788f151a377	Description	7
+nvd@nist.gov	Evaluator Solution	6
+security@open-xchange.com	Description	6
+6f8de1f0-f67e-45a6-b68f-98777fdb759c	Description	6
+reefs@jfrog.com	Description	6
+security@dotcms.com	Description	6
+responsibledisclosure@mattermost.com	Description	6
+security@eset.com	Description	6
+cve@zscaler.com	Description	6
+security@golang.org	Description	6
+10b61619-3869-496c-8a1e-f291b0e71e3f	Description	6
+security@liferay.com	Description	6
+bd4443e6-1eef-43f3-9886-25fc9ceeaae7	Description	6
+security@nortonlifelock.com	Description	6
+ot-cert@dragos.com	Description	5
+dl_cve@linecorp.com	Description	5
+security.vulnerabilities@algosec.com	Description	5
+psirt@sailpoint.com	Description	5
+430a6cef-dc26-47e3-9fa8-52fb7f19644e	Description	5
+596c5446-0ce5-4ba2-aa66-48b3b757a647	Description	5
+psirt@wdc.com	Description	5
+2505284f-8ffb-486c-bf60-e19c1097a90b	Description	5
+security@1e.com	Description	5
+security@xiaomi.com	Description	5
+36c7be3b-2937-45df-85ea-ca7133ea542c	Description	5
+CybersecurityCOE@eaton.com	Description	5
+security@elastic.co	Description	5
+security@xen.org	Description	5
+22d9ba52-f336-4b0d-bf1f-0efbdcc3c1de	Description	5
+ed10eef1-636d-4fbe-9993-6890dfa878f8	Description	5
+security@salesforce.com	Description	5
+85b1779b-6ecd-4f52-bcc5-73eac4659dcf	Description	5
+5a6e4751-2f3f-4070-9419-94fb35b644e8	Description	5
+412d305a-227d-44f9-a262-a31ba44f2aea	Description	5
+psirt@nvidia.com	Description	4
+psirt@lenovo.com	Description	4
+security@mediatek.com	Description	4
+research@onekey.com	Description	4
+security@openvpn.net	Description	4
+psirt@servicenow.com	Description	4
+security@ni.com	Description	4
+hp-security-alert@hp.com	Description	4
+cve-requests@bitdefender.com	Description	4
+security@documentfoundation.org	Description	4
+551230f0-3615-47bd-b7cc-93e92e730bbf	Description	4
+bugreport@qualys.com	Description	4
+cve-assign@fb.com	Description	4
+psirt@forgerock.com	Description	4
+1c053176-eef3-4d6a-ae0b-24728c86587b	Description	4
+050066fd-a2f9-4f32-ab5d-4c53f48bc333	Description	4
+4760f414-e1ae-4ff1-bdad-c7a9c3538b79	Description	4
+
+====================================================================================================
+CHANGED VALUE SHAPES
+====================================================================================================
+Reference Type	string->string	83190
+CPE Configuration	string->string	29967
+Description	string->string	25593
+CVSS V4.0 Score	string->string	4614
+SSVC	dict->dict	4439
+Vulnerability Name	string->string	563
+Translation	string->string	219
+Due Date	string->string	22
+Required Action	string->string	14
+Evaluator Description	string->string	8
+Evaluator Impact	string->string	7
+Evaluator Solution	string->string	6
+Source	string->string	6
+Date Added	string->string	3
+
+====================================================================================================
+AYNI CHANGE ICINDE REMOVED + ADDED BULUNAN AYNI TYPE
+====================================================================================================
+Reference	change_sayisi=10599
+CVSS V3.1	change_sayisi=3181
+CWE	change_sayisi=2732
+CPE Configuration	change_sayisi=396
+CVSS V4.0	change_sayisi=387
+CVSS V2	change_sayisi=68
+CVSS V3	change_sayisi=17
+CVSS V2 Metadata	change_sayisi=1
+Tag	change_sayisi=1
+
+====================================================================================================
+REMOVED + ADDED ESLESME COKLUKLARI
+====================================================================================================
+Reference	removed=1	added=1	change_sayisi=7517
+CVSS V3.1	removed=1	added=1	change_sayisi=3181
+CWE	removed=1	added=1	change_sayisi=2660
+Reference	removed=2	added=2	change_sayisi=779
+CVSS V4.0	removed=1	added=1	change_sayisi=387
+CPE Configuration	removed=1	added=1	change_sayisi=298
+Reference	removed=3	added=3	change_sayisi=252
+Reference	removed=2	added=1	change_sayisi=242
+Reference	removed=1	added=2	change_sayisi=187
+Reference	removed=4	added=4	change_sayisi=184
+Reference	removed=5	added=5	change_sayisi=121
+Reference	removed=8	added=8	change_sayisi=109
+Reference	removed=6	added=6	change_sayisi=92
+CVSS V2	removed=1	added=1	change_sayisi=68
+Reference	removed=2	added=3	change_sayisi=65
+Reference	removed=7	added=7	change_sayisi=59
+Reference	removed=3	added=1	change_sayisi=53
+Reference	removed=3	added=4	change_sayisi=53
+CWE	removed=1	added=2	change_sayisi=38
+Reference	removed=4	added=5	change_sayisi=36
+Reference	removed=6	added=3	change_sayisi=36
+Reference	removed=2	added=5	change_sayisi=36
+Reference	removed=2	added=4	change_sayisi=30
+Reference	removed=1	added=3	change_sayisi=29
+Reference	removed=3	added=2	change_sayisi=26
+Reference	removed=5	added=6	change_sayisi=26
+Reference	removed=4	added=1	change_sayisi=25
+CPE Configuration	removed=1	added=2	change_sayisi=23
+Reference	removed=7	added=8	change_sayisi=23
+Reference	removed=10	added=10	change_sayisi=22
+Reference	removed=9	added=9	change_sayisi=20
+Reference	removed=11	added=11	change_sayisi=20
+Reference	removed=12	added=12	change_sayisi=19
+CWE	removed=2	added=1	change_sayisi=18
+Reference	removed=8	added=4	change_sayisi=18
+CVSS V3	removed=1	added=1	change_sayisi=17
+Reference	removed=1	added=4	change_sayisi=15
+Reference	removed=13	added=13	change_sayisi=15
+Reference	removed=5	added=1	change_sayisi=13
+Reference	removed=3	added=5	change_sayisi=12
+Reference	removed=14	added=14	change_sayisi=12
+CWE	removed=2	added=2	change_sayisi=11
+Reference	removed=10	added=5	change_sayisi=11
+CPE Configuration	removed=2	added=2	change_sayisi=10
+Reference	removed=1	added=5	change_sayisi=10
+Reference	removed=7	added=4	change_sayisi=10
+CPE Configuration	removed=1	added=28	change_sayisi=9
+Reference	removed=5	added=7	change_sayisi=9
+Reference	removed=4	added=2	change_sayisi=9
+Reference	removed=14	added=7	change_sayisi=9
+Reference	removed=5	added=8	change_sayisi=9
+CPE Configuration	removed=1	added=3	change_sayisi=8
+Reference	removed=5	added=3	change_sayisi=8
+Reference	removed=15	added=7	change_sayisi=8
+Reference	removed=4	added=8	change_sayisi=8
+Reference	removed=19	added=19	change_sayisi=8
+Reference	removed=17	added=17	change_sayisi=8
+Reference	removed=6	added=1	change_sayisi=7
+Reference	removed=18	added=18	change_sayisi=7
+Reference	removed=16	added=16	change_sayisi=7
+Reference	removed=6	added=7	change_sayisi=7
+Reference	removed=3	added=6	change_sayisi=6
+Reference	removed=16	added=8	change_sayisi=6
+Reference	removed=9	added=5	change_sayisi=6
+Reference	removed=2	added=6	change_sayisi=6
+Reference	removed=24	added=24	change_sayisi=6
+Reference	removed=16	added=17	change_sayisi=6
+Reference	removed=29	added=29	change_sayisi=6
+Reference	removed=19	added=20	change_sayisi=6
+CPE Configuration	removed=3	added=3	change_sayisi=5
+Reference	removed=7	added=3	change_sayisi=5
+Reference	removed=12	added=13	change_sayisi=5
+Reference	removed=8	added=9	change_sayisi=5
+Reference	removed=15	added=15	change_sayisi=5
+CPE Configuration	removed=3	added=1	change_sayisi=4
+CPE Configuration	removed=4	added=4	change_sayisi=4
+Reference	removed=12	added=6	change_sayisi=4
+Reference	removed=11	added=5	change_sayisi=4
+Reference	removed=7	added=6	change_sayisi=4
+Reference	removed=17	added=18	change_sayisi=4
+Reference	removed=20	added=20	change_sayisi=4
+Reference	removed=25	added=25	change_sayisi=4
+Reference	removed=3	added=10	change_sayisi=4
+Reference	removed=40	added=40	change_sayisi=4
+Reference	removed=23	added=23	change_sayisi=4
+Reference	removed=18	added=19	change_sayisi=4
+Reference	removed=35	added=35	change_sayisi=4
+Reference	removed=32	added=32	change_sayisi=4
+Reference	removed=28	added=28	change_sayisi=4
+CPE Configuration	removed=2	added=4	change_sayisi=3
+CPE Configuration	removed=2	added=1	change_sayisi=3
+Reference	removed=6	added=2	change_sayisi=3
+CPE Configuration	removed=3	added=4	change_sayisi=3
+Reference	removed=4	added=3	change_sayisi=3
+Reference	removed=8	added=7	change_sayisi=3
+Reference	removed=9	added=4	change_sayisi=3
+Reference	removed=6	added=5	change_sayisi=3
+Reference	removed=15	added=22	change_sayisi=3
+Reference	removed=41	added=41	change_sayisi=3
+Reference	removed=27	added=27	change_sayisi=3
+Reference	removed=50	added=50	change_sayisi=3
+Reference	removed=26	added=26	change_sayisi=3
+Reference	removed=8	added=10	change_sayisi=3
+Reference	removed=24	added=25	change_sayisi=3
+Reference	removed=11	added=12	change_sayisi=3
+Reference	removed=9	added=11	change_sayisi=3
+Reference	removed=31	added=31	change_sayisi=3
+Reference	removed=2	added=8	change_sayisi=3
+Reference	removed=6	added=8	change_sayisi=3
+Reference	removed=2	added=7	change_sayisi=3
+Reference	removed=13	added=14	change_sayisi=3
+CPE Configuration	removed=1	added=6	change_sayisi=2
+CPE Configuration	removed=3	added=5	change_sayisi=2
+CPE Configuration	removed=13	added=1	change_sayisi=2
+CPE Configuration	removed=18	added=1	change_sayisi=2
+Reference	removed=5	added=2	change_sayisi=2
+Reference	removed=7	added=9	change_sayisi=2
+Reference	removed=11	added=6	change_sayisi=2
+Reference	removed=21	added=6	change_sayisi=2
+Reference	removed=9	added=3	change_sayisi=2
+Reference	removed=10	added=6	change_sayisi=2
+Reference	removed=13	added=6	change_sayisi=2
+Reference	removed=17	added=7	change_sayisi=2
+Reference	removed=14	added=8	change_sayisi=2
+Reference	removed=14	added=5	change_sayisi=2
+Reference	removed=5	added=4	change_sayisi=2
+Reference	removed=12	added=1	change_sayisi=2
+Reference	removed=22	added=22	change_sayisi=2
+Reference	removed=12	added=14	change_sayisi=2
+Reference	removed=34	added=34	change_sayisi=2
+Reference	removed=36	added=37	change_sayisi=2
+Reference	removed=45	added=45	change_sayisi=2
+Reference	removed=21	added=21	change_sayisi=2
+Reference	removed=32	added=33	change_sayisi=2
+Reference	removed=38	added=39	change_sayisi=2
+Reference	removed=44	added=44	change_sayisi=2
+Reference	removed=4	added=7	change_sayisi=2
+Reference	removed=3	added=8	change_sayisi=2
+Reference	removed=7	added=10	change_sayisi=2
+Reference	removed=10	added=11	change_sayisi=2
+Reference	removed=11	added=13	change_sayisi=2
+Reference	removed=30	added=30	change_sayisi=2
+Reference	removed=37	added=37	change_sayisi=2
+Reference	removed=36	added=36	change_sayisi=2
+Reference	removed=26	added=27	change_sayisi=2
+Reference	removed=33	added=33	change_sayisi=2
+Reference	removed=39	added=39	change_sayisi=2
+CPE Configuration	removed=44	added=44	change_sayisi=1
+CVSS V2 Metadata	removed=1	added=1	change_sayisi=1
+CPE Configuration	removed=1	added=5	change_sayisi=1
+Reference	removed=11	added=1	change_sayisi=1
+Tag	removed=1	added=1	change_sayisi=1
+CPE Configuration	removed=5	added=2	change_sayisi=1
+CPE Configuration	removed=1	added=4	change_sayisi=1
+CPE Configuration	removed=1	added=26	change_sayisi=1
+Reference	removed=23	added=1	change_sayisi=1
+Reference	removed=9	added=1	change_sayisi=1
+CWE	removed=3	added=2	change_sayisi=1
+CPE Configuration	removed=11	added=11	change_sayisi=1
+CPE Configuration	removed=25	added=25	change_sayisi=1
+CPE Configuration	removed=19	added=1	change_sayisi=1
+CPE Configuration	removed=7	added=2	change_sayisi=1
+CPE Configuration	removed=2	added=41	change_sayisi=1
+Reference	removed=21	added=24	change_sayisi=1
+CPE Configuration	removed=9	added=10	change_sayisi=1
+CPE Configuration	removed=1	added=24	change_sayisi=1
+Reference	removed=23	added=2	change_sayisi=1
+Reference	removed=49	added=50	change_sayisi=1
+Reference	removed=65	added=66	change_sayisi=1
+CPE Configuration	removed=7	added=1	change_sayisi=1
+CWE	removed=3	added=1	change_sayisi=1
+CPE Configuration	removed=8	added=10	change_sayisi=1
+Reference	removed=1	added=7	change_sayisi=1
+CPE Configuration	removed=8	added=8	change_sayisi=1
+CWE	removed=1	added=4	change_sayisi=1
+CWE	removed=6	added=2	change_sayisi=1
+CWE	removed=6	added=1	change_sayisi=1
+CPE Configuration	removed=3	added=6	change_sayisi=1
+Reference	removed=13	added=7	change_sayisi=1
+Reference	removed=12	added=7	change_sayisi=1
+Reference	removed=6	added=4	change_sayisi=1
+Reference	removed=11	added=4	change_sayisi=1
+Reference	removed=17	added=8	change_sayisi=1
+Reference	removed=14	added=6	change_sayisi=1
+Reference	removed=12	added=4	change_sayisi=1
+Reference	removed=24	added=28	change_sayisi=1
+CPE Configuration	removed=2	added=6	change_sayisi=1
+Reference	removed=8	added=1	change_sayisi=1
+Reference	removed=21	added=1	change_sayisi=1
+Reference	removed=3	added=7	change_sayisi=1
+Reference	removed=85	added=85	change_sayisi=1
+Reference	removed=16	added=23	change_sayisi=1
+Reference	removed=283	added=283	change_sayisi=1
+Reference	removed=20	added=27	change_sayisi=1
+Reference	removed=36	added=43	change_sayisi=1
+Reference	removed=8	added=15	change_sayisi=1
+Reference	removed=114	added=114	change_sayisi=1
+Reference	removed=43	added=43	change_sayisi=1
+Reference	removed=249	added=249	change_sayisi=1
+Reference	removed=52	added=52	change_sayisi=1
+Reference	removed=71	added=80	change_sayisi=1
+Reference	removed=68	added=68	change_sayisi=1
+Reference	removed=14	added=21	change_sayisi=1
+Reference	removed=170	added=171	change_sayisi=1
+Reference	removed=126	added=127	change_sayisi=1
+Reference	removed=225	added=227	change_sayisi=1
+Reference	removed=54	added=55	change_sayisi=1
+Reference	removed=97	added=107	change_sayisi=1
+Reference	removed=22	added=32	change_sayisi=1
+Reference	removed=136	added=136	change_sayisi=1
+Reference	removed=82	added=83	change_sayisi=1
+Reference	removed=44	added=54	change_sayisi=1
+Reference	removed=122	added=129	change_sayisi=1
+Reference	removed=48	added=49	change_sayisi=1
+Reference	removed=56	added=61	change_sayisi=1
+Reference	removed=47	added=49	change_sayisi=1
+Reference	removed=48	added=50	change_sayisi=1
+Reference	removed=10	added=17	change_sayisi=1
+Reference	removed=46	added=46	change_sayisi=1
+Reference	removed=42	added=42	change_sayisi=1
+Reference	removed=43	added=44	change_sayisi=1
+Reference	removed=42	added=52	change_sayisi=1
+Reference	removed=13	added=17	change_sayisi=1
+Reference	removed=58	added=59	change_sayisi=1
+Reference	removed=49	added=49	change_sayisi=1
+Reference	removed=40	added=42	change_sayisi=1
+Reference	removed=25	added=26	change_sayisi=1
+Reference	removed=4	added=6	change_sayisi=1
+Reference	removed=30	added=32	change_sayisi=1
+Reference	removed=73	added=74	change_sayisi=1
+Reference	removed=56	added=56	change_sayisi=1
+Reference	removed=42	added=48	change_sayisi=1
+Reference	removed=14	added=15	change_sayisi=1
+Reference	removed=23	added=24	change_sayisi=1
+Reference	removed=21	added=22	change_sayisi=1
+Reference	removed=515	added=1027	change_sayisi=1
+Reference	removed=1	added=6	change_sayisi=1
+Reference	removed=79	added=79	change_sayisi=1
+Reference	removed=18	added=20	change_sayisi=1
+Reference	removed=27	added=30	change_sayisi=1
+Reference	removed=13	added=15	change_sayisi=1
+Reference	removed=15	added=16	change_sayisi=1
+Reference	removed=9	added=10	change_sayisi=1
+Reference	removed=1	added=9	change_sayisi=1
+Reference	removed=71	added=71	change_sayisi=1
+CPE Configuration	removed=1	added=31	change_sayisi=1
+Reference	removed=8	added=11	change_sayisi=1
+Reference	removed=10	added=13	change_sayisi=1
+Reference	removed=12	added=16	change_sayisi=1
+
+====================================================================================================
+CVSS REMOVED + ADDED DEGISIM ADAYLARI
+====================================================================================================
+CVSS V3.1	change_sayisi=3181
+CVSS V4.0	change_sayisi=387
+CVSS V2	change_sayisi=68
+CVSS V3	change_sayisi=17
+CVSS V2 Metadata	change_sayisi=1
+
+====================================================================================================
+CVSS REMOVED + ADDED SIGNATURE
+====================================================================================================
+CVSS V3.1	removed=1	added=1	change_sayisi=3181
+CVSS V4.0	removed=1	added=1	change_sayisi=387
+CVSS V2	removed=1	added=1	change_sayisi=68
+CVSS V3	removed=1	added=1	change_sayisi=17
+CVSS V2 Metadata	removed=1	added=1	change_sayisi=1
+
+====================================================================================================
+EN YAYGIN CHANGE ACTION SIGNATURE - ILK 100
+====================================================================================================
+356079	[BOS SIGNATURE]
+349721	Added:Affected
+152915	Added:SSVC
+105805	Added:Reference
+56195	Added:Reference | Added:Reference
+37561	Added:Reference | Added:Reference | Added:Reference
+28026	Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference
+26345	Changed:CPE Configuration
+26113	Added:CVSS V3.1
+25662	Added:CVSS V3.1 | Added:CWE
+21501	Added:Reference | Added:Reference | Added:Reference | Added:Reference
+20316	Added:Affected | Added:SSVC
+14191	Added:CPE Configuration | Added:Reference Type
+14110	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+10806	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+10275	Changed:Description
+9977	Added:CPE Configuration | Added:Reference Type | Added:Reference Type
+9371	Added:CWE
+9015	Added:Description | Added:Reference
+8330	Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+7914	Added:Description | Added:Reference | Added:Reference
+7574	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+6594	Added:Affected | Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference
+6578	Added:CPE Configuration | Added:CVSS V3.1 | Added:Reference Type
+6566	Added:Translation
+6055	Changed:Description | Removed:CVSS V3.1
+5603	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+4878	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Changed:Reference Type
+4646	Added:Description | Added:Reference | Added:Reference | Added:Reference
+4614	Changed:CVSS V4.0 Score
+4496	Added:CWE | Added:Description | Added:Reference
+4487	Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference
+4374	Added:CVSS V2 | Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+4189	Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference
+4132	Changed:SSVC
+4035	Added:CPE Configuration | Added:CVSS V3.1 | Added:Reference Type | Added:Reference Type
+4003	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+3628	Added:Description
+3311	Added:CPE Configuration | Added:Reference Type | Added:Reference Type | Added:Reference Type
+3101	Added:Reference | Added:SSVC
+3042	Added:Reference | Removed:Reference
+3008	Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+2999	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Changed:Reference Type | Changed:Reference Type
+2847	Added:Affected | Added:Reference
+2821	Removed:Reference | Removed:Reference Type
+2789	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+2737	Added:CVSS V3.1 | Added:Description | Added:Reference
+2608	Added:Affected | Added:CVSS V3.1 | Added:Description | Added:Reference
+2465	Added:CPE Configuration | Added:CVSS V3.1 | Added:Reference Type | Added:Reference Type | Added:Reference Type
+2463	Added:CWE | Added:SSVC
+2436	Added:CVSS V3.1 | Added:CWE | Added:SSVC
+2397	Removed:Reference
+2363	Added:CVSS V2 | Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+2253	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+2190	Added:CVSS V3.1 | Removed:CVSS V3.1
+2154	Added:CPE Configuration | Added:CVSS V3.1 | Changed:Reference Type
+2149	Added:CPE Configuration | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+2089	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+2085	Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+2078	Added:Affected | Added:CVSS V3.1
+2043	Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference
+1988	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1980	Added:CVSS V3.1 | Added:SSVC
+1889	Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+1853	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type
+1739	Added:CPE Configuration | Added:CVSS V3.1 | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+1737	Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1721	Added:CVSS V3 | Added:CWE | Added:Description | Added:Reference
+1670	Added:Reference | Changed:Description
+1654	Added:Affected | Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+1638	Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1633	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Changed:Reference Type | Changed:Reference Type | Changed:Reference Type | Changed:Reference Type
+1623	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type | Added:Reference Type
+1597	Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference
+1533	Added:CPE Configuration | Added:CVSS V3.1 | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+1530	Added:CPE Configuration | Added:CWE | Added:Reference Type
+1511	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type
+1498	Added:Affected | Added:Description | Added:Reference
+1492	Added:Tag
+1485	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+1466	Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1432	Added:SSVC | Removed:CVSS V3.1
+1423	Added:Affected | Added:CVSS V3.1 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+1417	Added:CVSS V3.1 | Added:Description | Added:Reference | Added:Reference
+1409	Added:Reference Type
+1391	Added:CWE | Added:Description | Added:Reference | Added:Reference
+1349	Added:Affected | Added:Description | Added:Reference | Added:Reference
+1292	Added:CVSS V3.1 | Added:CWE | Added:Reference
+1290	Added:CVSS V2 | Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1286	Removed:CVSS V3.1
+1259	Added:Affected | Added:CWE | Added:Description | Added:Reference | Added:Reference
+1239	Added:Description | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference | Added:Reference
+1231	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Changed:Reference Type | Changed:Reference Type | Changed:Reference Type
+1184	Added:Affected | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference
+1167	Added:CPE Configuration | Added:CWE | Changed:Reference Type
+1166	Added:CVSS V3 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+1145	Added:CWE | Removed:CWE
+1140	Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference | Added:Reference
+1128	Added:CPE Configuration | Added:CVSS V3.1 | Added:CWE | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type | Added:Reference Type
+1106	Added:CVSS V3.1 | Added:CVSS V4.0 | Added:CWE | Added:Description | Added:Reference | Added:Reference
+
+====================================================================================================
+CHANGED ORNEKLERI
+====================================================================================================
+
+--- Changed / CPE Configuration ---
+Ornek 1
+  CVE: CVE-2023-3080
+  Event: CPE Deprecation Remap
+  Change ID: D925C078-159C-4287-BCFC-7E7314CE47A5
+  Source: nvd@nist.gov
+  Created: 2024-01-02T16:28:55.030
+  Normalize edilince ayni: False
+  Old: OR *cpe:2.3:a:wp_mail_catcher_project:wp_mail_catcher:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.1.3
+  New: OR *cpe:2.3:a:jamesward:wp_mail_catcher:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.1.3
+Ornek 2
+  CVE: CVE-2021-45967
+  Event: Reanalysis
+  Change ID: 8A541041-7328-449B-B528-F5111CA8AA5D
+  Source: nvd@nist.gov
+  Created: 2024-01-03T18:55:26.937
+  Normalize edilince ayni: False
+  Old: OR *cpe:2.3:a:pascom_cloud_phone_system:*:*:*:*:*:*:*:*:* versions up to (including) 7.19
+  New: OR *cpe:2.3:a:pascom:cloud_phone_system:*:*:*:*:*:*:*:* versions up to (including) 7.19
+Ornek 3
+  CVE: CVE-2019-15592
+  Event: Reanalysis
+  Change ID: D0BC97FF-B2B9-426B-BDAA-ED6410C38871
+  Source: nvd@nist.gov
+  Created: 2024-01-03T18:55:45.163
+  Normalize edilince ayni: False
+  Old: OR *cpe:2.3:a:gitlab:gitlab:*:*:*:*:*:*:*:*
+  New: OR *cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:* versions from (including) 11.2.0 up to (excluding) 12.0.8 *cpe:2.3:a:gitlab:gitlab:*:*:*:*:enterprise:*:*:* versions from (including) 11.2.0 up to (excluding) 12.0.8 *cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:* versions from (including) 12.1.0 up to (excluding) 12.1.8 *cpe:2.3:a:gitlab:gitlab:*:*:*:*:enterprise:*:*:* versions from (including) 12.1.0 up to (excluding) 12.1.8 *cpe:2.3:a:gitlab:gitlab:*:*:*:*:community:*:*:* versions from (inc...[TRUNCATED]
+Ornek 4
+  CVE: CVE-2022-2389
+  Event: CPE Deprecation Remap
+  Change ID: 3B7E46F1-1E0D-4D96-8E6F-4B49D6418BD0
+  Source: nvd@nist.gov
+  Created: 2024-01-04T15:17:19.940
+  Normalize edilince ayni: False
+  Old: OR *cpe:2.3:a:buildwoofunnels:autonami:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.1.2
+  New: OR *cpe:2.3:a:funnelkit:funnelkit_automations:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.1.2
+Ornek 5
+  CVE: CVE-2014-6059
+  Event: CPE Deprecation Remap
+  Change ID: 98DD9D00-414B-4493-95AA-893BEAC9725A
+  Source: nvd@nist.gov
+  Created: 2024-01-05T14:36:21.020
+  Normalize edilince ayni: False
+  Old: OR *cpe:2.3:a:advanced_access_manager_project:advanced_access_manager:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.8.2
+  New: OR *cpe:2.3:a:vasyltech:advanced_access_manager:*:*:*:*:*:wordpress:*:* versions from (excluding) 2.8.2
+
+--- Changed / CVSS V4.0 Score ---
+Ornek 1
+  CVE: CVE-2025-14485
+  Event: Data Remediation
+  Change ID: C95FB0D9-FAAD-4FC4-BE97-4F3B0EE7002F
+  Source: nvd@nist.gov
+  Created: 2026-04-29T01:00:01.613
+  Normalize edilince ayni: False
+  Old: 2.3
+  New: 1.3
+Ornek 2
+  CVE: CVE-2023-7096
+  Event: Data Remediation
+  Change ID: 88921FF6-C146-4F79-993F-D731EEEF3AB1
+  Source: nvd@nist.gov
+  Created: 2026-04-29T01:00:01.613
+  Normalize edilince ayni: False
+  Old: 5.1
+  New: 2
+Ornek 3
+  CVE: CVE-2025-13544
+  Event: Data Remediation
+  Change ID: 2C8F2407-70D6-4305-8EFF-8F82BD851141
+  Source: nvd@nist.gov
+  Created: 2026-04-29T01:00:01.613
+  Normalize edilince ayni: False
+  Old: 5.3
+  New: 2.1
+Ornek 4
+  CVE: CVE-2025-14538
+  Event: Data Remediation
+  Change ID: F0FC0AE8-4D94-46FB-A54E-4486B993E65F
+  Source: nvd@nist.gov
+  Created: 2026-04-29T01:00:01.613
+  Normalize edilince ayni: False
+  Old: 5.1
+  New: 2
+Ornek 5
+  CVE: CVE-2025-14284
+  Event: Data Remediation
+  Change ID: 4E5971EA-3CDA-4855-8032-9F9FC011BF8B
+  Source: nvd@nist.gov
+  Created: 2026-04-29T01:00:01.613
+  Normalize edilince ayni: False
+  Old: 5.1
+  New: 2
+
+--- Changed / Date Added ---
+Ornek 1
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: F1FFF475-A695-4E2C-A662-267D65C8D077
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-19T01:00:03.257
+  Normalize edilince ayni: False
+  Old: 2022-03-15
+  New: 2024-09-18
+Ornek 2
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: 4C5BD64C-F059-4C85-814F-88F203CD4FA1
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-20T01:00:01.483
+  Normalize edilince ayni: False
+  Old: 2024-09-18
+  New: 2022-03-15
+Ornek 3
+  CVE: CVE-2025-62593
+  Event: CVE CISA KEV Update
+  Change ID: 8D833AAC-E9A7-424A-9FDB-3C11245F5104
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2026-08-17T19:00:00.900
+  Normalize edilince ayni: False
+  Old: 2026-08-18
+  New: 2026-08-17
+
+--- Changed / Description ---
+Ornek 1
+  CVE: CVE-2023-39912
+  Event: CVE Modified
+  Change ID: 7F3019A8-9A98-4296-8A43-7D77271FA10B
+  Source: cve@mitre.org
+  Created: 2024-01-01T06:15:08.007
+  Normalize edilince ayni: False
+  Old: Zoho ManageEngine ADManager Plus through 7202 allows admin users to download any file from the server machine via directory traversal.
+  New: Zoho ManageEngine ADManager Plus before 7203 allows Help Desk Technician users to read arbitrary files on the machine where this product is installed.
+Ornek 2
+  CVE: CVE-2023-51766
+  Event: CVE Modified
+  Change ID: EAB69DF0-E8E8-4E34-A4C8-CECF17FBBB68
+  Source: cve@mitre.org
+  Created: 2024-01-01T17:15:08.400
+  Normalize edilince ayni: False
+  Old: Exim through 4.97 allows SMTP smuggling in certain configurations. Remote attackers can use a published exploitation technique to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass of an SPF protection mechanism. This occurs because Exim supports <LF>.<CR><LF> but some other popular e-mail servers do not.
+  New: Exim before 4.97.1 allows SMTP smuggling in certain PIPELINING/CHUNKING configurations. Remote attackers can use a published exploitation technique to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass of an SPF protection mechanism. This occurs because Exim supports <LF>.<CR><LF> but some other popular e-mail servers do not.
+Ornek 3
+  CVE: CVE-2023-4380
+  Event: CVE Modified
+  Change ID: 5DAB48F5-FEBB-432A-A3E7-EC7D46DCE745
+  Source: secalert@redhat.com
+  Created: 2024-01-01T23:15:08.460
+  Normalize edilince ayni: False
+  Old: A logic flaw exists in Ansible. Whenever a private project is created with incorrect credentials, they are logged in plaintext. This flaw allows an attacker to retrieve the credentials from the log, resulting in the loss of confidentiality, integrity, and availability.
+  New: A logic flaw exists in Ansible Automation platform. Whenever a private project is created with incorrect credentials, they are logged in plaintext. This flaw allows an attacker to retrieve the credentials from the log, resulting in the loss of confidentiality, integrity, and availability.
+Ornek 4
+  CVE: CVE-2023-40303
+  Event: CVE Modified
+  Change ID: 78FED5DD-C340-4755-828D-BE89F5709065
+  Source: cve@mitre.org
+  Created: 2024-01-02T01:15:07.857
+  Normalize edilince ayni: False
+  Old: GNU inetutils through 2.4 may allow privilege escalation because of unchecked return values of set*id() family functions in ftpd, rcp, rlogin, rsh, rshd, and uucpd. This is, for example, relevant if the setuid system call fails when a process is trying to drop privileges before letting an ordinary user control the activities of the process.
+  New: GNU inetutils before 2.5 may allow privilege escalation because of unchecked return values of set*id() family functions in ftpd, rcp, rlogin, rsh, rshd, and uucpd. This is, for example, relevant if the setuid system call fails when a process is trying to drop privileges before letting an ordinary user control the activities of the process.
+Ornek 5
+  CVE: CVE-2023-6051
+  Event: CVE Modified
+  Change ID: 6115A67D-DA3A-40FA-95B7-750A0551231F
+  Source: cve@gitlab.com
+  Created: 2024-01-02T09:15:07.310
+  Normalize edilince ayni: False
+  Old: An issue has been discovered in GitLab CE/EE affecting all versions before 16.4.4, all versions starting from 15.5 before 16.5.4, all versions starting from 16.6 before 16.6.2. File integrity may be compromised when source code or installation packages are pulled from a specific tag.
+  New: An issue has been discovered in GitLab CE/EE affecting all versions before 16.4.4, all versions starting from 16.5 before 16.5.4, all versions starting from 16.6 before 16.6.2. File integrity may be compromised when source code or installation packages are pulled from a specific tag.
+
+--- Changed / Due Date ---
+Ornek 1
+  CVE: CVE-2023-46805
+  Event: CVE CISA KEV Update
+  Change ID: CFA0468D-416F-44BA-905A-A50CD5ADA238
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-01-19T02:00:02.097
+  Normalize edilince ayni: False
+  Old: 2024-01-31
+  New: 2024-01-22
+Ornek 2
+  CVE: CVE-2024-21887
+  Event: CVE CISA KEV Update
+  Change ID: A082207F-FBC9-4030-B14F-0FDAE5789B9A
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-01-19T02:00:02.523
+  Normalize edilince ayni: False
+  Old: 2024-01-31
+  New: 2024-01-22
+Ornek 3
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: F1FFF475-A695-4E2C-A662-267D65C8D077
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-19T01:00:03.257
+  Normalize edilince ayni: False
+  Old: 2022-04-05
+  New: 2024-10-09
+Ornek 4
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: 4C5BD64C-F059-4C85-814F-88F203CD4FA1
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-20T01:00:01.483
+  Normalize edilince ayni: False
+  Old: 2024-10-09
+  New: 2022-04-05
+Ornek 5
+  CVE: CVE-2025-3928
+  Event: CVE CISA KEV Update
+  Change ID: A0349C3E-3276-4517-8DC5-77F619D9633B
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2025-04-30T01:00:02.513
+  Normalize edilince ayni: False
+  Old: 2025-05-17
+  New: 2025-05-19
+
+--- Changed / Evaluator Description ---
+Ornek 1
+  CVE: CVE-2014-3631
+  Event: Modified Analysis
+  Change ID: 5F0994E8-DAAB-4AE3-AC3D-865139DC507A
+  Source: nvd@nist.gov
+  Created: 2024-02-02T16:33:35.667
+  Normalize edilince ayni: False
+  Old: <a href="http://cwe.mitre.org/data/definitions/476.html" target="_blank">CWE-476: NULL Pointer Dereference</a>
+  New: CWE-476: NULL Pointer Dereference
+Ornek 2
+  CVE: CVE-2010-0378
+  Event: Modified Analysis
+  Change ID: 6F62B9F7-2DC3-4B87-8B1E-A99AEB2DE62E
+  Source: nvd@nist.gov
+  Created: 2024-02-03T02:21:08.600
+  Normalize edilince ayni: True
+  Old: Per: http://cwe.mitre.org/data/definitions/416.html CWE-416 Use-After Free Vulnerability
+  New: Per: http://cwe.mitre.org/data/definitions/416.html CWE-416 Use-After Free Vulnerability
+Ornek 3
+  CVE: CVE-2010-0050
+  Event: Modified Analysis
+  Change ID: DBFC2BC1-02F5-4BD7-A702-30926A82E5CA
+  Source: nvd@nist.gov
+  Created: 2024-02-03T02:24:33.557
+  Normalize edilince ayni: True
+  Old: Per: http://lists.apple.com/archives/security-announce/2010/Mar/msg00000.html 'WebKit CVE-ID: CVE-2010-0050 Available for: Mac OS X v10.4.11, Mac OS X Server v10.4.11, Mac OS X v10.5.8, Mac OS X Server v10.5.8, Mac OS X v10.6.1 or later, Mac OS X Server v10.6.1 or later, Windows 7, Vista, XP Impact: Visiting a maliciously crafted website may lead to an unexpected application termination or arbitrary code execution Description: A use-after-free issue exists in WebKit's handling of incorrectly nes...[TRUNCATED]
+  New: Per: http://lists.apple.com/archives/security-announce/2010/Mar/msg00000.html 'WebKit CVE-ID: CVE-2010-0050 Available for: Mac OS X v10.4.11, Mac OS X Server v10.4.11, Mac OS X v10.5.8, Mac OS X Server v10.5.8, Mac OS X v10.6.1 or later, Mac OS X Server v10.6.1 or later, Windows 7, Vista, XP Impact: Visiting a maliciously crafted website may lead to an unexpected application termination or arbitrary code execution Description: A use-after-free issue exists in WebKit's handling of incorrectly nes...[TRUNCATED]
+Ornek 4
+  CVE: CVE-2016-4029
+  Event: Modified Analysis
+  Change ID: 25FDD671-530B-44CC-ACFC-277792DAAD72
+  Source: nvd@nist.gov
+  Created: 2024-02-08T19:56:14.487
+  Normalize edilince ayni: False
+  Old: <a href="https://cwe.mitre.org/data/definitions/918.html">CWE-918: Server-Side Request Forgery (SSRF)</a>
+  New: CWE-918: Server-Side Request Forgery (SSRF)
+Ornek 5
+  CVE: CVE-2010-0249
+  Event: Modified Analysis
+  Change ID: 6979873F-214D-4B7A-8064-36DF3AE5ACA3
+  Source: nvd@nist.gov
+  Created: 2024-02-15T21:06:48.087
+  Normalize edilince ayni: True
+  Old: Per: http://cwe.mitre.org/data/definitions/416.htmlhttp://cwe.mitre.org/data/definitions/416.html CWE-416: Use After Free
+  New: Per: http://cwe.mitre.org/data/definitions/416.htmlhttp://cwe.mitre.org/data/definitions/416.html CWE-416: Use After Free
+
+--- Changed / Evaluator Impact ---
+Ornek 1
+  CVE: CVE-2009-0244
+  Event: Modified Analysis
+  Change ID: B48C1C94-F494-4B30-B1A8-702D80DB8370
+  Source: nvd@nist.gov
+  Created: 2024-01-26T17:53:29.510
+  Normalize edilince ayni: True
+  Old: per: http://www.seguridadmobile.com/windows-mobile/windows-mobile-security/Microsoft-Bluetooth-Stack-Directory-Traversal.html "Non vulnerable products: Windows Mobile devices 5.0 and 6 not using Microsoft Bluetooth Stack (for example: ASUS P525, ASUS P535, ... using Widcomm/Broadcom Bluetooth Stack)"
+  New: per: http://www.seguridadmobile.com/windows-mobile/windows-mobile-security/Microsoft-Bluetooth-Stack-Directory-Traversal.html "Non vulnerable products: Windows Mobile devices 5.0 and 6 not using Microsoft Bluetooth Stack (for example: ASUS P525, ASUS P535, ... using Widcomm/Broadcom Bluetooth Stack)"
+Ornek 2
+  CVE: CVE-2007-4268
+  Event: Modified Analysis
+  Change ID: 5CBA3D70-3B45-4512-B32C-DAC1A481A749
+  Source: nvd@nist.gov
+  Created: 2024-02-02T02:35:40.727
+  Normalize edilince ayni: True
+  Old: "By sending a maliciously crafted AppleTalk message, a local user may cause an unexpected system shutdown or arbitrary code execution with system privileges."
+  New: "By sending a maliciously crafted AppleTalk message, a local user may cause an unexpected system shutdown or arbitrary code execution with system privileges."
+Ornek 3
+  CVE: CVE-2013-3301
+  Event: Modified Analysis
+  Change ID: F21871BB-76A9-4E88-9065-E442D930ECE4
+  Source: nvd@nist.gov
+  Created: 2024-02-02T16:33:41.397
+  Normalize edilince ayni: True
+  Old: Per https://access.redhat.com/security/cve/CVE-2013-3301 "This issue affects the versions of Linux kernel as shipped with Red Hat Enterprise Linux 6 and Red Hat Enterprise MRG 2. Future kernel updates for Red Hat Enterprise Linux 6 and Red Hat Enterprise MRG 2 may address this issue."
+  New: Per https://access.redhat.com/security/cve/CVE-2013-3301 "This issue affects the versions of Linux kernel as shipped with Red Hat Enterprise Linux 6 and Red Hat Enterprise MRG 2. Future kernel updates for Red Hat Enterprise Linux 6 and Red Hat Enterprise MRG 2 may address this issue."
+Ornek 4
+  CVE: CVE-2010-2547
+  Event: Modified Analysis
+  Change ID: 16ED219A-EF70-48EC-AC2E-78B38952C4F1
+  Source: nvd@nist.gov
+  Created: 2024-02-02T16:34:14.227
+  Normalize edilince ayni: True
+  Old: Per: http://lists.gnupg.org/pipermail/gnupg-announce/2010q3/000302.html 'GnuPG 1.x is NOT affected because it does not come with the GPGSM tool.'
+  New: Per: http://lists.gnupg.org/pipermail/gnupg-announce/2010q3/000302.html 'GnuPG 1.x is NOT affected because it does not come with the GPGSM tool.'
+Ornek 5
+  CVE: CVE-2010-0629
+  Event: Modified Analysis
+  Change ID: 0C36CDDD-A708-4AFF-9E4B-D069398DB65B
+  Source: nvd@nist.gov
+  Created: 2024-02-02T16:52:02.487
+  Normalize edilince ayni: True
+  Old: Per: http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-003.txt 'AFFECTED SOFTWARE ================= * kadmind in MIT releases krb5-1.5 through krb5-1.6.3.'
+  New: Per: http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-003.txt 'AFFECTED SOFTWARE ================= * kadmind in MIT releases krb5-1.5 through krb5-1.6.3.'
+
+--- Changed / Evaluator Solution ---
+Ornek 1
+  CVE: CVE-2006-2916
+  Event: Modified Analysis
+  Change ID: FF51E1A4-5E72-4EDA-83E4-5D4663E31975
+  Source: nvd@nist.gov
+  Created: 2024-01-21T01:42:33.747
+  Normalize edilince ayni: True
+  Old: Product is only vulnerable when running setuid root on Linux 2.6.0 or later versions. Vendor links provide patches for each affected version.
+  New: Product is only vulnerable when running setuid root on Linux 2.6.0 or later versions. Vendor links provide patches for each affected version.
+Ornek 2
+  CVE: CVE-2003-0899
+  Event: Modified Analysis
+  Change ID: 9A902C2F-F18A-4EB3-BFED-D38C26516F71
+  Source: nvd@nist.gov
+  Created: 2024-02-02T14:01:01.903
+  Normalize edilince ayni: True
+  Old: This vulnerability is addressed in the following product release: Acme Labs, thttpd, 2.24
+  New: This vulnerability is addressed in the following product release: Acme Labs, thttpd, 2.24
+Ornek 3
+  CVE: CVE-2010-0378
+  Event: Modified Analysis
+  Change ID: 6F62B9F7-2DC3-4B87-8B1E-A99AEB2DE62E
+  Source: nvd@nist.gov
+  Created: 2024-02-03T02:21:08.600
+  Normalize edilince ayni: True
+  Old: Per: http://www.microsoft.com/technet/security/advisory/979267.mspx " Suggested Actions Perform one or both of the following steps: • Uninstall the Adobe Flash Player version 6. • Install the most current version of Flash Player available from Adobe."
+  New: Per: http://www.microsoft.com/technet/security/advisory/979267.mspx " Suggested Actions Perform one or both of the following steps: • Uninstall the Adobe Flash Player version 6. • Install the most current version of Flash Player available from Adobe."
+Ornek 4
+  CVE: CVE-2010-0050
+  Event: Modified Analysis
+  Change ID: DBFC2BC1-02F5-4BD7-A702-30926A82E5CA
+  Source: nvd@nist.gov
+  Created: 2024-02-03T02:24:33.557
+  Normalize edilince ayni: True
+  Old: Per: http://lists.apple.com/archives/security-announce/2010/Mar/msg00000.html 'Safari 4.0.5 is available via the Apple Software Update application, or Apple's Safari download site at: http://www.apple.com/safari/download/'
+  New: Per: http://lists.apple.com/archives/security-announce/2010/Mar/msg00000.html 'Safari 4.0.5 is available via the Apple Software Update application, or Apple's Safari download site at: http://www.apple.com/safari/download/'
+Ornek 5
+  CVE: CVE-2007-0897
+  Event: Modified Analysis
+  Change ID: 635B3A39-5C16-4D08-BD9B-D0A87DE669B2
+  Source: nvd@nist.gov
+  Created: 2024-02-09T02:48:50.810
+  Normalize edilince ayni: True
+  Old: This vulnerability is addressed in the following product release: Clam AntiVirus, ClamAV, 0.90 Stable
+  New: This vulnerability is addressed in the following product release: Clam AntiVirus, ClamAV, 0.90 Stable
+
+--- Changed / Reference Type ---
+Ornek 1
+  CVE: CVE-2023-6895
+  Event: Initial Analysis
+  Change ID: 3D35C5F5-E36F-4D8A-ADDB-FA5C5D40ADEE
+  Source: nvd@nist.gov
+  Created: 2024-01-02T13:12:21.843
+  Normalize edilince ayni: False
+  Old: https://github.com/willchen0011/cve/blob/main/rce.md No Types Assigned
+  New: https://github.com/willchen0011/cve/blob/main/rce.md Exploit, Third Party Advisory
+Ornek 2
+  CVE: CVE-2023-6895
+  Event: Initial Analysis
+  Change ID: 3D35C5F5-E36F-4D8A-ADDB-FA5C5D40ADEE
+  Source: nvd@nist.gov
+  Created: 2024-01-02T13:12:21.843
+  Normalize edilince ayni: False
+  Old: https://vuldb.com/?ctiid.248254 No Types Assigned
+  New: https://vuldb.com/?ctiid.248254 Permissions Required, Third Party Advisory
+Ornek 3
+  CVE: CVE-2023-6895
+  Event: Initial Analysis
+  Change ID: 3D35C5F5-E36F-4D8A-ADDB-FA5C5D40ADEE
+  Source: nvd@nist.gov
+  Created: 2024-01-02T13:12:21.843
+  Normalize edilince ayni: False
+  Old: https://vuldb.com/?id.248254 No Types Assigned
+  New: https://vuldb.com/?id.248254 Third Party Advisory
+Ornek 4
+  CVE: CVE-2023-6314
+  Event: Initial Analysis
+  Change ID: 9549140B-251C-424C-88DC-BDB6E038B813
+  Source: nvd@nist.gov
+  Created: 2024-01-02T13:31:21.227
+  Normalize edilince ayni: False
+  Old: https://industry.panasonic.eu/products/automation-devices-solutions/programmable-logic-controllers-plc/plc-software/programming-software-control-fpwin-pro No Types Assigned
+  New: https://industry.panasonic.eu/products/automation-devices-solutions/programmable-logic-controllers-plc/plc-software/programming-software-control-fpwin-pro Product
+Ornek 5
+  CVE: CVE-2023-6315
+  Event: Initial Analysis
+  Change ID: C862F90C-40E8-4925-BFA4-14D1EE3EDCDA
+  Source: nvd@nist.gov
+  Created: 2024-01-02T13:43:51.827
+  Normalize edilince ayni: False
+  Old: https://industry.panasonic.eu/products/automation-devices-solutions/programmable-logic-controllers-plc/plc-software/programming-software-control-fpwin-pro No Types Assigned
+  New: https://industry.panasonic.eu/products/automation-devices-solutions/programmable-logic-controllers-plc/plc-software/programming-software-control-fpwin-pro Product
+
+--- Changed / Required Action ---
+Ornek 1
+  CVE: CVE-2024-3400
+  Event: CVE CISA KEV Update
+  Change ID: B42D736C-3127-46C8-A012-5F6920B8EF36
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-04-16T01:00:01.557
+  Normalize edilince ayni: False
+  Old: Users of affected devices should enable Threat Prevention Threat ID 95187 if that is available, otherwise, disable device telemetry until patches are available from the vendor, per vendor instructions.
+  New: Apply mitigations per vendor instructions as they become available. Otherwise, users with vulnerable versions of affected devices should enable Threat Prevention Threat ID 95187 if that is available, or disable device telemetry until patches are available from the vendor. See the vendor bulletin for more details and a patch release schedule.
+Ornek 2
+  CVE: CVE-2024-3400
+  Event: CVE CISA KEV Update
+  Change ID: 4B861AA7-887C-4FB8-8648-0470B0C83871
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-04-18T01:00:01.590
+  Normalize edilince ayni: False
+  Old: Apply mitigations per vendor instructions as they become available. Otherwise, users with vulnerable versions of affected devices should enable Threat Prevention Threat ID 95187 if that is available, or disable device telemetry until patches are available from the vendor. See the vendor bulletin for more details and a patch release schedule.
+  New: Apply mitigations per vendor instructions as they become available. Otherwise, users with vulnerable versions of affected devices should enable Threat Prevention IDs available from the vendor. See the vendor bulletin for more details and a patch release schedule.
+Ornek 3
+  CVE: CVE-2022-38028
+  Event: CVE CISA KEV Update
+  Change ID: EFA1D0CD-ECC6-4F79-A0C2-D35DE40E0BB5
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-11T01:00:01.297
+  Normalize edilince ayni: True
+  Old: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.
+  New: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.
+Ornek 4
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: F1FFF475-A695-4E2C-A662-267D65C8D077
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-19T01:00:03.257
+  Normalize edilince ayni: False
+  Old: Apply updates per vendor instructions.
+  New: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.
+Ornek 5
+  CVE: CVE-2019-1069
+  Event: CVE CISA KEV Update
+  Change ID: 4C5BD64C-F059-4C85-814F-88F203CD4FA1
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-09-20T01:00:01.483
+  Normalize edilince ayni: False
+  Old: Apply mitigations per vendor instructions or discontinue use of the product if mitigations are unavailable.
+  New: Apply updates per vendor instructions.
+
+--- Changed / SSVC ---
+Ornek 1
+  CVE: CVE-2024-22447
+  Event: CVE Modified
+  Change ID: EC1772B9-F05A-48E5-8F37-909973C2FF92
+  Source: 134c704f-9b21-4f2e-91b3-4a467353bcc0
+  Created: 2026-06-17T13:19:10.523
+  Normalize edilince ayni: False
+  Old: {"id":"CVE-2024-22447","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T14:58:44.096268Z","version":"2.0.3"}
+  New: {"id":"CVE-2024-22447","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T00:00:00+00:00","version":"2.0.3"}
+Ornek 2
+  CVE: CVE-2024-22451
+  Event: CVE Modified
+  Change ID: 57AD5546-14E3-416A-91BC-CC1BB8C5B856
+  Source: 134c704f-9b21-4f2e-91b3-4a467353bcc0
+  Created: 2026-06-17T13:19:10.693
+  Normalize edilince ayni: False
+  Old: {"id":"CVE-2024-22451","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T18:01:49.292846Z","version":"2.0.3"}
+  New: {"id":"CVE-2024-22451","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T00:00:00+00:00","version":"2.0.3"}
+Ornek 3
+  CVE: CVE-2026-0137
+  Event: CVE Modified
+  Change ID: 2E50A499-CA54-4086-A914-E4BFBBEC0C76
+  Source: 134c704f-9b21-4f2e-91b3-4a467353bcc0
+  Created: 2026-06-17T13:19:29.100
+  Normalize edilince ayni: False
+  Old: {"id":"CVE-2026-0137","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T20:19:47.907458Z","version":"2.0.3"}
+  New: {"id":"CVE-2026-0137","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T00:00:00+00:00","version":"2.0.3"}
+Ornek 4
+  CVE: CVE-2026-0138
+  Event: CVE Modified
+  Change ID: 31D3A788-33E8-44CA-96CB-0C6651215E8C
+  Source: 134c704f-9b21-4f2e-91b3-4a467353bcc0
+  Created: 2026-06-17T13:19:29.283
+  Normalize edilince ayni: False
+  Old: {"id":"CVE-2026-0138","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T20:21:06.901336Z","version":"2.0.3"}
+  New: {"id":"CVE-2026-0138","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T00:00:00+00:00","version":"2.0.3"}
+Ornek 5
+  CVE: CVE-2026-0139
+  Event: CVE Modified
+  Change ID: B351155C-B21D-48D3-BF05-FEC1F6410D57
+  Source: 134c704f-9b21-4f2e-91b3-4a467353bcc0
+  Created: 2026-06-17T13:19:29.473
+  Normalize edilince ayni: False
+  Old: {"id":"CVE-2026-0139","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T20:22:55.006482Z","version":"2.0.3"}
+  New: {"id":"CVE-2026-0139","options":[{"exploitation":"none"},{"automatable":"no"},{"technicalImpact":"total"}],"role":"CISA Coordinator","timestamp":"2026-06-16T00:00:00+00:00","version":"2.0.3"}
+
+--- Changed / Source ---
+Ornek 1
+  CVE: CVE-2023-36268
+  Event: CVE Source Update
+  Change ID: FC3CDCDA-049D-44E5-A842-3CDACEA404E8
+  Source: security@documentfoundation.org
+  Created: 2024-05-31T18:15:09.157
+  Normalize edilince ayni: False
+  Old: MITRE
+  New: Document Foundation, The
+Ornek 2
+  CVE: CVE-2024-37694
+  Event: CVE Source Update
+  Change ID: 98708BE3-B5E0-495D-B3CB-22C5C12583CB
+  Source: psirt@esri.com
+  Created: 2024-06-27T17:15:10.183
+  Normalize edilince ayni: False
+  Old: MITRE
+  New: Environmental Systems Research Institute, Inc.
+Ornek 3
+  CVE: CVE-2024-45440
+  Event: CVE Source Update
+  Change ID: 71AAB63E-E903-4037-B529-A4152AF3D7CE
+  Source: mlhess@drupal.org
+  Created: 2024-09-12T16:15:06.943
+  Normalize edilince ayni: False
+  Old: MITRE
+  New: Drupal.org
+Ornek 4
+  CVE: CVE-2024-43167
+  Event: CVE Source Update
+  Change ID: 9F162270-6880-4D10-BF10-50533DCFA17D
+  Source: sep@nlnetlabs.nl
+  Created: 2024-10-21T12:15:03.837
+  Normalize edilince ayni: False
+  Old: Red Hat, Inc.
+  New: NLnet Labs
+Ornek 5
+  CVE: CVE-2024-43168
+  Event: CVE Source Update
+  Change ID: 6DD4E10B-0E80-4228-AB13-79D05539FFFB
+  Source: sep@nlnetlabs.nl
+  Created: 2024-10-21T12:15:04.327
+  Normalize edilince ayni: False
+  Old: Red Hat, Inc.
+  New: NLnet Labs
+
+--- Changed / Translation ---
+Ornek 1
+  CVE: CVE-2026-10291
+  Event: CVE Translated
+  Change ID: 204E3941-C559-49BB-9B8F-CC9BAF7C5BC0
+  Source: nvd@nist.gov
+  Created: 2026-07-22T18:10:00.117
+  Normalize edilince ayni: True
+  Old: Title: claw-orchestrator de Enderfga, Description: Una vulnerabilidad de seguridad ha sido detectada en Enderfga claw-orchestrator hasta la versión 3.7.0. El elemento impactado es la función validateRegex del archivo claw-orchestrator/src/embedded-server.ts del componente Session Grep Endpoint. La manipulación del argumento body.pattern conduce a una complejidad de expresión regular ineficiente. El ataque puede ser iniciado remotamente. La actualización a la versión 3.7.1 es suficiente para reso...[TRUNCATED]
+  New: Title: claw-orchestrator de Enderfga, Description: Una vulnerabilidad de seguridad ha sido detectada en Enderfga claw-orchestrator hasta la versión 3.7.0. El elemento impactado es la función validateRegex del archivo claw-orchestrator/src/embedded-server.ts del componente Session Grep Endpoint. La manipulación del argumento body.pattern conduce a una complejidad de expresión regular ineficiente. El ataque puede ser iniciado remotamente. La actualización a la versión 3.7.1 es suficiente para reso...[TRUNCATED]
+Ornek 2
+  CVE: CVE-2025-59611
+  Event: CVE Translated
+  Change ID: 00A4B32B-1B27-4D9C-B52B-438AFFBD380A
+  Source: nvd@nist.gov
+  Created: 2026-07-22T18:10:00.117
+  Normalize edilince ayni: True
+  Old: Title: Snapdragon de Qualcomm, Inc., Description: Corrupción de memoria en servicios de diagnóstico debido a la ausencia de validación de entrada
+  New: Title: Snapdragon de Qualcomm, Inc., Description: Corrupción de memoria en servicios de diagnóstico debido a la ausencia de validación de entrada
+Ornek 3
+  CVE: CVE-2025-59606
+  Event: CVE Translated
+  Change ID: ACBBFEA9-8993-4B8A-B5FE-8B5B0301C7F4
+  Source: nvd@nist.gov
+  Created: 2026-07-22T18:10:00.117
+  Normalize edilince ayni: True
+  Old: Title: Snapdragon de Qualcomm, Inc., Description: Corrupción de memoria al escribir en ubicaciones de memoria no válidas se produce debido al agotamiento de la memoria heap durante la inicialización segura de datos.
+  New: Title: Snapdragon de Qualcomm, Inc., Description: Corrupción de memoria al escribir en ubicaciones de memoria no válidas se produce debido al agotamiento de la memoria heap durante la inicialización segura de datos.
+Ornek 4
+  CVE: CVE-2026-28581
+  Event: CVE Translated
+  Change ID: C2843395-9255-406D-9D75-0A5FD73D87BF
+  Source: nvd@nist.gov
+  Created: 2026-07-22T18:10:00.117
+  Normalize edilince ayni: True
+  Old: Title: Android de Google, Description: En fixInitiatingUserIfNecessary de CallIntentProcessor.java, existe una posible forma de realizar una llamada de emergencia debido a un error de lógica en el código. Esto podría llevar a local con privilegios de ejecución nulos necesarios. La interacción del usuario es nula para la explotación.
+  New: Title: Android de Google, Description: En fixInitiatingUserIfNecessary de CallIntentProcessor.java, existe una posible forma de realizar una llamada de emergencia debido a un error de lógica en el código. Esto podría llevar a local con privilegios de ejecución nulos necesarios. La interacción del usuario es nula para la explotación.
+Ornek 5
+  CVE: CVE-2026-10295
+  Event: CVE Translated
+  Change ID: EB5A64C3-EC1E-449E-93B4-F80B95CC8948
+  Source: nvd@nist.gov
+  Created: 2026-07-22T18:10:00.117
+  Normalize edilince ayni: True
+  Old: Title: Customer Review App de SourceCodester, Description: Se encontró una vulnerabilidad en SourceCodester Customer Review App 1.0. Esta vulnerabilidad afecta a la función add_review/save_review/get_all_reviews del archivo review_app.py. La manipulación del argumento name/comment resulta en una denegación de servicio. El ataque requiere un enfoque local. El exploit se ha hecho público y podría ser utilizado.
+  New: Title: Customer Review App de SourceCodester, Description: Se encontró una vulnerabilidad en SourceCodester Customer Review App 1.0. Esta vulnerabilidad afecta a la función add_review/save_review/get_all_reviews del archivo review_app.py. La manipulación del argumento name/comment resulta en una denegación de servicio. El ataque requiere un enfoque local. El exploit se ha hecho público y podría ser utilizado.
+
+--- Changed / Vulnerability Name ---
+Ornek 1
+  CVE: CVE-2019-13720
+  Event: CVE CISA KEV Update
+  Change ID: 4ED88FAE-857E-4F59-84E0-355036C50C09
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-02-15T02:00:01.827
+  Normalize edilince ayni: False
+  Old: Google Chrome Use-After-Free Vulnerability
+  New: Google Chrome WebAudio Use-After-Free Vulnerability
+Ornek 2
+  CVE: CVE-2019-5786
+  Event: CVE CISA KEV Update
+  Change ID: 8FDFD432-4F75-4F0E-ABA5-519DF592C75D
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-02-15T02:00:01.960
+  Normalize edilince ayni: False
+  Old: Google Chrome Use-After-Free Vulnerability
+  New: Google Chrome Blink Use-After-Free Vulnerability
+Ornek 3
+  CVE: CVE-2020-15999
+  Event: CVE CISA KEV Update
+  Change ID: 659266B6-E0BE-4157-9A39-C57E3FD014F0
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-02-15T02:00:02.063
+  Normalize edilince ayni: False
+  Old: Google Chrome Heap Buffer Overflow Vulnerability
+  New: Google Chrome FreeType Heap Buffer Overflow Vulnerability
+Ornek 4
+  CVE: CVE-2020-16010
+  Event: CVE CISA KEV Update
+  Change ID: 9F726BD9-33E5-4A2C-B6AE-05BA85AC0C79
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-02-15T02:00:02.180
+  Normalize edilince ayni: False
+  Old: Google Chrome for Android Heap Buffer Overflow Vulnerability
+  New: Google Chrome for Android UI Heap Buffer Overflow Vulnerability
+Ornek 5
+  CVE: CVE-2020-6572
+  Event: CVE CISA KEV Update
+  Change ID: CBCAFCEA-66C4-48DA-91ED-9AB6A58ED95A
+  Source: 9119a7d8-5eab-497f-8521-727c672e3725
+  Created: 2024-02-15T02:00:02.277
+  Normalize edilince ayni: False
+  Old: Google Chrome Prior to 81.0.4044.92 Use-After-Free Vulnerability
+  New: Google Chrome Media Prior to 81.0.4044.92 Use-After-Free Vulnerability
+
+====================================================================================================
+CVSS REMOVED + ADDED ORNEKLERI
+====================================================================================================
+
+--- CVSS V2 ---
+Ornek 1
+  CVE: CVE-2006-2428
+  Event: Modified Analysis
+  Change ID: 931179C1-4B9E-497C-9F05-6AC261D6486B
+  Source: nvd@nist.gov
+  Created: 2024-01-26T19:01:46.923
+  Removed: ["NIST (AV:N/AC:L/Au:N/C:P/I:P/A:N)"]
+  Added: ["NIST (AV:N/AC:L/Au:N/C:P/I:P/A:P)"]
+Ornek 2
+  CVE: CVE-2005-0254
+  Event: Modified Analysis
+  Change ID: E6576CB3-72A5-420A-BDC6-E43FEAE1D9F6
+  Source: nvd@nist.gov
+  Created: 2024-01-26T19:07:21.227
+  Removed: ["NIST (AV:N/AC:L/Au:N/C:N/I:P/A:N)"]
+  Added: ["NIST (AV:N/AC:M/Au:N/C:N/I:P/A:N)"]
+Ornek 3
+  CVE: CVE-2004-2262
+  Event: Modified Analysis
+  Change ID: 99E60603-9CE5-4CBC-9CD1-9E920B6F26F6
+  Source: nvd@nist.gov
+  Created: 2024-01-26T19:10:59.207
+  Removed: ["NIST (AV:N/AC:L/Au:N/C:N/I:P/A:N)"]
+  Added: ["NIST (AV:N/AC:L/Au:N/C:P/I:P/A:P)"]
+Ornek 4
+  CVE: CVE-2005-0253
+  Event: Modified Analysis
+  Change ID: DDBB2A68-8B4A-41CC-8FCB-48F5D8627398
+  Source: nvd@nist.gov
+  Created: 2024-01-26T19:16:36.767
+  Removed: ["NIST (AV:N/AC:L/Au:N/C:N/I:N/A:P)"]
+  Added: ["NIST (AV:N/AC:L/Au:S/C:N/I:N/A:P)"]
+Ornek 5
+  CVE: CVE-2024-0918
+  Event: CVE Modified
+  Change ID: FBF026F1-81BE-4242-A30A-5821DD32EB40
+  Source: cna@vuldb.com
+  Created: 2024-01-28T09:15:07.550
+  Removed: ["VulDB (AV:N/AC:L/Au:M/C:P/I:P/A:P)"]
+  Added: ["VulDB (AV:N/AC:L/Au:M/C:C/I:C/A:C)"]
+
+--- CVSS V2 Metadata ---
+Ornek 1
+  CVE: CVE-2004-1842
+  Event: Modified Analysis
+  Change ID: B85FEB13-984F-4C64-9351-4C788CFFD5E4
+  Source: nvd@nist.gov
+  Created: 2024-02-08T20:46:14.247
+  Removed: ["Obtain Other Access (e.g. application account)"]
+  Added: ["Victim must voluntarily interact with attack mechanism"]
+
+--- CVSS V3 ---
+Ornek 1
+  CVE: CVE-2023-6909
+  Event: CVE Modified
+  Change ID: 19895A47-106D-4A4F-8D1F-0E0AF1D828FE
+  Source: security@huntr.dev
+  Created: 2024-02-06T20:16:01.753
+  Removed: ["huntr.dev AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N"]
+  Added: ["huntr.dev AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"]
+Ornek 2
+  CVE: CVE-2023-6975
+  Event: CVE Modified
+  Change ID: 6F103A49-1960-4FC7-BB67-C2383FA5F69F
+  Source: security@huntr.dev
+  Created: 2024-02-06T20:16:02.677
+  Removed: ["huntr.dev AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"]
+  Added: ["huntr.dev AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"]
+Ornek 3
+  CVE: CVE-2023-6831
+  Event: CVE Modified
+  Change ID: 598A4D50-85BD-4A0F-AFDB-C40E33897D2A
+  Source: security@huntr.dev
+  Created: 2024-02-13T22:15:45.633
+  Removed: ["huntr.dev AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H"]
+  Added: ["huntr.dev AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H"]
+Ornek 4
+  CVE: CVE-2024-1163
+  Event: CVE Modified
+  Change ID: AF05BBB2-E5E2-4528-9C3E-D5E80BF3F19D
+  Source: security@huntr.dev
+  Created: 2024-02-29T15:15:07.473
+  Removed: ["huntr.dev AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L"]
+  Added: ["huntr.dev AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H"]
+Ornek 5
+  CVE: CVE-2024-0759
+  Event: CVE Modified
+  Change ID: 4A9BED01-D38D-403C-8505-CD7F672EB426
+  Source: security@huntr.dev
+  Created: 2024-03-07T20:15:50.480
+  Removed: ["huntr.dev AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N"]
+  Added: ["huntr.dev AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"]
+
+--- CVSS V3.1 ---
+Ornek 1
+  CVE: CVE-2023-5764
+  Event: CVE Modified
+  Change ID: 362F271D-EE0E-4840-9C7A-991E2C5C8798
+  Source: secalert@redhat.com
+  Created: 2024-01-01T21:15:24.487
+  Removed: ["Red Hat, Inc. AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N"]
+  Added: ["Red Hat, Inc. AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"]
+Ornek 2
+  CVE: CVE-2023-6277
+  Event: CVE Modified
+  Change ID: 6057D696-33BD-4B02-85B7-F2DA0EFAD390
+  Source: secalert@redhat.com
+  Created: 2024-01-02T09:15:07.500
+  Removed: ["Red Hat, Inc. AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"]
+  Added: ["Red Hat, Inc. AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"]
+Ornek 3
+  CVE: CVE-2023-40338
+  Event: Reanalysis
+  Change ID: CB989AD7-890D-42BA-9D36-07781ACD5199
+  Source: nvd@nist.gov
+  Created: 2024-01-02T19:53:57.600
+  Removed: ["NIST AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"]
+  Added: ["NIST AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"]
+Ornek 4
+  CVE: CVE-2023-3961
+  Event: CVE Modified
+  Change ID: FA6B601F-E1E9-4BE4-AAF1-A78924BC5B24
+  Source: secalert@redhat.com
+  Created: 2024-01-02T21:15:08.913
+  Removed: ["Red Hat, Inc. AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L"]
+  Added: ["Red Hat, Inc. AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H"]
+Ornek 5
+  CVE: CVE-2023-4320
+  Event: CVE Modified
+  Change ID: 01468419-4792-41D2-ADA1-0B9E65FE5832
+  Source: secalert@redhat.com
+  Created: 2024-01-03T12:15:23.390
+  Removed: ["Red Hat, Inc. AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:L"]
+  Added: ["Red Hat, Inc. AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L"]
+
+--- CVSS V4.0 ---
+Ornek 1
+  CVE: CVE-2024-4966
+  Event: CVE Modified
+  Change ID: 90F74638-C9CF-4B74-BE89-272FF82049AB
+  Source: cna@vuldb.com
+  Created: 2024-05-16T16:15:11.130
+  Removed: ["VulDB AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+  Added: ["VulDB CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+Ornek 2
+  CVE: CVE-2024-5116
+  Event: CVE Modified
+  Change ID: 7F4C8050-BA9F-4FA5-B5EB-54A7AB6182D5
+  Source: cna@vuldb.com
+  Created: 2024-05-20T05:15:09.807
+  Removed: ["VulDB AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+  Added: ["VulDB CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+Ornek 3
+  CVE: CVE-2024-5035
+  Event: CVE Modified
+  Change ID: 9BEF716B-5A08-4FBD-BEE7-11342F35DD6B
+  Source: research@onekey.com
+  Created: 2024-05-29T05:16:08.793
+  Removed: ["ONEKEY GmbH AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+  Added: ["ONEKEY GmbH CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+Ornek 4
+  CVE: CVE-2024-5176
+  Event: CVE Modified
+  Change ID: 14EB14B5-2555-4C65-83D3-3CF1F5FFFAE4
+  Source: productsecurity@baxter.com
+  Created: 2024-06-05T15:15:12.620
+  Removed: ["Baxter AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+  Added: ["Baxter CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+Ornek 5
+  CVE: CVE-2024-5745
+  Event: CVE Modified
+  Change ID: 48131B9F-B91B-44BC-A011-97D6B1A6FBA2
+  Source: cna@vuldb.com
+  Created: 2024-06-08T04:15:10.027
+  Removed: ["VulDB AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]
+  Added: ["VulDB CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X"]

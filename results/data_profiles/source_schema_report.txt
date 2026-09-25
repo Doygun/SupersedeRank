@@ -1,0 +1,4157 @@
+CHRONORANK KAYNAK SEMA RAPORU
+Ham veri kok dizini: D:\Chronorank\data\raw
+
+====================================================================================================
+NVD DOSYA DAGILIMI
+====================================================================================================
+CVE JSON dosyasi: 83
+History JSON dosyasi: 322
+Ilk CVE dosyasi: data\raw\nvd\cves\20240101_20240429_0000000.json
+Son CVE dosyasi: data\raw\nvd\cves\20260818_20260914_0012000.json
+Ilk History dosyasi: data\raw\nvd\history\20240101_20240429_0000000.json
+Son History dosyasi: data\raw\nvd\history\20260818_20260914_0035000.json
+
+====================================================================================================
+NVD CVE ORNEK SEMASI
+====================================================================================================
+Dosya: data\raw\nvd\cves\20240101_20240429_0000000.json
+Boyut: 11,638,927 bayt
+Sema:
+dict, anahtar sayisi=7
+- resultsPerPage: int = 2000
+- startIndex: int = 0
+- totalResults: int = 12553
+- format: str = 'NVD_CVE'
+- version: str = '2.0'
+- timestamp: str = '2026-09-14T06:16:24.349'
+- vulnerabilities: list, oge sayisi=2000
+  ilk oge tipi=dict
+  dict, anahtar sayisi=1
+  - cve: dict, anahtar sayisi=12
+    dict, anahtar sayisi=12
+    - id: str = 'CVE-2024-21732'
+    - sourceIdentifier: str = 'cve@mitre.org'
+    - published: str = '2024-01-01T08:15:36.087'
+    - lastModified: str = '2026-06-17T07:10:02.103'
+    - vulnStatus: str = 'Modified'
+    - cveTags: list, oge sayisi=0
+    - descriptions: list, oge sayisi=2
+      ilk oge tipi=dict
+      dict, anahtar sayisi=2
+      - lang: str = 'en'
+      - value: str = 'FlyCms through abbaa5a allows XSS via the permission management feature.'
+    - affected: list, oge sayisi=1
+      ilk oge tipi=dict
+      dict, anahtar sayisi=2
+      - source: str = 'cve@mitre.org'
+      - affectedData: list, oge sayisi=1
+        ilk oge tipi=dict
+        dict, anahtar sayisi=3
+        - vendor: str = 'n/a'
+        - product: str = 'n/a'
+        - versions: list, oge sayisi=1
+          ilk oge tipi=dict
+          <maksimum derinlik>
+    - metrics: dict, anahtar sayisi=2
+      dict, anahtar sayisi=2
+      - cvssMetricV31: list, oge sayisi=2
+        ilk oge tipi=dict
+        dict, anahtar sayisi=5
+        - source: str = 'nvd@nist.gov'
+        - type: str = 'Primary'
+        - cvssData: dict, anahtar sayisi=12
+          <maksimum derinlik>
+        - exploitabilityScore: float = 2.8
+        - impactScore: float = 2.7
+      - ssvcV203: list, oge sayisi=1
+        ilk oge tipi=dict
+        dict, anahtar sayisi=2
+        - source: str = '134c704f-9b21-4f2e-91b3-4a467353bcc0'
+        - ssvcData: dict, anahtar sayisi=5
+          <maksimum derinlik>
+    - weaknesses: list, oge sayisi=2
+      ilk oge tipi=dict
+      dict, anahtar sayisi=3
+      - source: str = 'nvd@nist.gov'
+      - type: str = 'Primary'
+      - description: list, oge sayisi=1
+        ilk oge tipi=dict
+        dict, anahtar sayisi=2
+        - lang: str = 'en'
+        - value: str = 'CWE-79'
+    - configurations: list, oge sayisi=1
+      ilk oge tipi=dict
+      dict, anahtar sayisi=1
+      - nodes: list, oge sayisi=1
+        ilk oge tipi=dict
+        dict, anahtar sayisi=3
+        - operator: str = 'OR'
+        - negate: bool = False
+        - cpeMatch: list, oge sayisi=1
+          ilk oge tipi=dict
+          <maksimum derinlik>
+    - references: list, oge sayisi=2
+      ilk oge tipi=dict
+      dict, anahtar sayisi=3
+      - url: str = 'https://github.com/Ghostfox2003/cms/blob/main/1.md'
+      - source: str = 'cve@mitre.org'
+      - tags: list, oge sayisi=2
+        ilk oge tipi=str
+        str = 'Exploit'
+
+====================================================================================================
+NVD HISTORY ORNEK SEMASI
+====================================================================================================
+Dosya: data\raw\nvd\history\20240101_20240429_0000000.json
+Boyut: 5,674,804 bayt
+Sema:
+dict, anahtar sayisi=7
+- resultsPerPage: int = 5000
+- startIndex: int = 0
+- totalResults: int = 38880
+- format: str = 'NVD_CVEHistory'
+- version: str = '2.0'
+- timestamp: str = '2026-09-14T06:37:13.163'
+- cveChanges: list, oge sayisi=5000
+  ilk oge tipi=dict
+  dict, anahtar sayisi=1
+  - change: dict, anahtar sayisi=6
+    dict, anahtar sayisi=6
+    - cveId: str = 'CVE-2023-29197'
+    - eventName: str = 'CVE Modified'
+    - cveChangeId: str = 'A126E8BF-8981-4994-81B0-AB50B50E768E'
+    - sourceIdentifier: str = 'security-advisories@github.com'
+    - created: str = '2024-01-01T01:15:20.317'
+    - details: list, oge sayisi=1
+      ilk oge tipi=dict
+      dict, anahtar sayisi=3
+      - action: str = 'Added'
+      - type: str = 'Reference'
+      - newValue: str = 'GitHub, Inc. https://lists.debian.org/debian-lts-announce/2023/12/msg00028.html [No types assigned]'
+
+====================================================================================================
+GHSA KOLEKSIYON YAPISI
+====================================================================================================
+Koleksiyon sayisi: 2
+
+Koleksiyon: github-reviewed
+Ornek JSON: data\raw\ghsa\advisories\github-reviewed\2026\09\GHSA-23fw-v26w-5fgq\GHSA-23fw-v26w-5fgq.json
+Ust duzey anahtarlar: schema_version, id, modified, published, aliases, summary, details, severity, affected, references, database_specific
+Ornek sema:
+  dict, anahtar sayisi=11
+  - schema_version: str = '1.4.0'
+  - id: str = 'GHSA-23fw-v26w-5fgq'
+  - modified: str = '2026-09-08T20:25:10Z'
+  - published: str = '2026-09-08T20:25:10Z'
+  - aliases: list, oge sayisi=1
+    ilk oge tipi=str
+    str = 'CVE-2026-62900'
+  - summary: str = 'Microsoft Security Advisory CVE-2026-62900 – .NET Information Disclosure Vulnerability'
+  - details: str = '## Executive summary\n\nMicrosoft is releasing this security advisory to provide information about a vulnerability in Microsoft.Build.Tasks.Git and Microsoft.SourceLink.AzureRepos.Git. This advisory also provides guidance on what developers can do to update their applications to remove this vulnerability.\n\nImproper removal of sensitive information before storage or transfer in .NET allows an...
+  - severity: list, oge sayisi=1
+    ilk oge tipi=dict
+    dict, anahtar sayisi=2
+    - type: str = 'CVSS_V3'
+    - score: str = 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  - affected: list, oge sayisi=8
+    ilk oge tipi=dict
+    dict, anahtar sayisi=2
+    - package: dict, anahtar sayisi=2
+      dict, anahtar sayisi=2
+      - ecosystem: str = 'NuGet'
+      - name: str = 'Microsoft.Build.Tasks.Git'
+    - versions: list, oge sayisi=1
+      ilk oge tipi=str
+      str = '8.0.0'
+  - references: list, oge sayisi=4
+    ilk oge tipi=dict
+    dict, anahtar sayisi=2
+    - type: str = 'WEB'
+    - url: str = 'https://github.com/dotnet/sourcelink/security/advisories/GHSA-23fw-v26w-5fgq'
+  - database_specific: dict, anahtar sayisi=5
+    dict, anahtar sayisi=5
+    - cwe_ids: list, oge sayisi=1
+      ilk oge tipi=str
+      str = 'CWE-212'
+    - severity: str = 'MODERATE'
+    - github_reviewed: bool = True
+    - github_reviewed_at: str = '2026-09-08T20:25:10Z'
+    - nvd_published_at: str = '2026-08-11T17:18:44Z'
+
+Koleksiyon: unreviewed
+Ornek JSON: data\raw\ghsa\advisories\unreviewed\2026\09\GHSA-223j-mh9x-75cm\GHSA-223j-mh9x-75cm.json
+Ust duzey anahtarlar: schema_version, id, modified, published, aliases, details, severity, affected, references, database_specific
+Ornek sema:
+  dict, anahtar sayisi=10
+  - schema_version: str = '1.4.0'
+  - id: str = 'GHSA-223j-mh9x-75cm'
+  - modified: str = '2026-09-03T15:32:16Z'
+  - published: str = '2026-09-03T15:32:16Z'
+  - aliases: list, oge sayisi=1
+    ilk oge tipi=str
+    str = 'CVE-2026-84832'
+  - details: str = 'SEPPmail Secure Email Gateway before 15.0.6 deserializes attacker-controlled data in a privileged REST import workflow without adequate validation. An attacker with a privileged API token can execute arbitrary commands with "nobody" privileges.'
+  - severity: list, oge sayisi=1
+    ilk oge tipi=dict
+    dict, anahtar sayisi=2
+    - type: str = 'CVSS_V4'
+    - score: str = 'CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X'
+  - affected: list, oge sayisi=0
+  - references: list, oge sayisi=3
+    ilk oge tipi=dict
+    dict, anahtar sayisi=2
+    - type: str = 'WEB'
+    - url: str = 'https://github.com/WWBN/AVideo/security/advisories/GHSA-pp65-5j34-grgc'
+  - database_specific: dict, anahtar sayisi=5
+    dict, anahtar sayisi=5
+    - cwe_ids: list, oge sayisi=1
+      ilk oge tipi=str
+      str = 'CWE-78'
+    - severity: str = 'HIGH'
+    - github_reviewed: bool = False
+    - github_reviewed_at: NoneType = None
+    - nvd_published_at: str = '2026-09-03T13:06:18Z'
+
+====================================================================================================
+EPSS ORNEK SEMASI
+====================================================================================================
+EPSS dosya sayisi: 986
+Ornek dosya: data\raw\epss\epss_scores-2024-01-01.csv.gz
+Ilk satirlar:
+1: #model_version:v2023.03.01,score_date:2024-01-01T00:00:00+0000
+2: cve,epss,percentile
+3: CVE-1999-0001,0.01167,0.83359
+4: CVE-1999-0002,0.02833,0.89643
+5: CVE-1999-0003,0.02487,0.88987
+CSV alanlari: ['cve', 'epss', 'percentile']
+Ilk veri satiri: {'cve': 'CVE-1999-0001', 'epss': '0.01167', 'percentile': '0.83359'}
+
+====================================================================================================
+HOH PARQUET SEMASI
+====================================================================================================
+Dosya: data\raw\hoh\hoh_qas_240601_241201.parquet
+Satir sayisi: 111,972
+Satir grubu sayisi: 1
+Arrow semasi:
+question: string
+answer: string
+last_modified_time: timestamp[ns]
+evidence: string
+outdated_infos: list<element: struct<answer: string, evidence: string, last_modified_time: string>>
+  child 0, element: struct<answer: string, evidence: string, last_modified_time: string>
+      child 0, answer: string
+      child 1, evidence: string
+      child 2, last_modified_time: string
+document: struct<id: string, title: string>
+  child 0, id: string
+  child 1, title: string
+-- schema metadata --
+pandas: '{"index_columns": [], "column_indexes": [], "columns": [{"name":' + 812
+Ilk kayit:
+  dict, anahtar sayisi=6
+  - question: str = 'What is the name of the yeast that can be used to ferment gluconolactone to ethanol and carbon dioxide?'
+  - answer: str = 'Maudiozyma bulderi'
+  - last_modified_time: Timestamp = Timestamp('2024-07-01 00:00:00')
+  - evidence: str = 'The yeast "Maudiozyma bulderi" can be used to ferment gluconolactone to ethanol and carbon dioxide.'
+  - outdated_infos: list, oge sayisi=1
+    ilk oge tipi=dict
+    dict, anahtar sayisi=3
+    - answer: str = 'Saccharomyces bulderi'
+    - evidence: str = 'The yeast "Saccharomyces bulderi" can be used to ferment gluconolactone to ethanol and carbon dioxide.'
+    - last_modified_time: str = '2024-06-01'
+  - document: dict, anahtar sayisi=2
+    dict, anahtar sayisi=2
+    - id: str = '1000005'
+    - title: str = 'Glucono delta-lactone'
+
+====================================================================================================
+DEBIAN ORNEK SEMASI
+====================================================================================================
+Dosya: data\raw\debian\json\debian_tracker_2026-09-14.json
+Boyut: 74,130,245 bayt
+Sema:
+dict, anahtar sayisi=4004
+- 389-ds-base: dict, anahtar sayisi=84
+  dict, anahtar sayisi=84
+  - CVE-2012-0833: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The acllas__handle_group_entry function in servers/plugins/acl/acllas.c in 389 Directory Server before 1.2.10 does not properly handled access control instructions (ACIs) that use certificate groups, which allows remote authenticated LDAP users with a certificate group to cause a denial of service (infinite loop and CPU consumption) by binding to the server.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2012-2678: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '389 Directory Server before 1.2.11.6 (aka Red Hat Directory Server before 8.2.10-3), after the password for a LDAP user has been changed and before the server has been reset, allows remote attackers to read the plaintext password via the unhashed#user#password attribute.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2012-2746: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '389 Directory Server before 1.2.11.6 (aka Red Hat Directory Server before 8.2.10-3), when the password of a LDAP user has been changed and audit logging is enabled, saves the new password to the log in plain text, which allows remote authenticated users to read the password.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2012-4450: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server 1.2.10 does not properly update the ACL when a DN entry is moved by a modrdn operation, which allows remote authenticated users with certain permissions to bypass ACL restrictions and access the DN entry.'
+    - debianbug: int = 688942
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.2.11.15-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.2.11.15-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.2.11.15-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-0312: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '389 Directory Server before 1.3.0.4 allows remote attackers to cause a denial of service (crash) via a zero length LDAP control sequence.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.0.3-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.0.3-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.0.3-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-0336: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The ipapwd_chpwop function in daemons/ipa-slapi-plugins/ipa-pwd-extop/ipa_pwd_extop.c in the directory server (dirsrv) in FreeIPA before 3.2.0 allows remote attackers to cause a denial of service (crash) via a connection request without a username/dn, related to the 389 directory server.'
+    - debianbug: int = 704077
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-1897: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The do_search function in ldap/servers/slapd/search.c in 389 Directory Server 1.2.x before 1.2.11.20 and 1.3.x before 1.3.0.5 does not properly restrict access to entries when the nsslapd-allow-anonymous-access configuration is set to rootdse and the BASE search scope is used, which allows remote attackers to obtain sensitive information outside of the rootDSE via a crafted LDAP search.'
+    - debianbug: int = 704421
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-2219: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The Red Hat Directory Server before 8.2.11-13 and 389 Directory Server do not properly restrict access to entity attributes, which allows remote authenticated users to obtain sensitive information via a search query for the attribute.'
+    - debianbug: int = 718325
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-4283: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'ns-slapd in 389 Directory Server before 1.3.0.8 allows remote attackers to cause a denial of service (server crash) via a crafted Distinguished Name (DN) in a MOD operation request.'
+    - debianbug: int = 721222
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2013-4485: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server 1.2.11.15 (aka Red Hat Directory Server before 8.2.11-14) allows remote authenticated users to cause a denial of service (crash) via multiple @ characters in a GER attribute list in a search request.'
+    - debianbug: int = 730115
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-0132: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The SASL authentication functionality in 389 Directory Server before 1.2.11.26 allows remote authenticated users to connect as an arbitrary user and gain privileges via the authzid parameter in a SASL/GSSAPI bind.'
+    - debianbug: int = 741600
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1.1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1.1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.9-1.1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-3562: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Red Hat Directory Server 8 and 389 Directory Server, when debugging is enabled, allows remote attackers to obtain sensitive replicated metadata by searching the directory.'
+    - debianbug: int = 757437
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.21-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.21-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.2.21-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-8105: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server before 1.3.2.27 and 1.3.3.x before 1.3.3.9 does not properly restrict access to the "cn=changelog" LDAP sub-tree, which allows remote attackers to obtain sensitive information from the changelog via unspecified vectors.'
+    - debianbug: int = 779909
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-8112: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server 1.3.1.x, 1.3.2.x before 1.3.2.27, and 1.3.3.x before 1.3.3.9 stores "unhashed" passwords even when the nsslapd-unhashed-pw-switch option is set to off, which allows remote authenticated users to obtain sensitive information by reading the Changelog.'
+    - debianbug: int = 779909
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.5-4'
+        - urgency: str = 'not yet assigned'
+  - CVE-2015-1854: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server before 1.3.3.10 allows attackers to bypass intended access restrictions and modify directory entries via a crafted ldapmodrdn call.'
+    - debianbug: int = 783923
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.10-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.10-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.10-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2015-3230: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server (formerly Fedora Directory Server) before 1.3.3.12 does not enforce the nsSSL3Ciphers preference when creating an sslSocket, which allows remote attackers to have unspecified impact by requesting to use a disabled cipher.'
+    - debianbug: int = 789202
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.12-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.12-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.3.12-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-0741: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'slapd/connection.c in 389 Directory Server (formerly Fedora Directory Server) 1.3.4.x before 1.3.4.7 allows remote attackers to cause a denial of service (infinite loop and connection blocking) by leveraging an abnormally closed connection.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.4.8-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.4.8-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.4.8-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-4992: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '389 Directory Server in Red Hat Enterprise Linux Desktop 6 through 7, Red Hat Enterprise Linux HPC Node 6 through 7, Red Hat Enterprise Linux Server 6 through 7, and Red Hat Enterprise Linux Workstation 6 through 7 allows remote attackers to infer the existence of RDN component objects.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.13-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.13-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.13-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-5405: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server in Red Hat Enterprise Linux Desktop 6 through 7, Red Hat Enterprise Linux HPC Node 6 through 7, Red Hat Enterprise Linux Server 6 through 7, and Red Hat Enterprise Linux Workstation 6 through 7 allows remote attackers to obtain user passwords.'
+    - debianbug: int = 842121
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.15-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.15-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.3.5.15-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-5416: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '389 Directory Server in Red Hat Enterprise Linux Desktop 6 through 7, Red Hat Enterprise Linux HPC Node 6 through 7, Red Hat Enterprise Linux Server 6 through 7, and Red Hat Enterprise Linux Workstation 6 through 7 allows remote attackers to read the default Access Control Instructions.'
+    - debianbug: int = 834233
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+  ... 64 anahtar daha var
+- 7zip: dict, anahtar sayisi=23
+  dict, anahtar sayisi=23
+  - CVE-2022-47111: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip 22.01 does not report an error for certain invalid xz files, involving block flags and reserved bits. Some later versions are unaffected.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+  - CVE-2022-47112: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip 22.01 does not report an error for certain invalid xz files, involving stream flags and reserved bits. Some later versions are unaffected.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+  - CVE-2023-31102: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Ppmd7.c in 7-Zip before 23.00 allows an integer underflow and invalid read operation via a crafted 7Z archive.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2023-40481: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip SquashFS File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.  The specific flaw exists within the parsing of SQFS files. The issue resu...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '23.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2023-52168: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The NtfsHandler.cpp NTFS handler in 7-Zip before 24.01 (for 7zz) contains a heap-based buffer overflow that allows an attacker to overwrite two bytes at multiple offsets beyond the allocated buffer size: buffer+512*i-2, for i=9, i=10, i=11, etc.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+dfsg-8+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2023-52169: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The NtfsHandler.cpp NTFS handler in 7-Zip before 24.01 (for 7zz) contains an out-of-bounds read that allows an attacker to read beyond the intended buffer. The bytes read beyond the intended buffer are presented as a part of a filename listed in the file system image. This has security relevance in some known web-service use cases where untrusted users can upload files and have them extracted ...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+dfsg-8+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.05+dfsg-1'
+        - urgency: str = 'unimportant'
+  - CVE-2024-11477: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip Zstandard Decompression Integer Underflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.  The specific flaw exists within the implementation of Zstandard decompre...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.07+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.07+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.07+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2024-11612: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip CopyCoder Infinite Loop Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of 7-Zip. Interaction with this library is required to exploit this vulnerability but attack vectors may vary depending on the implementation.  The specific flaw exists within the processing of streams. The issue results fro...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.08+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.08+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '24.08+dfsg-1'
+        - urgency: str = 'unimportant'
+  - CVE-2025-0411: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip Mark-of-the-Web Bypass Vulnerability. This vulnerability allows remote attackers to bypass the Mark-of-the-Web protection mechanism on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.  The specific flaw exists within the handling of archived files. When extracting files fro...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2025-11001: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.  The specific flaw exists within the handling of symbolic links in ZIP files. ...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.01+dfsg-1~deb13u1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2025-11002: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip ZIP File Parsing Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. Interaction with this product is required to exploit this vulnerability but attack vectors may vary depending on the implementation.  The specific flaw exists within the handling of symbolic links in ZIP files. ...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.01+dfsg-1~deb13u1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2025-53817: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip is a file archiver with a high compression ratio. 7-Zip supports extracting from Compound Documents. Prior to version 25.0.0, a null pointer dereference in the Compound handler may lead to denial of service. Version 25.0.0 contains a fix cor the issue.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+dfsg-1'
+        - urgency: str = 'unimportant'
+  - CVE-2025-55188: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '7-Zip before 25.01 does not always properly handle symbolic links during extraction.'
+    - debianbug: int = 1111068
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really25.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.01+dfsg-1~deb13u1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2026-14266: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '7-Zip XZ Decompression Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of 7-Zip. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.  The specific flaw exists within the processing of XZ chunked data. Craf...
+    - debianbug: int = 1142293
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.02+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.02+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.02+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=6
+        dict, anahtar sayisi=6
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue, will be fixed via spu'
+        - nodsa_reason: str = ''
+        - next_point_update: bool = True
+  - CVE-2026-48092: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip is a file archiver with a high compression ratio. Versions 9.34 through 26.00 contain a heap memory disclosure via SquashFS fragment offset integer overflow on 32-bit builds. 32-bit integer overflow in the SquashFS ReadBlock function allows an attacker-controlled node.Offset value to bypass the fragment bounds check, causing memcpy to read heap memory preceding the cache buffer into the ...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+        - next_point_update: bool = True
+  - CVE-2026-48095: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip is a file archiver with a high compression ratio. Versions 26.00 and prior contain a heap buffer overflow vulnerability caused by an under-allocation in the NTFS compressed stream buffer (GetCuSize shift UB), potentially allowing attackers to cause arbitrary code execution or application crashes. CInStream::GetCuSize() in the NTFS handler computes the compression-unit buffer size as (UIn...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=6
+        dict, anahtar sayisi=6
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue'
+        - nodsa_reason: str = ''
+        - next_point_update: bool = True
+  - CVE-2026-48101: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip is a file archiver with a high compression ratio. Versions 9.21 through 26.00 contain an An uninitialized memory disclosure vulnerability in the UEFI capsule (.scap) parser in 7-Zip. The OpenCapsule function allocates a heap buffer of attacker-declared CapsuleImageSize (up to 1 GiB) without zero-initialization, then reads the file contents into it with ReadStream_FALSE whose return value...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+        - next_point_update: bool = True
+  - CVE-2026-48102: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = "7-Zip is a file archiver with a high compression ratio. Versions 9.11 through 26.00 contain a heap out-of-bounds read of up to 3 bytes in the UDF disc image handler's File Identifier Descriptor parser. In CFileId::Parse (CPP/7zip/Archive/Udf/UdfIn.cpp), after validating size < 38 + idLen + impLen and advancing processed to 38 + impLen + idLen, the alignment-padding loop reads p[processed] whil...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+        - next_point_update: bool = True
+  - CVE-2026-48103: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = "7-Zip is a file archiver with a high compression ratio. Versions 9.34 through 26.00 contain an off-by-one heap out-of-bounds read in the WIM (Windows Imaging) archive handler's security descriptor lookup. In CHandler::GetSecurity (CPP/7zip/Archive/Wim/WimHandler.cpp), the per-image SecurOffsets table holds numEntries + 1 cumulative offsets, but the check securityId >= SecurOffsets.Size() admit...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+        - next_point_update: bool = True
+  - CVE-2026-48104: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = '7-Zip is a file archiver with a high compression ratio. Versions 9.18 through 26.00 contain an uninitialized heap read in the SquashFS archive handler caused by a sparsely populated index array. In the SquashFS handler, _blockToNode is allocated with capacity for every metadata block but populated only when an inode crosses a block boundary, so a crafted image with few inodes spanning many blo...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '22.01+really26.01+dfsg-0+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '26.01+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+        - next_point_update: bool = True
+  ... 3 anahtar daha var
+- 7zip-rar: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2025-53816: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '7-Zip is a file archiver with a high compression ratio. Zeroes written outside heap buffer in RAR5 handler may lead to memory corruption and denial of service in versions of 7-Zip prior to 25.0.0. Version 25.0.0 contains a fix for the issue.'
+    - debianbug: int = 1109494
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+ds-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+ds-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '25.00+ds-1'
+        - urgency: str = 'not yet assigned'
+- 9base: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2014-1935: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = '9base 1:6-6 and 1:6-7 insecurely creates temporary files which results in predictable filenames.'
+    - debianbug: int = 737206
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+- a2ps: dict, anahtar sayisi=5
+  dict, anahtar sayisi=5
+  - CVE-2001-1593: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The tempname_ensure function in lib/routines.h in a2ps 4.14 and earlier, as used by the spy_user function and possibly other functions, allows local users to modify arbitrary files via a symlink attack on a temporary file.'
+    - debianbug: int = 737385
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'low'
+  - CVE-2004-1170: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'a2ps 4.13 allows remote attackers to execute arbitrary commands via shell metacharacters in the filename.'
+    - debianbug: int = 283134
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.2'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.2'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.2'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.2'
+        - urgency: str = 'not yet assigned'
+  - CVE-2004-1377: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The (1) fixps (aka fixps.in) and (2) psmandup (aka psmandup.in) scripts in a2ps before 4.13 allow local users to overwrite arbitrary files via a symlink attack on temporary files.'
+    - debianbug: int = 286387
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.3'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.13b-4.3'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-0466: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The fixps script in a2ps 4.14 does not use the -dSAFER option when executing gs, which allows context-dependent attackers to delete arbitrary files or execute arbitrary commands via a crafted PostScript file.'
+    - debianbug: int = 742902
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.3'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.3'
+        - urgency: str = 'not yet assigned'
+  - CVE-2015-8107: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Format string vulnerability in GNU a2ps 4.14 allows remote attackers to execute arbitrary code.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:4.14-1.2'
+        - urgency: str = 'not yet assigned'
+- aardvark-dns: dict, anahtar sayisi=2
+  dict, anahtar sayisi=2
+  - CVE-2024-8418: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'A flaw was found in Aardvark-dns, which is vulnerable to a Denial of Service attack due to the serial processing of TCP DNS queries. An attacker can exploit this flaw by keeping a TCP connection open indefinitely, causing the server to become unresponsive and resulting in other DNS queries timing out. This issue prevents legitimate users from accessing DNS services, thereby disrupting normal o...
+    - debianbug: int = 1080964
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.12.2-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.12.2-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.12.2-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2026-35406: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Aardvark-dns is an authoritative dns server for A/AAAA container records. From 1.16.0 to 1.17.0, a truncated TCP DNS query followed by a connection reset causes aardvark-dns to enter an unrecoverable infinite error loop at 100% CPU. This vulnerability is fixed in 1.17.1.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.16.0-3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.16.0-3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+- abcm2ps: dict, anahtar sayisi=10
+  dict, anahtar sayisi=10
+  - CVE-2004-1258: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Buffer overflow in the put_words function in subs.c for abcm2ps 3.7.20 allows remote attackers to execute arbitrary code via crafted ABC files.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '4.8.5-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '4.8.5-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '4.8.5-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '4.8.5-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2010-3441: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Multiple buffer overflows in abcm2ps before 5.9.12 might allow remote attackers to execute arbitrary code via (1) a crafted input file, related to the PUT0 and PUT1 output macros; (2) a crafted input file, related to the trim_title function; and possibly (3) a long -O option on a command line.'
+    - debianbug: int = 577014
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.13-0.1'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.13-0.1'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.13-0.1'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.13-0.1'
+        - urgency: str = 'low'
+  - CVE-2010-4743: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Heap-based buffer overflow in the getarena function in abc2ps.c in abcm2ps before 5.9.13 might allow remote attackers to execute arbitrary code via a crafted ABC file, a different vulnerability than CVE-2010-3441.  NOTE: some of these details are obtained from third party information.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+  - CVE-2010-4744: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Multiple unspecified vulnerabilities in abcm2ps before 5.9.13 have unknown impact and attack vectors, a different issue than CVE-2010-3441.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.9.22-1'
+        - urgency: str = 'low'
+  - CVE-2018-10753: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Stack-based buffer overflow in the delayed_output function in music.c in abcm2ps through 8.13.20 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact.'
+    - debianbug: int = 897966
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+  - CVE-2018-10771: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Stack-based buffer overflow in the get_key function in parse.c in abcm2ps through 8.13.20 allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact.'
+    - debianbug: int = 898130
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+  - CVE-2019-1010069: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'moinejf abcm2ps 8.13.20 is affected by: Incorrect Access Control. The impact is: Allows attackers to cause a denial of service attack via a crafted file. The component is: front.c, function txt_add. The fixed version is: after commit commit 08aef597656d065e86075f3d53fda89765845eae.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.2-0.1'
+        - urgency: str = 'unimportant'
+  - CVE-2021-32434: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'abcm2ps v8.14.11 was discovered to contain an out-of-bounds read in the function calculate_beam at draw.c.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+  - CVE-2021-32435: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Stack-based buffer overflow in the function get_key in parse.c of abcm2ps v8.14.11 allows remote attackers to cause a Denial of Service (DoS) via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2021-32436: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'An out-of-bounds read in the function write_title() in subs.c of abcm2ps v8.14.11 allows remote attackers to cause a Denial of Service (DoS) via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '8.14.13-1'
+        - urgency: str = 'unimportant'
+- abcmidi: dict, anahtar sayisi=2
+  dict, anahtar sayisi=2
+  - CVE-2004-1256: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Multiple buffer overflows in the (1) event_text and (2) event_specific functions in abc2midi 2004.12.04 allow remote attackers to execute arbitrary code via crafted ABC files.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20050101-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20050101-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20050101-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20050101-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2006-1514: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Multiple buffer overflows in the abcmidi-yaps translator in abcmidi 20050101, and other versions, allow remote attackers to execute arbitrary code via crafted ABC music files that trigger the overflows during translation into PostScript.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20060422-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20060422-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20060422-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20060422-1'
+        - urgency: str = 'not yet assigned'
+- abiword: dict, anahtar sayisi=5
+  dict, anahtar sayisi=5
+  - CVE-2004-0645: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Buffer overflow in the wvHandleDateTimePicture function in wv library (wvWare) 0.7.4 through 0.7.6 and 1.0.0 allows remote attackers to execute arbitrary code via a document with a long DateTime field.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.0.8'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.0.8'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.0.8'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.0.8'
+        - urgency: str = 'not yet assigned'
+  - CVE-2005-2964: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Stack-based buffer overflow in AbiWord before 2.2.10 allows attackers to execute arbitrary code via the RTF import mechanism.'
+    - debianbug: int = 329839
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.10-1'
+        - urgency: str = 'medium'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.10-1'
+        - urgency: str = 'medium'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.10-1'
+        - urgency: str = 'medium'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.10-1'
+        - urgency: str = 'medium'
+  - CVE-2005-2972: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Multiple stack-based buffer overflows in the RTF import feature in AbiWord before 2.2.11 allow user-assisted attackers to execute arbitrary code via an RTF file with long identifiers, which are not properly handled in the (1) ParseLevelText, (2) getCharsInsideBrace, (3) HandleLists, (4) or (5) HandleAbiLists functions in ie_imp_RTF.cpp, a different vulnerability than CVE-2005-2964.'
+    - debianbug: int = 333740
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.1-1'
+        - urgency: str = 'medium'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.1-1'
+        - urgency: str = 'medium'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.1-1'
+        - urgency: str = 'medium'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.1-1'
+        - urgency: str = 'medium'
+  - CVE-2006-4513: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Multiple integer overflows in the WV library in wvWare (formerly mswordview) before 1.2.3, as used by AbiWord, KWord, and possibly other products, allow user-assisted remote attackers to execute arbitrary code via a crafted Microsoft Word (DOC) file that produces (1) large LFO clfolvl values in the wvGetLFO_records function or (2) a large LFO nolfo value in the wvGetFLO_PLF function.'
+    - debianbug: int = 396360
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.6-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.6-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.6-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.6-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2017-17529: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'af/util/xp/ut_go_file.cpp in AbiWord 3.0.2-2 does not validate strings before launching the program specified by the BROWSER environment variable, which might allow remote attackers to conduct argument-injection attacks via a crafted URL.'
+    - debianbug: int = 884923
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+- abseil: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2025-0838: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = "There exists a heap buffer overflow vulnerable in Abseil-cpp. The sized constructors, reserve(), and rehash() methods of absl::{flat,node}hash{set,map} did not impose an upper bound on their size argument. As a result, it was possible for a caller to pass a very large size that would cause an integer overflow when computing the size of the container's backing store, and a subsequent out-of-bou...
+    - debianbug: int = 1098903
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20220623.1-1+deb12u1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240722.0-3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240722.0-3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240722.0-3'
+        - urgency: str = 'not yet assigned'
+- accountsservice: dict, anahtar sayisi=12
+  dict, anahtar sayisi=12
+  - CVE-2011-4406: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The Ubuntu AccountsService package before 0.6.14-1git1ubuntu1.1 does not properly drop privileges when changing language settings, which allows local users to modify arbitrary files via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.15-3'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.15-3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.15-3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.15-3'
+        - urgency: str = 'not yet assigned'
+  - CVE-2012-2737: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The user_change_icon_file_authorized_cb function in /usr/libexec/accounts-daemon in AccountsService before 0.6.22 does not properly check the UID when copying an icon file to the system cache directory, which allows local users to read arbitrary files via a race condition.'
+    - debianbug: int = 679429
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.21-6'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.21-6'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.21-6'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.21-6'
+        - urgency: str = 'not yet assigned'
+  - CVE-2012-6655: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'An issue exists AccountService 0.6.37 in the user_change_password_authorized_cb() function in user.c which could let a local users obtain encrypted passwords.'
+    - debianbug: int = 757912
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '22.08.8-4'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '22.08.8-4'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '22.08.8-4'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '22.08.8-4'
+        - urgency: str = 'low'
+  - CVE-2018-14036: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Directory Traversal with ../ sequences occurs in AccountsService before 0.6.50 because of an insufficient path check in user_change_icon_file_authorized_cb() in user.c.'
+    - debianbug: int = 903828
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.45-2'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.45-2'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.45-2'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.6.45-2'
+        - urgency: str = 'low'
+  - CVE-2020-16126: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'An Ubuntu-specific modification to AccountsService in versions before 0.6.55-0ubuntu13.2, among other earlier versions, improperly dropped the ruid, allowing untrusted users to send signals to AccountService, thus stopping it from handling D-Bus messages in a timely fashion.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2020-16127: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'An Ubuntu-specific modification to AccountsService in versions before 0.6.55-0ubuntu13.2, among other earlier versions, would perform unbounded read operations on user-controlled ~/.pam_environment files, allowing an infinite loop if /dev/zero is symlinked to this location.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2021-3939: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Ubuntu-specific modifications to accountsservice (in patch file debian/patches/0010-set-language.patch) caused the fallback_locale variable, pointing to static storage, to be freed, in the user_change_language_authorized_cb function. This is reachable via the SetLanguage dbus function. This is fixed in versions 0.6.55-0ubuntu12~20.04.5, 0.6.55-0ubuntu13.3, 0.6.55-0ubuntu14.1.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2022-1804: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'accountsservice no longer drops permissions when writting .pam_environment'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2023-3297: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = "In Ubuntu's accountsservice an unprivileged local attacker can trigger a use-after-free vulnerability in accountsservice by sending a D-Bus message to the accounts-daemon process."
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2026-16743: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'A flaw was found in accountsservice. The systemd-homed code path for SetIconFile opens a user-supplied filename as root without the validation and privilege drop performed by the classic handler. A local attacker with a systemd-homed-managed account can read arbitrary files accessible to the accounts-daemon process.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2026-61897: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'An Ubuntu-specific patch to AccountsService before 23.13.9-8ubuntu7 only partially drops privileges before launching language helper scripts. It changes the effective UID/GID to the target user but leaves the real UID as 0 (root). A shell spawned by a helper script inherits ruid=0 and may reset its effective UID to root, enabling local privilege escalation.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2026-61898: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = "The Ubuntu-specific language helper scripts (save-to-pam-env, update-langlist) shipped with accountsservice before 23.13.9-8ubuntu7 treat the user-controlled LANGUAGE entry in ~/.pam_environment as trusted input. The value is interpolated unescaped into a GNU sed replacement expression, allowing an attacker to inject a sed 'e' flag and arbitrary shell commands that execute with the privileges ...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+- ace: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2014-6311: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'generate_doygen.pl in ace before 6.2.7+dfsg-2 creates predictable file names in the /tmp directory which allows attackers to gain elevated privileges.'
+    - debianbug: int = 760709
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '6.2.7+dfsg-2'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '6.2.7+dfsg-2'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '6.2.7+dfsg-2'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '6.2.7+dfsg-2'
+        - urgency: str = 'unimportant'
+- ack: dict, anahtar sayisi=3
+  dict, anahtar sayisi=3
+  - CVE-2026-49145: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'App::Ack versions through 3.10.0 for Perl read arbitrary files via --files-from in a project .ackrc.  ack searches up the directory hierarchy from the current directory for a project .ackrc and loads its options. The project-source option blocklist in App::Ack::ConfigLoader does not include --files-from, so a project .ackrc can set it to a path whose listed files ack then reads and searches. V...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue; local-only, needs untrusted project .ackrc; --files-from still unfixed upstream'
+        - nodsa_reason: str = 'postponed'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue'
+        - nodsa_reason: str = ''
+  - CVE-2026-49146: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'App::Ack versions before 3.10.0 for Perl allow memory exhaustion via an unbounded context value in a project .ackrc.  ack searches up the directory hierarchy from the current directory for a project .ackrc and loads its options. The -B and -C context options accepted any positive integer, and ack sized the before-context buffer to that value, so a project .ackrc setting --before-context=100000...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+  - CVE-2026-49147: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'App::Ack versions through 3.10.0 for Perl print unsanitised terminal escape sequences from filenames in several output modes.  When ack prints a filename whose basename contains terminal control bytes such as ANSI escape sequences, those bytes reach the terminal unchanged. Version 3.10.0 added a _safe_filename helper that sanitises the filenames printed by -f, -g, the colored match heading, an...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+- acl: dict, anahtar sayisi=3
+  dict, anahtar sayisi=3
+  - CVE-2009-4411: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The (1) setfacl and (2) getfacl commands in XFS acl 2.2.47, when running in recursive (-R) mode, follow symbolic links even when the --physical (aka -P) or -L option is specified, which might allow local users to modify the ACL for arbitrary files or directories via a symlink attack.'
+    - debianbug: int = 499076
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.49-2'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.49-2'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.49-2'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.2.49-2'
+        - urgency: str = 'low'
+  - CVE-2026-54369: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL r...
+    - debianbug: int = 1141110
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue; libacl acl_*_file() follow symlinks; fix adds new acl_*_at() ABI, not individually backportable'
+        - nodsa_reason: str = 'postponed'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.0-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.0-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Will be fixed first in unstable, then point release update; not to be backported by individual patches'
+        - nodsa_reason: str = ''
+  - CVE-2026-54370: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'acl before version 2.4.0 contains a time-of-check to time-of-use (TOCTOU) race condition vulnerability that allows local attackers to escalate privileges by replacing a pathname component with a symbolic link between an lstat() check and subsequent symlink-following operations such as stat(), chown(), chmod(), acl_get_file(), and acl_set_file(). Attackers who control a pathname component can r...
+    - debianbug: int = 1141110
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Minor issue; local TOCTOU in recursive setfacl/chacl; fix needs 2.4.0 acl_*_at() ABI + walk_tree rewrite, not individually backportable'
+        - nodsa_reason: str = 'postponed'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.0-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '2.4.0-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=5
+        dict, anahtar sayisi=5
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'not yet assigned'
+        - nodsa: str = 'Will be fixed first in unstable, then point release update; not to be backported by individual patches'
+        - nodsa_reason: str = ''
+- acm: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2002-0391: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Integer overflow in xdr_array function in RPC servers for operating systems that use libc, glibc, or other code based on SunRPC including dietlibc, allows remote attackers to execute arbitrary code by passing a large number of arguments to xdr_array through RPC services such as rpc.cmsd and dmispd.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.0-10'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.0-10'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.0-10'
+        - urgency: str = 'not yet assigned'
+- acme.sh: dict, anahtar sayisi=1
+  dict, anahtar sayisi=1
+  - CVE-2023-38198: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'acme.sh before 3.0.6 runs arbitrary commands from a remote server via eval, as exploited in the wild in June 2023.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+- acpi-support: dict, anahtar sayisi=2
+  dict, anahtar sayisi=2
+  - CVE-2014-0484: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The Debian acpi-support package before 0.140-5+deb7u3 allows local users to gain privileges via vectors related to the "user\'s environment."'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-4'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-4'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-4'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-4'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-1419: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Race condition in the power policy functions in policy-funcs in acpi-support before 0.142 allows local users to gain privileges via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-2'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-2'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-2'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0.142-2'
+        - urgency: str = 'not yet assigned'
+- acpica-unix: dict, anahtar sayisi=4
+  dict, anahtar sayisi=4
+  - CVE-2017-13693: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The acpi_ds_create_operands() function in drivers/acpi/acpica/dsutils.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+  - CVE-2017-13694: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The acpi_ps_complete_final_op() function in drivers/acpi/acpica/psobject.c in the Linux kernel through 4.12.9 does not flush the node and node_ext caches and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+  - CVE-2017-13695: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The acpi_ns_evaluate() function in drivers/acpi/acpica/nseval.c in the Linux kernel through 4.12.9 does not flush the operand cache and causes a kernel stack dump, which allows local users to obtain sensitive information from kernel memory and bypass the KASLR protection mechanism (in the kernel through 4.9) via a crafted ACPI table.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20180209-1'
+        - urgency: str = 'unimportant'
+  - CVE-2024-24856: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The memory allocation function ACPI_ALLOCATE_ZEROED does not guarantee a successful allocation, but the subsequent code directly dereferences the pointer that receives it, which may lead to null pointer dereference.  To fix this issue, a null pointer check should be added. If it is null,  return exception code AE_NO_MEMORY.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=3
+        dict, anahtar sayisi=3
+        - status: str = 'open'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240827-2'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240827-2'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '20240827-2'
+        - urgency: str = 'unimportant'
+- acpid: dict, anahtar sayisi=6
+  dict, anahtar sayisi=6
+  - CVE-2009-0798: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'ACPI Event Daemon (acpid) before 1.0.10 allows remote attackers to cause a denial of service (CPU consumption and connectivity loss) by opening a large number of UNIX sockets without closing them, which triggers an infinite loop.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.10-1'
+        - urgency: str = 'medium'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.10-1'
+        - urgency: str = 'medium'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.10-1'
+        - urgency: str = 'medium'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.10-1'
+        - urgency: str = 'medium'
+  - CVE-2009-4033: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'A certain Red Hat patch for acpid 1.0.4 effectively triggers a call to the open function with insufficient arguments, which might allow local users to leverage weak permissions on /var/log/acpid, and obtain sensitive information by reading this file, cause a denial of service by overwriting this file, or gain privileges by executing this file.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2009-4235: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'acpid 1.0.4 sets an unrestrictive umask, which might allow local users to leverage weak permissions on /var/log/acpid, and obtain sensitive information by reading this file or cause a denial of service by overwriting this file, a different vulnerability than CVE-2009-4033.'
+    - debianbug: int = 560771
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.6'
+        - urgency: str = 'low'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.6'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.6'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1.0.6'
+        - urgency: str = 'low'
+  - CVE-2011-1159: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'acpid.c in acpid before 2.0.9 does not properly handle a situation in which a process has connected to acpid.socket but is not reading any data, which allows local users to cause a denial of service (daemon hang) via a crafted application that performs a connect system call but no read system calls.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.9-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.9-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.9-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.9-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2011-2777: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'samples/powerbtn/powerbtn.sh in acpid (aka acpid2) 2.0.16 and earlier uses the pidof program incorrectly, which allows local users to gain privileges by running a program with the name kded4 and a DBUS_SESSION_BUS_ADDRESS environment variable containing commands.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.14-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.14-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.14-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.14-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2011-4578: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'event.c in acpid (aka acpid2) before 2.0.11 does not have an appropriate umask setting during execution of event-handler scripts, which might allow local users to (1) perform write operations within directories created by a script, or (2) read files created by a script, via standard filesystem system calls.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=4
+      dict, anahtar sayisi=4
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.11-1'
+        - urgency: str = 'not yet assigned'
+      - forky: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.11-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.11-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '1:2.0.11-1'
+        - urgency: str = 'not yet assigned'
+- activemq: dict, anahtar sayisi=56
+  dict, anahtar sayisi=56
+  - CVE-2011-4905: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Apache ActiveMQ before 5.6.0 allows remote attackers to cause a denial of service (file-descriptor exhaustion and broker crash or hang) by sending many openwire failover:tcp:// connection requests.'
+    - debianbug: int = 655495
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.5.0+dfsg-5'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.5.0+dfsg-5'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.5.0+dfsg-5'
+        - urgency: str = 'not yet assigned'
+  - CVE-2012-6092: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Multiple cross-site scripting (XSS) vulnerabilities in the web demos in Apache ActiveMQ before 5.8.0 allow remote attackers to inject arbitrary web script or HTML via (1) the refresh parameter to PortfolioPublishServlet.java (aka demo/portfolioPublish or Market Data Publisher), or vectors involving (2) debug logs or (3) subscribe messages in webapp/websocket/chat.js.  NOTE: AMQ-4124 is covered...
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2012-6551: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The default configuration of Apache ActiveMQ before 5.8.0 enables a sample web application, which allows remote attackers to cause a denial of service (broker resource consumption) via HTTP requests.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2013-1879: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Cross-site scripting (XSS) vulnerability in scheduled.jsp in Apache ActiveMQ 5.8.0 and earlier allows remote attackers to inject arbitrary web script or HTML via vectors involving the "cron of a message."'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2013-1880: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Cross-site scripting (XSS) vulnerability in the Portfolio publisher servlet in the demo web application in Apache ActiveMQ before 5.9.0 allows remote attackers to inject arbitrary web script or HTML via the refresh parameter to demo/portfolioPublish, a different vulnerability than CVE-2012-6092.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2013-3060: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The web console in Apache ActiveMQ before 5.8.0 does not require authentication, which allows remote attackers to obtain sensitive information or cause a denial of service via HTTP requests.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2014-3576: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The processControlCommand function in broker/TransportConnection.java in Apache ActiveMQ before 5.11.0 allows remote attackers to cause a denial of service (shutdown) via a shutdown command.'
+    - debianbug: int = 792857
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4+deb8u1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4+deb8u1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4+deb8u1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2014-3600: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'XML external entity (XXE) vulnerability in Apache ActiveMQ 5.x before 5.10.1 allows remote consumers to have unspecified impact via vectors involving an XPath based selector when dequeuing XML messages.'
+    - debianbug: int = 777196
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+  - CVE-2014-3612: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'The LDAPLoginModule implementation in the Java Authentication and Authorization Service (JAAS) in Apache ActiveMQ 5.x before 5.10.1 allows remote attackers to bypass authentication by logging in with an empty password and valid username, which triggers an unauthenticated bind. NOTE: this identifier has been SPLIT per ADT2 due to different vulnerability types. See CVE-2015-6524 for the use of w...
+    - debianbug: int = 777196
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+  - CVE-2014-8110: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Multiple cross-site scripting (XSS) vulnerabilities in the web based administration console in Apache ActiveMQ 5.x before 5.10.1 allow remote attackers to inject arbitrary web script or HTML via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2015-1830: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'Directory traversal vulnerability in the fileserver upload/download functionality for blob messages in Apache ActiveMQ 5.x before 5.11.2 for Windows allows remote attackers to create JSP files in arbitrary directories via unspecified vectors.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2015-5254: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker, which allows remote attackers to execute arbitrary code via a crafted serialized Java Message Service (JMS) ObjectMessage object.'
+    - debianbug: int = 809733
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2015-6524: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The LDAPLoginModule implementation in the Java Authentication and Authorization Service (JAAS) in Apache ActiveMQ 5.x before 5.10.1 allows wildcard operators in usernames, which allows remote attackers to obtain credentials via a brute force attack. NOTE: this identifier was SPLIT from CVE-2014-3612 per ADT2 due to different vulnerability types.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.6.0+dfsg1-4'
+        - urgency: str = 'low'
+  - CVE-2015-7559: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'It was found that the Apache ActiveMQ client before 5.14.5 exposed a remote shutdown command in the ActiveMQConnection class. An attacker logged into a compromised broker could use this flaw to achieve denial of service on a connected client.'
+    - debianbug: int = 860866
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.3-3'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.3-3'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.3-3'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-0734: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The web-based administration console in Apache ActiveMQ 5.x before 5.13.2 does not send an X-Frame-Options HTTP header, which makes it easier for remote attackers to conduct clickjacking attacks via a crafted web page that contains a (1) FRAME or (2) IFRAME element.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '0'
+        - urgency: str = 'unimportant'
+  - CVE-2016-0782: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The administration web console in Apache ActiveMQ 5.x before 5.11.4, 5.12.x before 5.12.3, and 5.13.x before 5.13.2 allows remote authenticated users to conduct cross-site scripting (XSS) attacks and consequently obtain sensitive information from a Java memory dump via vectors related to creating a queue.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.13.2+dfsg-1'
+        - urgency: str = 'unimportant'
+  - CVE-2016-3088: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'The Fileserver web application in Apache ActiveMQ 5.x before 5.14.0 allows remote attackers to upload and execute arbitrary files via an HTTP PUT followed by an HTTP MOVE request.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.0+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.0+dfsg-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.0+dfsg-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2016-6810: dict, anahtar sayisi=3
+    dict, anahtar sayisi=3
+    - description: str = 'In Apache ActiveMQ 5.x before 5.14.2, an instance of a cross-site scripting vulnerability was identified to be present in the web based administration console. The root cause of this issue is improper user data output validation.'
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.2+dfsg-1'
+        - urgency: str = 'unimportant'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.2+dfsg-1'
+        - urgency: str = 'unimportant'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.14.2+dfsg-1'
+        - urgency: str = 'unimportant'
+  - CVE-2017-15709: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'When using the OpenWire protocol in ActiveMQ versions 5.14.0 to 5.15.2 it was found that certain system details (such as the OS and kernel version) are exposed as plain text.'
+    - debianbug: int = 890352
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.3-1'
+        - urgency: str = 'not yet assigned'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.3-1'
+        - urgency: str = 'not yet assigned'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.3-1'
+        - urgency: str = 'not yet assigned'
+  - CVE-2018-11775: dict, anahtar sayisi=4
+    dict, anahtar sayisi=4
+    - description: str = 'TLS hostname verification when using the Apache ActiveMQ Client before 5.15.6 was missing which could make the client vulnerable to a MITM attack between a Java application using the ActiveMQ client and the ActiveMQ server. This is now enabled by default.'
+    - debianbug: int = 908950
+    - scope: str = 'local'
+    - releases: dict, anahtar sayisi=3
+      dict, anahtar sayisi=3
+      - bookworm: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=2
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.6-1'
+        - urgency: str = 'low'
+      - sid: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.6-1'
+        - urgency: str = 'low'
+      - trixie: dict, anahtar sayisi=4
+        dict, anahtar sayisi=4
+        - status: str = 'resolved'
+        - repositories: dict, anahtar sayisi=1
+          <maksimum derinlik>
+        - fixed_version: str = '5.15.6-1'
+        - urgency: str = 'low'
+  ... 36 anahtar daha var
+... 3984 anahtar daha var
+
+====================================================================================================
+CISA KEV ORNEK SEMASI
+====================================================================================================
+Dosya: data\raw\kev\known_exploited_vulnerabilities.json
+Boyut: 1,721,121 bayt
+Sema:
+dict, anahtar sayisi=5
+- title: str = 'CISA Catalog of Known Exploited Vulnerabilities'
+- catalogVersion: str = '2026.09.11'
+- dateReleased: str = '2026-09-11T19:32:16.8993Z'
+- count: int = 1709
+- vulnerabilities: list, oge sayisi=1709
+  ilk oge tipi=dict
+  dict, anahtar sayisi=12
+  - cveID: str = 'CVE-2026-84869'
+  - vendorProject: str = 'ConnectWise'
+  - product: str = 'ScreenConnect'
+  - vulnerabilityName: str = 'ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability'
+  - dateAdded: str = '2026-09-11'
+  - shortDescription: str = 'ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sessions without authorization or host confirmation.'
+  - requiredAction: str = "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evalua...
+  - dueDate: str = '2026-09-14'
+  - knownRansomwareCampaignUse: str = 'Unknown'
+  - forensicTriage: str = 'Yes'
+  - notes: str = 'https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-20...
+  - cwes: list, oge sayisi=2
+    ilk oge tipi=str
+    str = 'CWE-269'
+
+====================================================================================================
+RAPOR SONU
+====================================================================================================
+Beklenmeyen kaynak hatasi sayisi: 0

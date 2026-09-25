@@ -1,0 +1,24 @@
+\begin{table}
+\centering
+\caption{Paired method differences on the test split.}
+\label{tab:significance}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Comparison & Metric & $\Delta$ & 95\% CI & $p$ & Holm $p$ & W/L/T \\
+\midrule
+vs BM25 & Cur@1$\wedge$NoStale@10 & 0.9980 & [0.9954, 1.0000] & <0.0001 & 0.0012 & 1503/0/3 \\
+vs BM25 & Stale@10 & -0.1048 & [-0.1060, -0.1036] & <0.0001 & 0.0012 & 1506/0/0 \\
+vs BM25 & gNDCG@10 & 0.2025 & [0.1943, 0.2105] & <0.0001 & 0.0012 & 1181/0/325 \\
+vs BM25+Recency & Cur@1$\wedge$NoStale@10 & 0.9980 & [0.9954, 1.0000] & <0.0001 & 0.0012 & 1503/0/3 \\
+vs BM25+Recency & Stale@10 & -0.1048 & [-0.1060, -0.1036] & <0.0001 & 0.0012 & 1506/0/0 \\
+vs BM25+Recency & gNDCG@10 & 0.0348 & [0.0317, 0.0381] & <0.0001 & 0.0012 & 728/20/758 \\
+vs Cross-encoder & Cur@1$\wedge$NoStale@10 & 0.9190 & [0.9049, 0.9331] & <0.0001 & 0.0012 & 1384/0/122 \\
+vs Cross-encoder & Stale@10 & -0.0631 & [-0.0659, -0.0602] & <0.0001 & 0.0012 & 910/0/596 \\
+vs Cross-encoder & gNDCG@10 & 0.4756 & [0.4570, 0.4950] & <0.0001 & 0.0012 & 1200/3/303 \\
+vs ChronoRank-Rule-Corpus & Cur@1$\wedge$NoStale@10 & 0.1640 & [0.1450, 0.1831] & <0.0001 & 0.0012 & 248/1/1257 \\
+vs ChronoRank-Rule-Corpus & Stale@10 & -0.0167 & [-0.0187, -0.0148] & <0.0001 & 0.0012 & 248/0/1258 \\
+vs ChronoRank-Rule-Corpus & gNDCG@10 & -0.0036 & [-0.0046, -0.0026] & <0.0001 & 0.0012 & 0/106/1400 \\
+\bottomrule
+\end{tabular}}
+\end{table}

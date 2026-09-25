@@ -1,0 +1,6 @@
+mapping_version: 1
+aliases:
+  - raw_identifier: "nvd@nist.gov"
+    normalized_source_key: "NVD"
+    mapping_reason: "NVD's own analyst source identifier"
+    mapping_evidence: "NVD CVE API 2.0 documentation: sourceIdentifier of NVD-authored data is nvd@nist.gov"

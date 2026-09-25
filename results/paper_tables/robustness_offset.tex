@@ -1,0 +1,17 @@
+\begin{table}
+\centering
+\caption{Query-time offset sensitivity.}
+\label{tab:robustness_offset}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Offset & $n$ & BM25 Top-1 & Rec. Top-1 & Rec. MRR & Rec. Stale & $\tau$180 Top-1 & $\tau$365 Top-1 & $n$ (re-retr.) & Rec. Top-1 (re-retr.) \\
+\midrule
++1d & 3451 & 0.424 & 0.989 & 0.994 & 0.105 & 0.971 & 0.962 & 297 & 0.976 \\
++30d & 3286 & 0.424 & 0.957 & 0.979 & 0.104 & 0.968 & 0.961 & 288 & 0.951 \\
++90d & 3042 & 0.417 & 0.884 & 0.942 & 0.104 & 0.952 & 0.950 & 276 & 0.862 \\
++180d & 2362 & 0.411 & 0.875 & 0.937 & 0.105 & 0.926 & 0.931 & 228 & 0.847 \\
++365d & 1402 & 0.400 & 0.810 & 0.904 & 0.105 & 0.841 & 0.857 & 146 & 0.788 \\
+\bottomrule
+\end{tabular}}
+\end{table}

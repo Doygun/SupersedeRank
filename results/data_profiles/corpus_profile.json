@@ -1,0 +1,53 @@
+{
+  "potential_intervals": 265965,
+  "text_generated": 265965,
+  "accepted": 265900,
+  "excluded": 65,
+  "excluded_by_reason": {
+    "AMBIGUOUS_CHAIN": 64,
+    "BASE_VECTOR_NOT_PARSEABLE": 1
+  },
+  "unique_cves": 164394,
+  "unique_source_keys": 427,
+  "by_version": {
+    "3.1": 210735,
+    "2.0": 13946,
+    "4.0": 36973,
+    "3.0": 4246
+  },
+  "base_score_available_ratio": 1.0,
+  "left_censored": 1224,
+  "ambiguous_chain_intervals_excluded": 64,
+  "duplicate_evidence_text": 20,
+  "duplicate_cve_source_version_vector": 7825,
+  "overlapping_intervals_same_chain": 0,
+  "text_length": {
+    "mean": 183.2,
+    "median": 182.0,
+    "min": 152,
+    "max": 261
+  },
+  "mean_visible_corpus_at_query_times": {
+    "train": 88821.3,
+    "dev": 85586.1,
+    "test": 206253.8
+  },
+  "coverage_vs_main_evidence": {
+    "main_evidence": 9015,
+    "main_in_full_corpus": 9010,
+    "main_missing_from_full_corpus": [
+      "CVE-2024-11132|3.1|NVD|1",
+      "CVE-2024-58377|3.1|disclosure@vulncheck.com|1",
+      "CVE-2024-58377|3.1|disclosure@vulncheck.com|2",
+      "CVE-2026-19582|3.1|secalert@redhat.com|1",
+      "CVE-2026-19582|3.1|secalert@redhat.com|2"
+    ],
+    "full_corpus_only": 256890
+  },
+  "by_split_of_cve": {
+    "corpus_only": 256568,
+    "dev": 795,
+    "train": 4510,
+    "test": 4027
+  }
+}

@@ -1,0 +1,7 @@
+method,label,current_preservation@10,top1_current_rate,outdated_suppression@10,one_minus_stale@10,current_at1_and_no_stale@10,split,queries
+bm25,BM25,1.0,0.4489,0.0,0.8952,0.0,test,1506
+recency_only,Recency-only,0.6222,0.3201,0.5578,0.9537,0.0505,test,1506
+bm25_recency,BM25+Recency,1.0,0.9754,0.0,0.8952,0.0,test,1506
+cross_encoder,Cross-encoder,0.7749,0.3738,0.3996,0.9369,0.079,test,1506
+rule_corpus,ChronoRank-Rule-Corpus,1.0,0.9987,0.8353,0.9833,0.834,test,1506
+rule_target,ChronoRank-Rule-Target,1.0,0.998,1.0,1.0,0.998,test,1506

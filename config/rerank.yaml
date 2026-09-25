@@ -1,0 +1,47 @@
+candidate_pool:
+  source: results/experiments/bm25_full
+  smoke_source: results/experiments/smoke_bm25
+  depth: 50
+  rule: "rerankers only permute the 50 BM25 candidates; no removal, no additions; Recall@50 must equal BM25"
+  tie_break: "SHA256(seed | query_id | evidence_id), seed from config/retrieval.yaml bm25.tie_break (time-blind)"
+
+recency:
+  time_field: observed_from
+  age_name: observed_age_days
+  censoring_note: "left-censored evidence (valid_from_censored=true) carries observed_from = window start; its observed age is a lower bound"
+  forbidden_fields: [label, valid_until, replaced_by_evidence_id, replacement_event_id, replacement_type, timeline_status, termination_event_id]
+  diagnostic:
+    name: recency_only
+    rule: "sort the 50 candidates by observed_from descending (newest first); ties by the hash"
+  main:
+    name: bm25_recency
+    formula: "score = minmax_bm25(e, q) + lambda * exp(-observed_age_days / tau)"
+    bm25_normalization: "min-max within the 50 candidates of the query; constant list -> 0"
+    grid:
+      tau_days: [30, 180, 365]
+      lambda: [0.1, 0.3, 0.5]
+    selection:
+      split: dev
+      objective: ndcg@10
+      tie_breaker: stale@10
+      note: "9 combinations only; no wider search"
+  output_dir: results/experiments/recency
+
+cross_encoder:
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  revision: 233902d25c440f23af6f7d6e94d2946bac0bee0a
+  library: transformers
+  input: [query_text, evidence_text]
+  max_length: 512
+  score_transformation: raw_logit
+  dtype: float32
+  batch_size: 64
+  seed: 20260920
+  cache_dir: data/processed/retrieval/cross_encoder_cache
+  cache_key: "sha256(query_id|evidence_id|model_revision|tokenizer_revision|max_length|score_transformation|sha256(query_text)|sha256(evidence_text))"
+  determinism_check: {queries: 20, batch_sizes: [16, 64]}
+  output_dir: results/experiments/cross_encoder
+
+comparison:
+  output_dir: results/experiments/reranking_baselines
+  methods: [bm25, recency_only, bm25_recency, cross_encoder]

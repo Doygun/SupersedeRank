@@ -1,0 +1,119 @@
+NVD HISTORY PROFIL RAPORU
+================================================================================
+Dosya sayisi: 322
+Change sayisi: 1,590,753
+Detail sayisi: 3,249,766
+OldValue bulunan detail: 223,207
+NewValue bulunan detail: 3,175,194
+OldValue ve NewValue birlikte bulunan detail: 148,651
+Bozuk change sayisi: 0
+Bozuk detail sayisi: 0
+Dosya okuma hatasi: 0
+
+EVENT NAME DAGILIMI
+--------------------------------------------------------------------------------
+CVE Modified	1190858
+New CVE Received	156330
+Initial Analysis	95658
+CVE Status Change	94219
+CPE Deprecation Remap	23650
+Modified Analysis	8400
+CVE Translated	7123
+CVE Rejected	4646
+Data Remediation	4614
+Reanalysis	3106
+CVE CISA KEV Update	1259
+Reference Tag Update	844
+CVE Unrejected	40
+CVE Source Update	6
+
+ACTION DAGILIMI
+--------------------------------------------------------------------------------
+Added	3026543
+Changed	148651
+Removed	74556
+[EKSIK]	16
+
+DETAIL TYPE DAGILIMI
+--------------------------------------------------------------------------------
+Reference	1413943
+Affected	413075
+Reference Type	309547
+CPE Configuration	228434
+CVSS V3.1	224823
+CWE	213469
+SSVC	190102
+Description	181924
+CVSS V4.0	37553
+CVSS V2	14009
+Translation	7123
+CVSS V4.0 Score	4614
+CVSS V3	4328
+Tag	3513
+Vulnerability Name	1227
+Due Date	686
+Required Action	678
+Date Added	667
+CVSS V2 Metadata	13
+Evaluator Description	13
+Evaluator Impact	11
+Evaluator Solution	6
+Source	6
+CWE CVMAP Excluded	2
+
+ACTION + TYPE DAGILIMI
+--------------------------------------------------------------------------------
+Added	Reference	1375590
+Added	Affected	413075
+Added	Reference Type	212721
+Added	CVSS V3.1	210145
+Added	CWE	208612
+Added	CPE Configuration	197326
+Added	SSVC	185606
+Added	Description	156330
+Changed	Reference Type	83190
+Removed	Reference	38353
+Added	CVSS V4.0	36961
+Changed	CPE Configuration	29967
+Changed	Description	25593
+Removed	CVSS V3.1	14678
+Added	CVSS V2	13900
+Removed	Reference Type	13636
+Added	Translation	6566
+Removed	CWE	4857
+Changed	CVSS V4.0 Score	4614
+Changed	SSVC	4439
+Added	CVSS V3	3741
+Added	Tag	3314
+Removed	CPE Configuration	1126
+Added	Date Added	660
+Added	Vulnerability Name	660
+Added	Due Date	660
+Added	Required Action	660
+Removed	CVSS V4.0	592
+Removed	CVSS V3	587
+Changed	Vulnerability Name	563
+Removed	Translation	338
+Changed	Translation	219
+Removed	Tag	199
+Removed	CVSS V2	109
+Removed	SSVC	57
+Changed	Due Date	22
+[EKSIK]	CPE Configuration	15
+Changed	Required Action	14
+Added	CVSS V2 Metadata	11
+Changed	Evaluator Description	8
+Changed	Evaluator Impact	7
+Changed	Evaluator Solution	6
+Changed	Source	6
+Removed	Evaluator Impact	4
+Removed	Due Date	4
+Removed	Vulnerability Name	4
+Removed	Date Added	4
+Removed	Required Action	4
+Changed	Date Added	3
+Added	Evaluator Description	3
+Removed	CVSS V2 Metadata	2
+Removed	Evaluator Description	2
+Added	CWE CVMAP Excluded	2
+[EKSIK]	Description	1

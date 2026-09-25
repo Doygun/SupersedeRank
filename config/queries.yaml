@@ -1,0 +1,32 @@
+evidence:
+  corpus_scope: main_cves_all_chains
+  text_template_active: "As of {date}, {source} assessed {cve} under CVSS {version} with Base metric vector {base_vector}, a CVSS-B score of {score}, and {severity} severity."
+  text_template_censored: "At the beginning of the observation window, {source} had an active CVSS {version} Base assessment for {cve} with Base metric vector {base_vector}, a CVSS-B score of {score}, and {severity} severity."
+  text_template_no_score: "As of {date}, {source} assessed {cve} under CVSS {version} with Base metric vector {base_vector}."
+  forbidden_words_in_text: [outdated, superseded, former, previous, replaced, current, stale, CURRENT, OUTDATED]
+
+queries:
+  query_family: CURRENT_CVSS_BASE_ASSESSMENT
+  seed: 20260916
+  template_assignment: seeded_uniform
+  templates:
+    base_vector: "As of {query_date}, what was the current CVSS {version} Base metric vector issued by {source} for {cve}?"
+    cvssb_score: "As of {query_date}, what was the current CVSS-B score issued by {source} for {cve} under CVSS {version}?"
+    base_severity: "As of {query_date}, what was the current Base severity issued by {source} for {cve} under CVSS {version}?"
+    combined: "As of {query_date}, what was the current CVSS {version} Base assessment issued by {source} for {cve}?"
+  post_replacement:
+    enabled: true
+    role: POST_REPLACEMENT_MAIN
+    offset_days: 30
+    max_fraction_of_interval: 0.5
+    min_interval_seconds: 2
+  pre_replacement_control:
+    enabled: true
+    role: PRE_REPLACEMENT_CONTROL
+    offset_days: 30
+    max_fraction_of_interval: 0.5
+    min_interval_seconds: 2
+  requirements:
+    main_requires_current_target: true
+    main_requires_outdated_same_chain: true
+    control_requires_current_target: true

@@ -1,0 +1,202 @@
+{
+  "reference_policy": "rule_corpus",
+  "threshold": 10,
+  "groups": {
+    "test": {
+      "preserved_ge10": {
+        "queries": 1258,
+        "cves": 1121,
+        "methods": {
+          "bm25": {
+            "mrr@10": 0.7324,
+            "stale@10": 0.1054,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "bm25_recency": {
+            "mrr@10": 0.9952,
+            "stale@10": 0.1054,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "cross_encoder": {
+            "mrr@10": 0.4231,
+            "stale@10": 0.0591,
+            "current_at1_and_no_stale@10": 0.0588,
+            "outdated_suppression@10": 0.4426
+          },
+          "rule_target": {
+            "mrr@10": 0.9988,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 0.9976,
+            "outdated_suppression@10": 1.0
+          },
+          "rule_corpus": {
+            "mrr@10": 0.9992,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 0.9984,
+            "outdated_suppression@10": 1.0
+          },
+          "rule_direct_upper_bound": {
+            "mrr@10": 0.9976,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 0.9952,
+            "outdated_suppression@10": 1.0
+          },
+          "oracle_temporal": {
+            "mrr@10": 1.0,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 1.0,
+            "outdated_suppression@10": 1.0
+          }
+        }
+      },
+      "preserved_lt10": {
+        "queries": 248,
+        "cves": 245,
+        "methods": {
+          "bm25": {
+            "mrr@10": 0.6647,
+            "stale@10": 0.1016,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "bm25_recency": {
+            "mrr@10": 0.9496,
+            "stale@10": 0.1016,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "cross_encoder": {
+            "mrr@10": 0.922,
+            "stale@10": 0.0835,
+            "current_at1_and_no_stale@10": 0.1815,
+            "outdated_suppression@10": 0.1815
+          },
+          "rule_target": {
+            "mrr@10": 1.0,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 1.0,
+            "outdated_suppression@10": 1.0
+          },
+          "rule_corpus": {
+            "mrr@10": 1.0,
+            "stale@10": 0.1016,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "rule_direct_upper_bound": {
+            "mrr@10": 1.0,
+            "stale@10": 0.1016,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "oracle_temporal": {
+            "mrr@10": 1.0,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 1.0,
+            "outdated_suppression@10": 1.0
+          }
+        }
+      }
+    },
+    "all_main": {
+      "preserved_ge10": {
+        "queries": 3253,
+        "cves": 2899,
+        "methods": {
+          "bm25": {
+            "mrr@10": 0.7156,
+            "stale@10": 0.1049,
+            "current_at1_and_no_stale@10": 0.0003,
+            "outdated_suppression@10": 0.0
+          },
+          "bm25_recency": {
+            "mrr@10": 0.9831,
+            "stale@10": 0.1049,
+            "current_at1_and_no_stale@10": 0.0003,
+            "outdated_suppression@10": 0.0
+          },
+          "cross_encoder": {
+            "mrr@10": 0.5114,
+            "stale@10": 0.0613,
+            "current_at1_and_no_stale@10": 0.0861,
+            "outdated_suppression@10": 0.4187
+          },
+          "rule_target": {
+            "mrr@10": 0.9974,
+            "stale@10": 0.0001,
+            "current_at1_and_no_stale@10": 0.9945,
+            "outdated_suppression@10": 0.9994
+          },
+          "rule_corpus": {
+            "mrr@10": 0.9985,
+            "stale@10": 0.0001,
+            "current_at1_and_no_stale@10": 0.9966,
+            "outdated_suppression@10": 0.9994
+          },
+          "rule_direct_upper_bound": {
+            "mrr@10": 0.9977,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 0.9954,
+            "outdated_suppression@10": 1.0
+          },
+          "oracle_temporal": {
+            "mrr@10": 1.0,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 1.0,
+            "outdated_suppression@10": 1.0
+          }
+        }
+      },
+      "preserved_lt10": {
+        "queries": 284,
+        "cves": 281,
+        "methods": {
+          "bm25": {
+            "mrr@10": 0.6661,
+            "stale@10": 0.1014,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "bm25_recency": {
+            "mrr@10": 0.9437,
+            "stale@10": 0.1014,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "cross_encoder": {
+            "mrr@10": 0.9196,
+            "stale@10": 0.0849,
+            "current_at1_and_no_stale@10": 0.1655,
+            "outdated_suppression@10": 0.1655
+          },
+          "rule_target": {
+            "mrr@10": 0.9982,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 0.9965,
+            "outdated_suppression@10": 1.0
+          },
+          "rule_corpus": {
+            "mrr@10": 1.0,
+            "stale@10": 0.1014,
+            "current_at1_and_no_stale@10": 0.0,
+            "outdated_suppression@10": 0.0
+          },
+          "rule_direct_upper_bound": {
+            "mrr@10": 1.0,
+            "stale@10": 0.1011,
+            "current_at1_and_no_stale@10": 0.0035,
+            "outdated_suppression@10": 0.0035
+          },
+          "oracle_temporal": {
+            "mrr@10": 1.0,
+            "stale@10": 0.0,
+            "current_at1_and_no_stale@10": 1.0,
+            "outdated_suppression@10": 1.0
+          }
+        }
+      }
+    }
+  }
+}

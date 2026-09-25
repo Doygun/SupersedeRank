@@ -1,0 +1,449 @@
+{
+  "agreement": {
+    "queries": 300,
+    "same_full_list": 44,
+    "same_target_chain_decisions": 300,
+    "differ_equal": 236,
+    "differ_better": 20
+  },
+  "rule_signal_alone_accuracy": {
+    "train": {
+      "accuracy_rule_feature_alone": 0.9994,
+      "n": 3514
+    },
+    "dev": {
+      "accuracy_rule_feature_alone": 1.0,
+      "n": 641
+    }
+  },
+  "rule_feature_coefficient_learned_full": -1.384946,
+  "learned_full_vs_no_rule_signal": {
+    "mrr@10": [
+      1.0,
+      1.0
+    ],
+    "ndcg@10_graded": [
+      0.9974,
+      0.9974
+    ],
+    "stale@10": [
+      0.0,
+      0.0
+    ],
+    "outdated_suppression@10": [
+      1.0,
+      1.0
+    ],
+    "current_preservation@10": [
+      1.0,
+      1.0
+    ],
+    "current_at1_and_no_stale@10": [
+      1.0,
+      1.0
+    ]
+  },
+  "differing_queries": [
+    {
+      "query_id": "q_049541cc90acb72b",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 44
+    },
+    {
+      "query_id": "q_061f78c45f96ed10",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 22
+    },
+    {
+      "query_id": "q_06a4ed5abbd5a406",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 36
+    },
+    {
+      "query_id": "q_09fb009a0507a25d",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 10
+    },
+    {
+      "query_id": "q_0b735b304937b300",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 12
+    },
+    {
+      "query_id": "q_0bc04a6ae8f3e7c2",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 34
+    },
+    {
+      "query_id": "q_0c96fcb5039ddd54",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 41
+    },
+    {
+      "query_id": "q_0e8659e768acfc5c",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 32
+    },
+    {
+      "query_id": "q_11a718b4917a28b8",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 16
+    },
+    {
+      "query_id": "q_1af01633d406fbe1",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 27
+    },
+    {
+      "query_id": "q_1b957266e2ad011c",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 46
+    },
+    {
+      "query_id": "q_1bbfad752cb66cbc",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 17
+    },
+    {
+      "query_id": "q_2fed908e9910fc53",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 31
+    },
+    {
+      "query_id": "q_334212e3e49d09f4",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 10
+    },
+    {
+      "query_id": "q_369aa115fe3faf51",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 32
+    },
+    {
+      "query_id": "q_36de39f8416459fa",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 12
+    },
+    {
+      "query_id": "q_381b57ee8f5da992",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 35
+    },
+    {
+      "query_id": "q_38b7ef03acdd395f",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 42
+    },
+    {
+      "query_id": "q_38dcbf89c2e63181",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 34
+    },
+    {
+      "query_id": "q_394230718b7cddcd",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 48
+    },
+    {
+      "query_id": "q_3ab3100bbf83554b",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 40
+    },
+    {
+      "query_id": "q_41d24ba978e90cb1",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 37
+    },
+    {
+      "query_id": "q_447df06a9d0ee5c1",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 46
+    },
+    {
+      "query_id": "q_44dc7d2f7aff078e",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 48
+    },
+    {
+      "query_id": "q_463eb6e538a71b46",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 31
+    },
+    {
+      "query_id": "q_4917c4573635be24",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 42
+    },
+    {
+      "query_id": "q_4a623939813058bc",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 34
+    },
+    {
+      "query_id": "q_4c689eaba6b68d00",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 27
+    },
+    {
+      "query_id": "q_5bc8f3d7f8e38008",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 13
+    },
+    {
+      "query_id": "q_5d7869a885d42f74",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 10
+    },
+    {
+      "query_id": "q_5efb952391358f21",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 45
+    },
+    {
+      "query_id": "q_611ac6d02e34fc76",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 31
+    },
+    {
+      "query_id": "q_61c7b47423b0545f",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 32
+    },
+    {
+      "query_id": "q_61f9e2259f4ad66b",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 27
+    },
+    {
+      "query_id": "q_6afab80f61615f97",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 33
+    },
+    {
+      "query_id": "q_6bd33b00ee9391da",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 48
+    },
+    {
+      "query_id": "q_6e9750eef60efd71",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 14
+    },
+    {
+      "query_id": "q_6eee8e0f0c78793e",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 25
+    },
+    {
+      "query_id": "q_71b4b1a9a57c84ea",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 31
+    },
+    {
+      "query_id": "q_736bec6002ccaf42",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 33
+    },
+    {
+      "query_id": "q_746edfbea4d09abf",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 48
+    },
+    {
+      "query_id": "q_83b4d81cd2ac63dc",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 47
+    },
+    {
+      "query_id": "q_8599cca044ed1498",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 34
+    },
+    {
+      "query_id": "q_8652278317468c1b",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 47
+    },
+    {
+      "query_id": "q_867293749e76cb69",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 48
+    },
+    {
+      "query_id": "q_8864e1d97fab4ee3",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 35
+    },
+    {
+      "query_id": "q_92b10aa9149f76de",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 35
+    },
+    {
+      "query_id": "q_9325d42441584203",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 45
+    },
+    {
+      "query_id": "q_9625bdf6943b008b",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 16
+    },
+    {
+      "query_id": "q_966a3868f35711ab",
+      "split": "train",
+      "verdict": "equal",
+      "only_learned_suppressed": [],
+      "only_rule_suppressed_target_chain": [],
+      "n_preserved_rule": 43
+    }
+  ],
+  "verdict_copy_of_rule": false
+}

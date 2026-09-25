@@ -1,0 +1,24 @@
+\begin{table}
+\centering
+\renewcommand{\arraystretch}{1.45}
+\caption{Reranking results on the main queries.}
+\label{tab:main_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & MRR@10 & NDCG@10 & gNDCG@10 & Stale@10 & OutSupp@10 & CurPres@10 & Cur@1$\wedge$NoStale@10 & Top-1 CUR \\
+\midrule
+\multicolumn{9}{l}{Retrieval and semantic baselines} \\
+BM25 & 0.712 & 0.787 & 0.785 & 0.105 & 0.000 & 1.000 & 0.000 & 0.430 \\
+BM25+Recency & 0.980 & 0.985 & 0.957 & 0.105 & 0.000 & 1.000 & 0.000 & 0.960 \\
+Cross-encoder & 0.544 & 0.605 & 0.557 & 0.063 & 0.398 & 0.796 & 0.092 & 0.417 \\
+\multicolumn{9}{l}{ChronoRank} \\
+ChronoRank-Rule-Target & 0.998 & 0.998 & 0.994 & 0.000 & 0.999 & 1.000 & 0.995 & 0.995 \\
+ChronoRank-Rule-Corpus & 0.999 & 0.999 & 0.999 & 0.008 & 0.919 & 1.000 & 0.917 & 0.997 \\
+\multicolumn{9}{l}{Diagnostic policy} \\
+Direct-Link Policy (diagnostic) & 0.998 & 0.998 & 0.999 & 0.008 & 0.920 & 1.000 & 0.916 & 0.996 \\
+\multicolumn{9}{l}{Oracle upper bound} \\
+Temporal-clean oracle (oracle upper bound) & 1.000 & 1.000 & 1.000 & 0.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}}
+\end{table}

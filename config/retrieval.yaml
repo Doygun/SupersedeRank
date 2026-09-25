@@ -1,0 +1,86 @@
+corpus:
+  source: data/processed/cvss_evidence.jsonl
+  output: data/processed/corpus/full_corpus.jsonl
+  eligibility:
+    require_cve_id: true
+    require_source_key: true
+    require_cvss_version: true
+    require_parseable_base_vector: true
+    require_observed_from: true
+    require_source_file: true
+    exclude_ambiguous_chains: true
+    forbid_label_words_in_text: true
+
+bm25:
+  implementation: rank_bm25.BM25Okapi
+  k1: 1.5
+  b: 0.75
+  epsilon: 0.25
+  top_k: 50
+  analyzer:
+    lowercase: true
+    tokenization: "split on whitespace and '/'; keep [a-z0-9.:@-] characters inside tokens; drop tokens shorter than 1"
+    punctuation: "stripped except '.', ':', '-', '@' (needed for CVE ids, metrics such as av:n, versions such as 3.1, source keys)"
+  fields:
+    identity: [cve_id, source_key, cvss_version]
+    content: [evidence_text]
+  visibility: "observed_from <= query_time (documents activated after the query are never candidates)"
+  tie_break:
+    method: "SHA256(seed | query_id | evidence_id), ascending"
+    seed: 20260918
+    note: "evidence_id carries the chain sequence number, so plain evidence_id order would leak interval order"
+
+smoke_test:
+  queries_per_split: 100
+  splits: [train, dev, test]
+  role: POST_REPLACEMENT_MAIN
+  sampling: "CVE-level: sample 100 distinct CVEs per split with the seed, one main query per CVE (lowest query_id)"
+  seed: 20260917
+  output_dir: results/experiments/smoke_bm25
+
+oracle:
+  current_first: [TARGET_CURRENT, OTHER_SOURCE_CURRENT, TARGET_OUTDATED, OTHER]
+  temporal: [TARGET_CURRENT, OTHER_SOURCE_CURRENT, OTHER, TARGET_OUTDATED]
+  note: "upper bounds over the BM25 top-k candidates; not model results"
+
+full_run:
+  main_splits: [train, dev, test]
+  role: POST_REPLACEMENT_MAIN
+  output_dir: results/experiments/bm25_full
+  future_event: "run separately, descriptive only"
+
+dense:
+  model: BAAI/bge-base-en-v1.5
+  revision: a5beb1e3e68b9ab74eb54cfd186867f64f240e1a
+  library: transformers
+  query_prefix: "Represent this sentence for searching relevant passages: "
+  doc_prefix: ""
+  query_input: "query_prefix + query_text (identity fields are already part of query_text)"
+  doc_input: "evidence_text"
+  pooling: mean
+  normalize: l2
+  similarity: inner_product
+  max_length: 512
+  dtype: float32
+  batch_size: 128
+  deterministic: true
+  seed: 20260919
+  candidates_top_k: 100
+  eval_top_k: 50
+  tie_break: "same rule as bm25.tie_break (SHA256(seed | query_id | evidence_id)), same seed"
+  embeddings_dir: data/processed/retrieval/dense_bge_base
+  output_dir: results/experiments/dense_full
+  smoke_output_dir: results/experiments/smoke_dense_hybrid
+
+hybrid:
+  method: rrf
+  rrf_k: 60
+  inputs: [bm25_top100, dense_top100]
+  output_top_k: 50
+  formula: "RRF(d) = sum over methods m with d in top-100_m of 1 / (rrf_k + rank_m(d)); missing list => no contribution"
+  tie_break: "same SHA256 rule as bm25.tie_break; never CURRENT/OUTDATED, time or replacement order"
+  output_dir: results/experiments/hybrid_full
+
+source_groups:
+  named: [134c704f-9b21-4f2e-91b3-4a467353bcc0, NVD, disclosure@vulncheck.com, secalert@redhat.com, cna@vuldb.com, audit@patchstack.com]
+  other: OTHER_SOURCE

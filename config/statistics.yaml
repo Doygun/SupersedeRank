@@ -1,0 +1,51 @@
+population:
+  split: test
+  source: results/experiments/chronorank_rule_target/per_query.json
+  recency_only_source: results/experiments/reranking_baselines/per_query.json
+  exclude_splits: [train, dev, future_event]
+
+bootstrap:
+  unit: cve_id
+  replicates: 10000
+  seed: 20260924
+  ci_method: percentile
+  ci_level: 0.95
+  shared_replicates: true
+  p_value: "two-sided bootstrap p = 2 * min(P(diff <= 0), P(diff >= 0)), floored at 1 / replicates"
+
+methods:
+  main: [bm25, bm25_recency, cross_encoder, rule_target]
+  scope_analysis: [rule_corpus]
+  upper_bounds: [rule_direct_upper_bound, oracle_temporal]
+  diagnostic_only: [learned_full, learned_no_rule_signal]
+  names:
+    bm25: BM25
+    bm25_recency: BM25+Recency
+    cross_encoder: Cross-encoder
+    recency_only: Recency-only
+    rule_target: ChronoRank-Rule-Target
+    rule_corpus: ChronoRank-Rule-Corpus
+    rule_direct_upper_bound: Direct-Link Policy (diagnostic)
+    oracle_temporal: Temporal-clean oracle (oracle upper bound)
+
+metrics:
+  primary: [current_at1_and_no_stale@10, stale@10, ndcg@10_graded]
+  secondary: [mrr@10, ndcg@10, outdated_suppression@10, current_preservation@10]
+  ci_metrics: [mrr@10, ndcg@10, ndcg@10_graded, stale@10, outdated_suppression@10, current_preservation@10, current_at1_and_no_stale@10]
+  lower_is_better: [stale@10]
+  undefined_policy: "outdated_suppression@10 / current_preservation@10 are undefined for queries whose BM25 top-10 has no OUTDATED / CURRENT; such queries are excluded from that metric's mean and from its paired difference"
+
+comparisons:
+  reference: rule_target
+  against: [bm25, bm25_recency, cross_encoder, rule_corpus]
+  primary_family: "4 comparisons x 3 primary metrics = 12 tests; Holm step-down at alpha 0.05 applied within this family"
+  secondary_family: "reported unadjusted (descriptive)"
+  alpha: 0.05
+
+capacity_analysis:
+  reference_policy: rule_corpus
+  threshold: 10
+
+tables:
+  output_dir: results/paper_tables
+  decimals: 3

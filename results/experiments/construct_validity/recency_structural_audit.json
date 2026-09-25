@@ -1,0 +1,94 @@
+{
+  "queries": 3537,
+  "selected_recency": {
+    "tau_days": 30,
+    "lambda": 0.5
+  },
+  "query_time_rule": "query_time = replacement_time + min(30 days, 0.5 * remaining CURRENT interval)  (config/queries.yaml)",
+  "event_to_query_days": {
+    "n": 3537,
+    "min": 0.0015,
+    "max": 30.0,
+    "mean": 27.9834,
+    "median": 30.0,
+    "p25": 30.0,
+    "p75": 30.0,
+    "exactly_30_days_rate": 0.9002,
+    "below_30_days_rate": 0.0998
+  },
+  "current_minus_outdated_observed_from_days": {
+    "n": 3537,
+    "min": 0.0014,
+    "max": 969.7068,
+    "mean": 104.902,
+    "median": 12.8751,
+    "p25": 0.9583,
+    "p75": 93.1251
+  },
+  "current_observed_age_days": {
+    "n": 3537,
+    "min": 0.0015,
+    "max": 30.0,
+    "mean": 27.9834,
+    "median": 30.0,
+    "p25": 30.0,
+    "p75": 30.0
+  },
+  "outdated_observed_age_days": {
+    "n": 3537,
+    "min": 0.0061,
+    "max": 978.8534,
+    "mean": 132.8854,
+    "median": 40.9998,
+    "p25": 30.7918,
+    "p75": 121.2108
+  },
+  "outdated_left_censored_count": 390,
+  "newest_visible_chain_evidence_is_current": {
+    "rate": 1.0,
+    "count": 3537,
+    "exceptions": 0,
+    "exception_rows": []
+  },
+  "newest_visible_same_cve_evidence_is_current": {
+    "rate": 0.8569,
+    "count": 3031,
+    "note": "across every chain of the CVE (other sources/versions); relevant to recency-only"
+  },
+  "recency_feature_tau_selected": {
+    "current_mean": 0.4062,
+    "outdated_mean": 0.2216,
+    "current_gt_outdated_rate": 1.0
+  },
+  "tau_alignment": {
+    "query_offset_upper_bound_days": 30,
+    "selected_tau_days": 30,
+    "structurally_aligned": true,
+    "note": "the recency bonus is monotone in observed age for every tau, so within a same-chain BM25 tie the newer (CURRENT) evidence wins for any tau; tau only changes the bonus gap against other-CVE candidates and the newest-vs-older margin"
+  },
+  "decomposition": {
+    "agreement|bm25_recency_vs_chain_newest_same_top1|False": 278,
+    "agreement|bm25_recency_vs_chain_newest_same_top1|True": 3259,
+    "tied|bm25_recency_top1_current|False": 8,
+    "tied|bm25_recency_top1_current|True": 3080,
+    "tied|bm25_top1_current|False": 1621,
+    "tied|bm25_top1_current|True": 1467,
+    "tied|chain_newest_tiebreak_top1_current|False": 12,
+    "tied|chain_newest_tiebreak_top1_current|True": 3076,
+    "untied|bm25_recency_top1_current|False": 133,
+    "untied|bm25_recency_top1_current|True": 316,
+    "untied|bm25_top1_current|False": 395,
+    "untied|bm25_top1_current|True": 54,
+    "untied|chain_newest_tiebreak_top1_current|False": 395,
+    "untied|chain_newest_tiebreak_top1_current|True": 54
+  },
+  "top1_current_by_method": {
+    "bm25": 0.43,
+    "bm25_recency": 0.9601,
+    "chain_newest_tiebreak": 0.8849,
+    "cross_encoder": 0.4173,
+    "oracle_current_first": 1.0,
+    "oracle_temporal": 1.0,
+    "recency_only": 0.2997
+  }
+}

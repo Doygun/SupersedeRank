@@ -1,0 +1,209 @@
+Ham veri kok dizini: D:\Chronorank\data\raw
+Kaynak sayisi      : 6
+
+UST DUZEY YAPI
+--------------------------------------------------------------------------------
+
+[KLASOR] data\raw\debian
+  [DIR ] json
+
+[KLASOR] data\raw\epss
+  [FILE] epss_scores-2024-01-01.csv.gz
+  [FILE] epss_scores-2024-01-02.csv.gz
+  [FILE] epss_scores-2024-01-03.csv.gz
+  [FILE] epss_scores-2024-01-04.csv.gz
+  [FILE] epss_scores-2024-01-05.csv.gz
+  [FILE] epss_scores-2024-01-06.csv.gz
+  [FILE] epss_scores-2024-01-07.csv.gz
+  [FILE] epss_scores-2024-01-08.csv.gz
+  [FILE] epss_scores-2024-01-09.csv.gz
+  [FILE] epss_scores-2024-01-10.csv.gz
+  [FILE] epss_scores-2024-01-11.csv.gz
+  [FILE] epss_scores-2024-01-12.csv.gz
+  [FILE] epss_scores-2024-01-13.csv.gz
+  [FILE] epss_scores-2024-01-14.csv.gz
+  [FILE] epss_scores-2024-01-15.csv.gz
+  [FILE] epss_scores-2024-01-16.csv.gz
+  [FILE] epss_scores-2024-01-17.csv.gz
+  [FILE] epss_scores-2024-01-18.csv.gz
+  [FILE] epss_scores-2024-01-19.csv.gz
+  [FILE] epss_scores-2024-01-20.csv.gz
+  [FILE] epss_scores-2024-01-21.csv.gz
+  [FILE] epss_scores-2024-01-22.csv.gz
+  [FILE] epss_scores-2024-01-23.csv.gz
+  [FILE] epss_scores-2024-01-24.csv.gz
+  [FILE] epss_scores-2024-01-25.csv.gz
+  [FILE] epss_scores-2024-01-26.csv.gz
+  [FILE] epss_scores-2024-01-27.csv.gz
+  [FILE] epss_scores-2024-01-28.csv.gz
+  [FILE] epss_scores-2024-01-29.csv.gz
+  [FILE] epss_scores-2024-01-30.csv.gz
+  [FILE] epss_scores-2024-01-31.csv.gz
+  [FILE] epss_scores-2024-02-01.csv.gz
+  [FILE] epss_scores-2024-02-02.csv.gz
+  [FILE] epss_scores-2024-02-03.csv.gz
+  [FILE] epss_scores-2024-02-04.csv.gz
+  [FILE] epss_scores-2024-02-05.csv.gz
+  [FILE] epss_scores-2024-02-06.csv.gz
+  [FILE] epss_scores-2024-02-07.csv.gz
+  [FILE] epss_scores-2024-02-08.csv.gz
+  [FILE] epss_scores-2024-02-09.csv.gz
+  [FILE] epss_scores-2024-02-10.csv.gz
+  [FILE] epss_scores-2024-02-11.csv.gz
+  [FILE] epss_scores-2024-02-12.csv.gz
+  [FILE] epss_scores-2024-02-13.csv.gz
+  [FILE] epss_scores-2024-02-14.csv.gz
+  [FILE] epss_scores-2024-02-15.csv.gz
+  [FILE] epss_scores-2024-02-16.csv.gz
+  [FILE] epss_scores-2024-02-17.csv.gz
+  [FILE] epss_scores-2024-02-18.csv.gz
+  [FILE] epss_scores-2024-02-19.csv.gz
+  ... 936 oge daha var
+
+[KLASOR] data\raw\ghsa
+  [DIR ] .github
+  [DIR ] advisories
+  [FILE] CODE_OF_CONDUCT.md
+  [FILE] CONTRIBUTING.md
+  [FILE] LICENSE.md
+  [FILE] README.md
+  [FILE] SECURITY.md
+
+[KLASOR] data\raw\hoh
+  [FILE] hoh_qas_240601_241201.parquet
+
+[KLASOR] data\raw\kev
+  [FILE] known_exploited_vulnerabilities.json
+
+[KLASOR] data\raw\nvd
+  [DIR ] cves
+  [DIR ] history
+
+Taraniyor: debian
+
+Taraniyor: epss
+
+Taraniyor: ghsa
+
+Taraniyor: hoh
+
+Taraniyor: kev
+
+Taraniyor: nvd
+
+
+AYRINTILI RAPOR
+
+================================================================================
+KAYNAK: debian
+================================================================================
+Alt klasor sayisi : 1
+Veri dosyasi      : 1
+Toplam veri boyutu: 70.696 MB
+
+Uzanti dagilimi:
+  .json           dosya=         1 boyut=     70.696 MB
+      ornek: debian\json\debian_tracker_2026-09-14.json
+
+Okuma hatasi: 0
+
+================================================================================
+KAYNAK: epss
+================================================================================
+Alt klasor sayisi : 0
+Veri dosyasi      : 986
+Toplam veri boyutu: 1.706 GB
+
+Uzanti dagilimi:
+  .csv.gz         dosya=       986 boyut=      1.706 GB
+      ornek: epss\epss_scores-2024-01-01.csv.gz
+      ornek: epss\epss_scores-2024-01-02.csv.gz
+      ornek: epss\epss_scores-2024-01-03.csv.gz
+      ornek: epss\epss_scores-2024-01-04.csv.gz
+      ornek: epss\epss_scores-2024-01-05.csv.gz
+
+Okuma hatasi: 0
+
+================================================================================
+KAYNAK: ghsa
+================================================================================
+Alt klasor sayisi : 371,096
+Veri dosyasi      : 370,913
+Toplam veri boyutu: 568.298 MB
+
+Uzanti dagilimi:
+  .json           dosya=   370,903 boyut=    568.216 MB
+      ornek: ghsa\advisories\github-reviewed\2017\10\GHSA-229r-pqp6-8w6g\GHSA-229r-pqp6-8w6g.json
+      ornek: ghsa\advisories\github-reviewed\2017\10\GHSA-24fg-p96v-hxh8\GHSA-24fg-p96v-hxh8.json
+      ornek: ghsa\advisories\github-reviewed\2017\10\GHSA-29gr-w57f-rpfw\GHSA-29gr-w57f-rpfw.json
+      ornek: ghsa\advisories\github-reviewed\2017\10\GHSA-2fqv-h3r5-m4vf\GHSA-2fqv-h3r5-m4vf.json
+      ornek: ghsa\advisories\github-reviewed\2017\10\GHSA-2xjj-5x6h-8vmf\GHSA-2xjj-5x6h-8vmf.json
+  .md             dosya=         5 boyut=     37.888 KB
+      ornek: ghsa\CODE_OF_CONDUCT.md
+      ornek: ghsa\CONTRIBUTING.md
+      ornek: ghsa\LICENSE.md
+      ornek: ghsa\README.md
+      ornek: ghsa\SECURITY.md
+  .yaml           dosya=         5 boyut=     45.700 KB
+      ornek: ghsa\.github\workflows\create_staging_branch.yaml
+      ornek: ghsa\.github\workflows\create_staging_branch_writer.yaml
+      ornek: ghsa\.github\workflows\delete_staging_and_head_branches.yaml
+      ornek: ghsa\.github\workflows\delete_staging_and_head_branches_writer.yaml
+      ornek: ghsa\.github\workflows\stale.yaml
+
+Okuma hatasi: 0
+
+================================================================================
+KAYNAK: hoh
+================================================================================
+Alt klasor sayisi : 0
+Veri dosyasi      : 1
+Toplam veri boyutu: 27.655 MB
+
+Uzanti dagilimi:
+  .parquet        dosya=         1 boyut=     27.655 MB
+      ornek: hoh\hoh_qas_240601_241201.parquet
+
+Okuma hatasi: 0
+
+================================================================================
+KAYNAK: kev
+================================================================================
+Alt klasor sayisi : 0
+Veri dosyasi      : 1
+Toplam veri boyutu: 1.641 MB
+
+Uzanti dagilimi:
+  .json           dosya=         1 boyut=      1.641 MB
+      ornek: kev\known_exploited_vulnerabilities.json
+
+Okuma hatasi: 0
+
+================================================================================
+KAYNAK: nvd
+================================================================================
+Alt klasor sayisi : 2
+Veri dosyasi      : 405
+Toplam veri boyutu: 1.572 GB
+
+Uzanti dagilimi:
+  .json           dosya=       405 boyut=      1.572 GB
+      ornek: nvd\cves\20240101_20240429_0000000.json
+      ornek: nvd\cves\20240101_20240429_0002000.json
+      ornek: nvd\cves\20240101_20240429_0004000.json
+      ornek: nvd\cves\20240101_20240429_0006000.json
+      ornek: nvd\cves\20240101_20240429_0008000.json
+
+Okuma hatasi: 0
+
+================================================================================
+GENEL OZET
+================================================================================
+debian          dosya=         1 klasor=         1 boyut=     70.696 MB
+epss            dosya=       986 klasor=         0 boyut=      1.706 GB
+ghsa            dosya=   370,913 klasor=   371,096 boyut=    568.298 MB
+hoh             dosya=         1 klasor=         0 boyut=     27.655 MB
+kev             dosya=         1 klasor=         0 boyut=      1.641 MB
+nvd             dosya=       405 klasor=         2 boyut=      1.572 GB
+--------------------------------------------------------------------------------
+TOPLAM          dosya=   372,307 klasor=   371,099 boyut=      3.931 GB

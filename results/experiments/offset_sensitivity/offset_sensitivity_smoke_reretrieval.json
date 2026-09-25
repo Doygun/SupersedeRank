@@ -1,0 +1,319 @@
+{
+  "queries_sampled": 300,
+  "cohorts": {
+    "+1d": {
+      "eligible_queries": 297,
+      "excluded": {
+        "CURRENT_INTERVAL_ENDS_BEFORE_OFFSET": 3
+      },
+      "mean_pool_overlap_with_original_top50": 0.6481,
+      "reretrieval": {
+        "bm25": {
+          "queries": 297,
+          "recall@50": 1.0,
+          "mrr@10": 0.6998,
+          "ndcg@10": 0.7784,
+          "stale@10": 0.1024,
+          "top1_current_rate": 0.4007,
+          "top1_outdated_rate": 0.5926
+        },
+        "recency_only": {
+          "queries": 297,
+          "recall@50": 1.0,
+          "mrr@10": 0.4454,
+          "ndcg@10": 0.4793,
+          "stale@10": 0.0438,
+          "top1_current_rate": 0.3838,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 297,
+          "recall@50": 1.0,
+          "mrr@10": 0.9882,
+          "ndcg@10": 0.9913,
+          "stale@10": 0.1024,
+          "top1_current_rate": 0.9764,
+          "top1_outdated_rate": 0.0202
+        }
+      },
+      "pool_fixed_all_main": {
+        "bm25": {
+          "queries": 3451,
+          "mrr@10": 0.7088,
+          "ndcg@10": 0.7849,
+          "stale@10": 0.1047,
+          "top1_current_rate": 0.4245,
+          "top1_outdated_rate": 0.5708
+        },
+        "recency_only": {
+          "queries": 3451,
+          "mrr@10": 0.9002,
+          "ndcg@10": 0.9239,
+          "stale@10": 0.0833,
+          "top1_current_rate": 0.8351,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 3451,
+          "mrr@10": 0.9943,
+          "ndcg@10": 0.9958,
+          "stale@10": 0.1047,
+          "top1_current_rate": 0.9887,
+          "top1_outdated_rate": 0.011
+        }
+      }
+    },
+    "+30d": {
+      "eligible_queries": 288,
+      "excluded": {
+        "CURRENT_INTERVAL_ENDS_BEFORE_OFFSET": 6,
+        "BEYOND_OBSERVATION_WINDOW": 6
+      },
+      "mean_pool_overlap_with_original_top50": 0.9818,
+      "reretrieval": {
+        "bm25": {
+          "queries": 288,
+          "recall@50": 1.0,
+          "mrr@10": 0.7008,
+          "ndcg@10": 0.7791,
+          "stale@10": 0.1017,
+          "top1_current_rate": 0.4028,
+          "top1_outdated_rate": 0.5938
+        },
+        "recency_only": {
+          "queries": 288,
+          "recall@50": 1.0,
+          "mrr@10": 0.3835,
+          "ndcg@10": 0.4351,
+          "stale@10": 0.0438,
+          "top1_current_rate": 0.2951,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 288,
+          "recall@50": 1.0,
+          "mrr@10": 0.9757,
+          "ndcg@10": 0.9821,
+          "stale@10": 0.1017,
+          "top1_current_rate": 0.9514,
+          "top1_outdated_rate": 0.0451
+        }
+      },
+      "pool_fixed_all_main": {
+        "bm25": {
+          "queries": 3286,
+          "mrr@10": 0.7087,
+          "ndcg@10": 0.7848,
+          "stale@10": 0.1044,
+          "top1_current_rate": 0.4239,
+          "top1_outdated_rate": 0.5712
+        },
+        "recency_only": {
+          "queries": 3286,
+          "mrr@10": 0.3704,
+          "ndcg@10": 0.4223,
+          "stale@10": 0.0429,
+          "top1_current_rate": 0.2928,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 3286,
+          "mrr@10": 0.9786,
+          "ndcg@10": 0.9842,
+          "stale@10": 0.1044,
+          "top1_current_rate": 0.9574,
+          "top1_outdated_rate": 0.0402
+        }
+      }
+    },
+    "+90d": {
+      "eligible_queries": 276,
+      "excluded": {
+        "CURRENT_INTERVAL_ENDS_BEFORE_OFFSET": 6,
+        "BEYOND_OBSERVATION_WINDOW": 18
+      },
+      "mean_pool_overlap_with_original_top50": 0.64,
+      "reretrieval": {
+        "bm25": {
+          "queries": 276,
+          "recall@50": 1.0,
+          "mrr@10": 0.6969,
+          "ndcg@10": 0.7762,
+          "stale@10": 0.1018,
+          "top1_current_rate": 0.3949,
+          "top1_outdated_rate": 0.6014
+        },
+        "recency_only": {
+          "queries": 276,
+          "recall@50": 1.0,
+          "mrr@10": 0.3599,
+          "ndcg@10": 0.399,
+          "stale@10": 0.0409,
+          "top1_current_rate": 0.308,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 276,
+          "recall@50": 1.0,
+          "mrr@10": 0.9312,
+          "ndcg@10": 0.9492,
+          "stale@10": 0.1018,
+          "top1_current_rate": 0.8623,
+          "top1_outdated_rate": 0.1341
+        }
+      },
+      "pool_fixed_all_main": {
+        "bm25": {
+          "queries": 3042,
+          "mrr@10": 0.7055,
+          "ndcg@10": 0.7824,
+          "stale@10": 0.1044,
+          "top1_current_rate": 0.4175,
+          "top1_outdated_rate": 0.5776
+        },
+        "recency_only": {
+          "queries": 3042,
+          "mrr@10": 0.3695,
+          "ndcg@10": 0.4217,
+          "stale@10": 0.0425,
+          "top1_current_rate": 0.2926,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 3042,
+          "mrr@10": 0.9419,
+          "ndcg@10": 0.9571,
+          "stale@10": 0.1044,
+          "top1_current_rate": 0.8843,
+          "top1_outdated_rate": 0.1121
+        }
+      }
+    },
+    "+180d": {
+      "eligible_queries": 228,
+      "excluded": {
+        "CURRENT_INTERVAL_ENDS_BEFORE_OFFSET": 9,
+        "BEYOND_OBSERVATION_WINDOW": 63
+      },
+      "mean_pool_overlap_with_original_top50": 0.5704,
+      "reretrieval": {
+        "bm25": {
+          "queries": 228,
+          "recall@50": 1.0,
+          "mrr@10": 0.6944,
+          "ndcg@10": 0.7744,
+          "stale@10": 0.1018,
+          "top1_current_rate": 0.3904,
+          "top1_outdated_rate": 0.6053
+        },
+        "recency_only": {
+          "queries": 228,
+          "recall@50": 1.0,
+          "mrr@10": 0.3303,
+          "ndcg@10": 0.3583,
+          "stale@10": 0.0342,
+          "top1_current_rate": 0.2895,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 228,
+          "recall@50": 1.0,
+          "mrr@10": 0.9232,
+          "ndcg@10": 0.9433,
+          "stale@10": 0.1018,
+          "top1_current_rate": 0.8465,
+          "top1_outdated_rate": 0.1535
+        }
+      },
+      "pool_fixed_all_main": {
+        "bm25": {
+          "queries": 2362,
+          "mrr@10": 0.7022,
+          "ndcg@10": 0.78,
+          "stale@10": 0.1048,
+          "top1_current_rate": 0.4115,
+          "top1_outdated_rate": 0.5826
+        },
+        "recency_only": {
+          "queries": 2362,
+          "mrr@10": 0.3492,
+          "ndcg@10": 0.3991,
+          "stale@10": 0.0409,
+          "top1_current_rate": 0.2697,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 2362,
+          "mrr@10": 0.9371,
+          "ndcg@10": 0.9535,
+          "stale@10": 0.1048,
+          "top1_current_rate": 0.8747,
+          "top1_outdated_rate": 0.1207
+        }
+      }
+    },
+    "+365d": {
+      "eligible_queries": 146,
+      "excluded": {
+        "CURRENT_INTERVAL_ENDS_BEFORE_OFFSET": 22,
+        "BEYOND_OBSERVATION_WINDOW": 132
+      },
+      "mean_pool_overlap_with_original_top50": 0.5863,
+      "reretrieval": {
+        "bm25": {
+          "queries": 146,
+          "recall@50": 1.0,
+          "mrr@10": 0.6701,
+          "ndcg@10": 0.7564,
+          "stale@10": 0.1027,
+          "top1_current_rate": 0.3425,
+          "top1_outdated_rate": 0.6575
+        },
+        "recency_only": {
+          "queries": 146,
+          "recall@50": 1.0,
+          "mrr@10": 0.3204,
+          "ndcg@10": 0.3432,
+          "stale@10": 0.0308,
+          "top1_current_rate": 0.2877,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 146,
+          "recall@50": 1.0,
+          "mrr@10": 0.8938,
+          "ndcg@10": 0.9216,
+          "stale@10": 0.1027,
+          "top1_current_rate": 0.7877,
+          "top1_outdated_rate": 0.2123
+        }
+      },
+      "pool_fixed_all_main": {
+        "bm25": {
+          "queries": 1402,
+          "mrr@10": 0.6964,
+          "ndcg@10": 0.7758,
+          "stale@10": 0.1049,
+          "top1_current_rate": 0.4001,
+          "top1_outdated_rate": 0.5927
+        },
+        "recency_only": {
+          "queries": 1402,
+          "mrr@10": 0.3737,
+          "ndcg@10": 0.4345,
+          "stale@10": 0.0423,
+          "top1_current_rate": 0.2782,
+          "top1_outdated_rate": 0.0
+        },
+        "bm25_recency": {
+          "queries": 1402,
+          "mrr@10": 0.9044,
+          "ndcg@10": 0.9294,
+          "stale@10": 0.1049,
+          "top1_current_rate": 0.8096,
+          "top1_outdated_rate": 0.1833
+        }
+      }
+    }
+  }
+}

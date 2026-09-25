@@ -1,0 +1,276 @@
+{
+  "role": "PRE_REPLACEMENT_CONTROL",
+  "note": "negative control / data quality; not part of the main table; cross-encoder skipped (cache covers main pairs only)",
+  "checks": {
+    "queries": 3536,
+    "visibility_violations": 0,
+    "future_replacing_evidence_in_pool": 0,
+    "outdated_in_pool": 154,
+    "current_in_pool": 3536,
+    "censored_target": 372
+  },
+  "selected_recency": {
+    "tau_days": 30,
+    "lambda": 0.5
+  },
+  "methods": {
+    "bm25": {
+      "queries": 3536,
+      "recall@10": 1.0,
+      "recall@50": 1.0,
+      "mrr@10": 0.9882,
+      "ndcg@10": 0.9912,
+      "ndcg@10_graded": 0.9911,
+      "stale@10": 0.0047,
+      "retrieval_failure_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "outdated_same_chain_in_top50": 0.0436,
+      "outdated_same_chain_in_top10": 0.0436,
+      "current_and_outdated_in_top50": 0.0436,
+      "other_source_current_in_top50": 0.4381,
+      "current_and_outdated_in_top10": 0.0436,
+      "other_source_current_in_top10": 0.4375,
+      "top1_current_rate": 0.9771,
+      "top1_outdated_rate": 0.0184,
+      "current_outdated_score_tie_rate": 0.6429,
+      "current_outdated_mean_score_gap": 1.1854,
+      "current_outdated_both_in_list": 154,
+      "outdated_count@10_mean": 0.0469,
+      "first_outdated_rank_mean": 48.8487,
+      "first_outdated_rank_median": 51.0,
+      "first_outdated_beyond_top10_rate": 0.9564,
+      "first_outdated_not_in_pool_rate": 0.9564,
+      "outdated_suppression@10": 0.0,
+      "outdated_suppression@10_queries": 154,
+      "current_preservation@10": 1.0,
+      "current_preservation@10_queries": 3536,
+      "current_at1_and_no_stale@10": 0.9519,
+      "by_split": {
+        "dev": {
+          "queries": 312,
+          "recall@50": 1.0,
+          "mrr@10": 0.9866,
+          "ndcg@10": 0.9901,
+          "stale@10": 0.0054,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9744,
+          "top1_outdated_rate": 0.016
+        },
+        "test": {
+          "queries": 1506,
+          "recall@50": 1.0,
+          "mrr@10": 0.9899,
+          "ndcg@10": 0.9925,
+          "stale@10": 0.0048,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9807,
+          "top1_outdated_rate": 0.0159
+        },
+        "train": {
+          "queries": 1718,
+          "recall@50": 1.0,
+          "mrr@10": 0.9869,
+          "ndcg@10": 0.9903,
+          "stale@10": 0.0045,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9744,
+          "top1_outdated_rate": 0.021
+        }
+      },
+      "by_censored": {
+        "False": {
+          "queries": 3164,
+          "recall@50": 1.0,
+          "mrr@10": 0.9868,
+          "ndcg@10": 0.9902,
+          "stale@10": 0.0052,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9744,
+          "top1_outdated_rate": 0.0205
+        },
+        "True": {
+          "queries": 372,
+          "recall@50": 1.0,
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "stale@10": 0.0,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 1.0,
+          "top1_outdated_rate": 0.0
+        }
+      }
+    },
+    "recency_only": {
+      "queries": 3536,
+      "recall@10": 1.0,
+      "recall@50": 1.0,
+      "mrr@10": 0.3795,
+      "ndcg@10": 0.4305,
+      "ndcg@10_graded": 0.4526,
+      "stale@10": 0.0026,
+      "retrieval_failure_rate": 0.0,
+      "ranking_failure_rate": 0.405,
+      "outdated_same_chain_in_top50": 0.0436,
+      "outdated_same_chain_in_top10": 0.024,
+      "current_and_outdated_in_top50": 0.0436,
+      "other_source_current_in_top50": 0.4381,
+      "current_and_outdated_in_top10": 0.024,
+      "other_source_current_in_top10": 0.2712,
+      "top1_current_rate": 0.2899,
+      "top1_outdated_rate": 0.0,
+      "current_outdated_score_tie_rate": 0.0,
+      "current_outdated_mean_score_gap": 45.1286,
+      "current_outdated_both_in_list": 154,
+      "outdated_count@10_mean": 0.0257,
+      "first_outdated_rank_mean": 49.5354,
+      "first_outdated_rank_median": 51.0,
+      "first_outdated_beyond_top10_rate": 0.976,
+      "first_outdated_not_in_pool_rate": 0.9564,
+      "outdated_suppression@10": 0.4513,
+      "outdated_suppression@10_queries": 154,
+      "current_preservation@10": 0.595,
+      "current_preservation@10_queries": 3536,
+      "current_at1_and_no_stale@10": 0.2738,
+      "by_split": {
+        "dev": {
+          "queries": 312,
+          "recall@50": 1.0,
+          "mrr@10": 0.3468,
+          "ndcg@10": 0.3958,
+          "stale@10": 0.0019,
+          "ranking_failure_rate": 0.4455,
+          "top1_current_rate": 0.266,
+          "top1_outdated_rate": 0.0
+        },
+        "test": {
+          "queries": 1506,
+          "recall@50": 1.0,
+          "mrr@10": 0.3776,
+          "ndcg@10": 0.4322,
+          "stale@10": 0.0033,
+          "ranking_failure_rate": 0.3918,
+          "top1_current_rate": 0.2782,
+          "top1_outdated_rate": 0.0
+        },
+        "train": {
+          "queries": 1718,
+          "recall@50": 1.0,
+          "mrr@10": 0.3871,
+          "ndcg@10": 0.4354,
+          "stale@10": 0.0021,
+          "ranking_failure_rate": 0.4092,
+          "top1_current_rate": 0.3044,
+          "top1_outdated_rate": 0.0
+        }
+      },
+      "by_censored": {
+        "False": {
+          "queries": 3164,
+          "recall@50": 1.0,
+          "mrr@10": 0.4228,
+          "ndcg@10": 0.4786,
+          "stale@10": 0.0029,
+          "ranking_failure_rate": 0.3417,
+          "top1_current_rate": 0.3236,
+          "top1_outdated_rate": 0.0
+        },
+        "True": {
+          "queries": 372,
+          "recall@50": 1.0,
+          "mrr@10": 0.0119,
+          "ndcg@10": 0.0219,
+          "stale@10": 0.0,
+          "ranking_failure_rate": 0.9435,
+          "top1_current_rate": 0.0027,
+          "top1_outdated_rate": 0.0
+        }
+      }
+    },
+    "bm25_recency": {
+      "queries": 3536,
+      "recall@10": 1.0,
+      "recall@50": 1.0,
+      "mrr@10": 0.997,
+      "ndcg@10": 0.9978,
+      "ndcg@10_graded": 0.9963,
+      "stale@10": 0.0047,
+      "retrieval_failure_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "outdated_same_chain_in_top50": 0.0436,
+      "outdated_same_chain_in_top10": 0.0436,
+      "current_and_outdated_in_top50": 0.0436,
+      "other_source_current_in_top50": 0.4381,
+      "current_and_outdated_in_top10": 0.0436,
+      "other_source_current_in_top10": 0.4355,
+      "top1_current_rate": 0.9941,
+      "top1_outdated_rate": 0.0006,
+      "current_outdated_score_tie_rate": 0.0,
+      "current_outdated_mean_score_gap": 0.2066,
+      "current_outdated_both_in_list": 154,
+      "outdated_count@10_mean": 0.0469,
+      "first_outdated_rank_mean": 48.8722,
+      "first_outdated_rank_median": 51.0,
+      "first_outdated_beyond_top10_rate": 0.9564,
+      "first_outdated_not_in_pool_rate": 0.9564,
+      "outdated_suppression@10": 0.0,
+      "outdated_suppression@10_queries": 154,
+      "current_preservation@10": 1.0,
+      "current_preservation@10_queries": 3536,
+      "current_at1_and_no_stale@10": 0.9511,
+      "by_split": {
+        "dev": {
+          "queries": 312,
+          "recall@50": 1.0,
+          "mrr@10": 0.9936,
+          "ndcg@10": 0.9953,
+          "stale@10": 0.0054,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9872,
+          "top1_outdated_rate": 0.0
+        },
+        "test": {
+          "queries": 1506,
+          "recall@50": 1.0,
+          "mrr@10": 0.9983,
+          "ndcg@10": 0.9988,
+          "stale@10": 0.0048,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9967,
+          "top1_outdated_rate": 0.0
+        },
+        "train": {
+          "queries": 1718,
+          "recall@50": 1.0,
+          "mrr@10": 0.9965,
+          "ndcg@10": 0.9974,
+          "stale@10": 0.0045,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.993,
+          "top1_outdated_rate": 0.0012
+        }
+      },
+      "by_censored": {
+        "False": {
+          "queries": 3164,
+          "recall@50": 1.0,
+          "mrr@10": 0.9972,
+          "ndcg@10": 0.9979,
+          "stale@10": 0.0052,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9943,
+          "top1_outdated_rate": 0.0006
+        },
+        "True": {
+          "queries": 372,
+          "recall@50": 1.0,
+          "mrr@10": 0.996,
+          "ndcg@10": 0.997,
+          "stale@10": 0.0,
+          "ranking_failure_rate": 0.0,
+          "top1_current_rate": 0.9919,
+          "top1_outdated_rate": 0.0
+        }
+      }
+    }
+  }
+}

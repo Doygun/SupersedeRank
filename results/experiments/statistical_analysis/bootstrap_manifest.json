@@ -1,0 +1,62 @@
+{
+  "config_hash": "9307ce67a7fb1b5d247efbce0e4ea4b0c162ada3200edec4b64abb274bdd9a4f",
+  "population": {
+    "split": "test",
+    "queries": 1506,
+    "clusters_cve": 1356,
+    "source": "results/experiments/chronorank_rule_target/per_query.json"
+  },
+  "bootstrap": {
+    "unit": "cve_id",
+    "replicates": 10000,
+    "seed": 20260924,
+    "ci_method": "percentile",
+    "ci_level": 0.95,
+    "shared_replicates": true,
+    "draws_sha256": "6a1b308b0a9c8229c7bac3d2406956b8acea7144c361f67ce15aed66079209ee",
+    "p_value": "two-sided bootstrap p = 2 * min(P(diff <= 0), P(diff >= 0)), floored at 1 / replicates",
+    "estimator": "ratio of summed defined values to defined counts over sampled clusters"
+  },
+  "methods": [
+    "bm25",
+    "bm25_recency",
+    "cross_encoder",
+    "rule_target",
+    "rule_corpus",
+    "rule_direct_upper_bound",
+    "oracle_temporal"
+  ],
+  "metrics": [
+    "mrr@10",
+    "ndcg@10",
+    "ndcg@10_graded",
+    "stale@10",
+    "outdated_suppression@10",
+    "current_preservation@10",
+    "current_at1_and_no_stale@10"
+  ],
+  "primary_metrics": [
+    "current_at1_and_no_stale@10",
+    "stale@10",
+    "ndcg@10_graded"
+  ],
+  "secondary_metrics": [
+    "mrr@10",
+    "ndcg@10",
+    "outdated_suppression@10",
+    "current_preservation@10"
+  ],
+  "comparisons": {
+    "reference": "rule_target",
+    "against": [
+      "bm25",
+      "bm25_recency",
+      "cross_encoder",
+      "rule_corpus"
+    ]
+  },
+  "holm_family": "4 comparisons x 3 primary metrics = 12 tests; Holm step-down at alpha 0.05 applied within this family",
+  "alpha": 0.05,
+  "undefined_policy": "outdated_suppression@10 / current_preservation@10 are undefined for queries whose BM25 top-10 has no OUTDATED / CURRENT; such queries are excluded from that metric's mean and from its paired difference",
+  "seconds": 3.1
+}

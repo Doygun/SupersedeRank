@@ -1,0 +1,266 @@
+{
+  "base_query": {
+    "atomic_events_total": 3649,
+    "by_version": {
+      "dev": {
+        "2.0": 7,
+        "3.0": 4,
+        "3.1": 281,
+        "4.0": 20
+      },
+      "future_event": {
+        "3.1": 18,
+        "4.0": 1
+      },
+      "test": {
+        "2.0": 8,
+        "3.0": 2,
+        "3.1": 1348,
+        "4.0": 148
+      },
+      "train": {
+        "2.0": 53,
+        "3.0": 11,
+        "3.1": 1530,
+        "4.0": 125
+      }
+    },
+    "counts": {
+      "dev": {
+        "cves": 273,
+        "events": 312
+      },
+      "future_event": {
+        "cves": 18,
+        "events": 19
+      },
+      "test": {
+        "cves": 1356,
+        "events": 1506
+      },
+      "train": {
+        "cves": 1533,
+        "events": 1719
+      }
+    },
+    "derived_from": "atomic_replacement_manifest (same CVE assignment; events filtered, CVEs never re-split)",
+    "eligibility_rule": "at least one changed BASE metric between the replaced and replacing vector",
+    "excluded_by_detail": {
+      "ENVIRONMENTAL_ONLY_CHANGE": 7,
+      "NO_BASE_COMPONENT_CHANGE": 1,
+      "SUPPLEMENTAL_ONLY_CHANGE": 15,
+      "THREAT_ONLY_CHANGE": 70
+    },
+    "excluded_by_split": {
+      "dev": 6,
+      "test": 38,
+      "train": 49
+    },
+    "excluded_events": 93,
+    "main_split_events": 3537,
+    "manifest_kind": "base_query_eligible_manifest",
+    "threat_only_atomic_events": 70
+  },
+  "config": {
+    "cohorts": {
+      "main_test_cohort": "future_entity"
+    },
+    "dev": {
+      "fraction_of_train_cves": 0.15,
+      "seed": 20260915
+    },
+    "main_event_filter": {
+      "exclude_ambiguous_chains": true,
+      "replacement_type": "STRICT_SAME_CHANGE"
+    },
+    "periods": {
+      "test_years": [
+        2026
+      ],
+      "train_years": [
+        2024,
+        2025
+      ]
+    }
+  },
+  "cves_corpus_only": 161150,
+  "cves_total_in_timeline": 164399,
+  "cves_with_main_events": 3249,
+  "held_out_cohorts": {
+    "future_event": {
+      "cves": 18,
+      "events": 19
+    }
+  },
+  "main_events_total": 3649,
+  "period_membership": {
+    "future_entity_cves": 1392,
+    "overlap_cves": 18,
+    "test_period_cves": 1410,
+    "train_period_cves": 1857
+  },
+  "sanity": {
+    "events_assigned": 3649,
+    "events_unassigned": 0
+  },
+  "scope": {
+    "candidate_strict_same_change": null,
+    "future_event_events": 19,
+    "main_split_events": 3630,
+    "timeline_eligible_events": 3649,
+    "timeline_excluded_events": 2
+  },
+  "side_files": {
+    "cross_event_sensitivity": 131,
+    "same_value_readds": 7672
+  },
+  "split_cves": {
+    "dev": 279,
+    "test": 1392,
+    "train": 1578
+  },
+  "splits": {
+    "dev": {
+      "by_source_key": {
+        "134c704f-9b21-4f2e-91b3-4a467353bcc0": 95,
+        "NVD": 79,
+        "cna@vuldb.com": 18,
+        "cve-coordination@incibe.es": 7,
+        "disclosure@vulncheck.com": 8,
+        "secalert@redhat.com": 18,
+        "secure@microsoft.com": 8,
+        "sirt@juniper.net": 7
+      },
+      "by_version": {
+        "2.0": 7,
+        "3.0": 4,
+        "3.1": 281,
+        "4.0": 26
+      },
+      "by_year": {
+        "2024": 129,
+        "2025": 189
+      },
+      "censored_old_events": 37,
+      "censored_ratio": 0.1164,
+      "chains": 303,
+      "cves": 279,
+      "events": 318,
+      "nvd_only_events": 79
+    },
+    "future_event": {
+      "by_source_key": {
+        "134c704f-9b21-4f2e-91b3-4a467353bcc0": 9,
+        "NVD": 4,
+        "cve-coordination@incibe.es": 1,
+        "secalert@redhat.com": 5
+      },
+      "by_version": {
+        "3.1": 18,
+        "4.0": 1
+      },
+      "by_year": {
+        "2026": 19
+      },
+      "censored_old_events": 0,
+      "censored_ratio": 0.0,
+      "chains": 19,
+      "cves": 18,
+      "events": 19,
+      "nvd_only_events": 4
+    },
+    "test": {
+      "by_source_key": {
+        "0b0ca135-0b70-47e7-9f44-1890c2a1c46c": 27,
+        "134c704f-9b21-4f2e-91b3-4a467353bcc0": 477,
+        "NVD": 175,
+        "audit@patchstack.com": 126,
+        "cna@vuldb.com": 26,
+        "disclosure@vulncheck.com": 323,
+        "secalert@redhat.com": 62,
+        "security@wordfence.com": 94
+      },
+      "by_version": {
+        "2.0": 8,
+        "3.0": 2,
+        "3.1": 1348,
+        "4.0": 186
+      },
+      "by_year": {
+        "2026": 1544
+      },
+      "censored_old_events": 108,
+      "censored_ratio": 0.0699,
+      "chains": 1474,
+      "cves": 1392,
+      "events": 1544,
+      "nvd_only_events": 175
+    },
+    "train": {
+      "by_source_key": {
+        "134c704f-9b21-4f2e-91b3-4a467353bcc0": 519,
+        "NVD": 441,
+        "cna@vuldb.com": 128,
+        "disclosure@vulncheck.com": 49,
+        "psirt@adobe.com": 46,
+        "secalert@redhat.com": 85,
+        "secure@microsoft.com": 62,
+        "security-advisories@github.com": 42
+      },
+      "by_version": {
+        "2.0": 53,
+        "3.0": 11,
+        "3.1": 1530,
+        "4.0": 174
+      },
+      "by_year": {
+        "2024": 651,
+        "2025": 1117
+      },
+      "censored_old_events": 227,
+      "censored_ratio": 0.1284,
+      "chains": 1695,
+      "cves": 1578,
+      "events": 1768,
+      "nvd_only_events": 441
+    }
+  },
+  "timeline_excluded_events": [
+    {
+      "ambiguity_type": [
+        "REMOVAL_OF_UNOBSERVED_VALUE_AFTER_OTHER_EVENTS"
+      ],
+      "change_id": "76381203-6AB4-41DB-B36A-907C740E352F",
+      "counted_in_candidate_regression": true,
+      "counted_in_timeline_eligible": false,
+      "cve_id": "CVE-2024-0584",
+      "cvss_version": "3.1",
+      "event_time": "2024-01-21T10:15:08.337000+00:00",
+      "exclusion_reason": "TIMELINE_CHAIN_AMBIGUITY",
+      "new_evidence_id": "CVE-2024-0584|3.1|secalert@redhat.com|2",
+      "old_evidence_id": "CVE-2024-0584|3.1|secalert@redhat.com|1",
+      "source_file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+      "source_identifier_raw": "secalert@redhat.com",
+      "source_key": "secalert@redhat.com",
+      "why_not_replayable": "A value never observed as Added was removed after other events; the inference rule for pre-window values applies only to a chain's first observed event."
+    },
+    {
+      "ambiguity_type": [
+        "REMOVAL_OF_INACTIVE_VALUE"
+      ],
+      "change_id": "C1E28887-2855-442B-9570-38C7906FF6F0",
+      "counted_in_candidate_regression": true,
+      "counted_in_timeline_eligible": false,
+      "cve_id": "CVE-2024-58377",
+      "cvss_version": "3.1",
+      "event_time": "2026-08-28T20:17:20.467000+00:00",
+      "exclusion_reason": "TIMELINE_CHAIN_AMBIGUITY",
+      "new_evidence_id": "CVE-2024-58377|3.1|disclosure@vulncheck.com|2",
+      "old_evidence_id": "CVE-2024-58377|3.1|disclosure@vulncheck.com|1",
+      "source_file": "data\\raw\\nvd\\history\\20260818_20260914_0010000.json",
+      "source_identifier_raw": "disclosure@vulncheck.com",
+      "source_key": "disclosure@vulncheck.com",
+      "why_not_replayable": "A Removed event referenced a value that was not active in the chain at that time (e.g. one change removed several assessors' entries), so the chain state could not be replayed reliably."
+    }
+  ]
+}

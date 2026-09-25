@@ -1,0 +1,59 @@
+{
+  "config": {
+    "time_field": "observed_from",
+    "age_name": "observed_age_days",
+    "censoring_note": "left-censored evidence (valid_from_censored=true) carries observed_from = window start; its observed age is a lower bound",
+    "forbidden_fields": [
+      "label",
+      "valid_until",
+      "replaced_by_evidence_id",
+      "replacement_event_id",
+      "replacement_type",
+      "timeline_status",
+      "termination_event_id"
+    ],
+    "diagnostic": {
+      "name": "recency_only",
+      "rule": "sort the 50 candidates by observed_from descending (newest first); ties by the hash"
+    },
+    "main": {
+      "name": "bm25_recency",
+      "formula": "score = minmax_bm25(e, q) + lambda * exp(-observed_age_days / tau)",
+      "bm25_normalization": "min-max within the 50 candidates of the query; constant list -> 0",
+      "grid": {
+        "tau_days": [
+          30,
+          180,
+          365
+        ],
+        "lambda": [
+          0.1,
+          0.3,
+          0.5
+        ]
+      },
+      "selection": {
+        "split": "dev",
+        "objective": "ndcg@10",
+        "tie_breaker": "stale@10",
+        "note": "9 combinations only; no wider search"
+      }
+    },
+    "output_dir": "results/experiments/recency"
+  },
+  "selected": {
+    "tau_days": 30,
+    "lambda": 0.5
+  },
+  "selection_split": "dev",
+  "formula": "score = minmax_bm25(e, q) + lambda * exp(-observed_age_days / tau)",
+  "sign_note": "bonus decays with observed age (age penalty); the draft's -exp form would penalise recent evidence",
+  "time_field": "observed_from",
+  "age_name": "observed_age_days",
+  "censoring_note": "left-censored evidence (valid_from_censored=true) carries observed_from = window start; its observed age is a lower bound",
+  "tie_break_seed": 20260918,
+  "candidate_fields_read": [
+    "evidence_id",
+    "observed_from"
+  ]
+}

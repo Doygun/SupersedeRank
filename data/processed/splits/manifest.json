@@ -1,0 +1,41 @@
+{
+  "split_unit": "cve_id",
+  "period_membership": "time of main-set STRICT_SAME_CHANGE replacement events in non-ambiguous chains",
+  "main_test_cohort": "future_entity",
+  "secondary_cohort": "future_event (held out; secondary analysis only)",
+  "dev": {
+    "fraction_of_train_cves": 0.15,
+    "seed": 20260915,
+    "sampling": "random.Random(seed).sample over the sorted list of train-period CVEs",
+    "stratification": "none",
+    "n_dev_cves": 279,
+    "dev_cve_sha256": "d4a1c85db822180a60fc00aab3da6d4d43cd2ea673006cd0107b235e376e23f6"
+  },
+  "test_usage_policy": "never used for model, feature, threshold or hyperparameter selection",
+  "counts": {
+    "train": {
+      "cves": 1578,
+      "events": 1768
+    },
+    "dev": {
+      "cves": 279,
+      "events": 318
+    },
+    "test": {
+      "cves": 1392,
+      "events": 1544
+    },
+    "future_event": {
+      "cves": 18,
+      "events": 19
+    }
+  },
+  "scope": {
+    "candidate_strict_same_change": null,
+    "timeline_eligible_events": 3649,
+    "main_split_events": 3630,
+    "future_event_events": 19,
+    "timeline_excluded_events": 2
+  },
+  "manifest_kind": "atomic_replacement_manifest"
+}

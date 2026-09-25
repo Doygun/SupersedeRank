@@ -1,0 +1,65 @@
+{
+  "model": {
+    "name": "BAAI/bge-base-en-v1.5",
+    "revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "local_dir": "C:\\Users\\CoDeM\\.cache\\huggingface\\hub\\models--BAAI--bge-base-en-v1.5\\snapshots\\a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "file_sha256": {
+      "config.json": "bc00af31a4a31b74040d73370aa83b62da34c90b75eb77bfa7db039d90abd591",
+      "model.safetensors": "c7c1988aae201f80cf91a5dbbd5866409503b89dcaba877ca6dba7dd0a5167d7",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"
+    },
+    "hidden_size": 768,
+    "pooling": "mean",
+    "normalize": "l2",
+    "similarity": "inner_product",
+    "max_length": 512,
+    "query_prefix": "Represent this sentence for searching relevant passages:",
+    "doc_prefix": "",
+    "dtype": "float32"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.0",
+    "cpu_count": 24,
+    "ram_gb": 31.7,
+    "torch": "2.14.0+cu126",
+    "cuda_available": true,
+    "torch_cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 3070 Ti",
+    "vram_gb": 8.0,
+    "gpu_count": 1,
+    "transformers": "5.17.0"
+  },
+  "device": "cuda",
+  "seed": 20260919,
+  "n_docs": 265900,
+  "embedding_shape": [
+    265900,
+    768
+  ],
+  "embedding_dtype": "float32",
+  "embedding_file": "data\\processed\\retrieval\\dense_bge_base\\embeddings.npy",
+  "embedding_bytes": 816844928,
+  "embedding_sha256": "416382c3c369269bf849686f09c2323874734e1c23a3f0567c4c248237658daf",
+  "ids_file": "data\\processed\\retrieval\\dense_bge_base\\ids.json",
+  "doc_stats": {
+    "texts": 265900,
+    "truncated": 0,
+    "truncation_rate": 0.0,
+    "max_tokens": 122,
+    "mean_tokens": 89.7,
+    "batch_size_used": 128,
+    "oom_events": []
+  },
+  "nan_or_inf": 0,
+  "norm_min_max": [
+    0.9999998807907104,
+    1.0000001192092896
+  ],
+  "embed_seconds": 473.1,
+  "peak_gpu_memory_gb": 0.957,
+  "created_utc": "2026-09-15T09:27:41Z"
+}

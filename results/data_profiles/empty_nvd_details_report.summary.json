@@ -1,0 +1,16 @@
+{
+  "event_counts": {
+    "DETAILS_EMPTY_LIST\tCVE Modified": 255063,
+    "DETAILS_EMPTY_LIST\tCVE Rejected": 4646,
+    "DETAILS_EMPTY_LIST\tCVE Status Change": 94219,
+    "DETAILS_EMPTY_LIST\tCVE Unrejected": 40,
+    "DETAILS_EMPTY_LIST\tModified Analysis": 1852,
+    "DETAILS_EMPTY_LIST\tNew CVE Received": 54,
+    "DETAILS_EMPTY_LIST\tReanalysis": 205
+  },
+  "file_count": 322,
+  "reason_counts": {
+    "DETAILS_EMPTY_LIST": 356079
+  },
+  "total_changes": 1590753
+}

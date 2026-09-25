@@ -1,0 +1,40 @@
+\begin{table}
+\centering
+\caption{Paired method differences for all reported metrics.}
+\label{tab:significance_full}
+\resizebox{0.84\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Comparison & Metric & Family & $\Delta$ & 95\% CI & $p$ & Holm $p$ & W/L/T \\
+\midrule
+vs BM25 & Cur@1$\wedge$NoStale@10 & primary & 0.9980 & [0.9954, 1.0000] & <0.0001 & 0.0012 & 1503/0/3 \\
+vs BM25 & Stale@10 & primary & -0.1048 & [-0.1060, -0.1036] & <0.0001 & 0.0012 & 1506/0/0 \\
+vs BM25 & gNDCG@10 & primary & 0.2025 & [0.1943, 0.2105] & <0.0001 & 0.0012 & 1181/0/325 \\
+vs BM25 & MRR@10 & secondary & 0.2778 & [0.2650, 0.2903] & <0.0001 & -- & 829/0/677 \\
+vs BM25 & NDCG@10 & secondary & 0.2052 & [0.1958, 0.2144] & <0.0001 & -- & 829/0/677 \\
+vs BM25 & OutSupp@10 & secondary & 1.0000 & [1.0000, 1.0000] & <0.0001 & -- & 1506/0/0 \\
+vs BM25 & CurPres@10 & secondary & 0.0000 & [0.0000, 0.0000] & 1.0000 & -- & 0/0/1506 \\
+vs BM25+Recency & Cur@1$\wedge$NoStale@10 & primary & 0.9980 & [0.9954, 1.0000] & <0.0001 & 0.0012 & 1503/0/3 \\
+vs BM25+Recency & Stale@10 & primary & -0.1048 & [-0.1060, -0.1036] & <0.0001 & 0.0012 & 1506/0/0 \\
+vs BM25+Recency & gNDCG@10 & primary & 0.0348 & [0.0317, 0.0381] & <0.0001 & 0.0012 & 728/20/758 \\
+vs BM25+Recency & MRR@10 & secondary & 0.0113 & [0.0075, 0.0154] & <0.0001 & -- & 36/2/1468 \\
+vs BM25+Recency & NDCG@10 & secondary & 0.0083 & [0.0056, 0.0114] & <0.0001 & -- & 36/2/1468 \\
+vs BM25+Recency & OutSupp@10 & secondary & 1.0000 & [1.0000, 1.0000] & <0.0001 & -- & 1506/0/0 \\
+vs BM25+Recency & CurPres@10 & secondary & 0.0000 & [0.0000, 0.0000] & 1.0000 & -- & 0/0/1506 \\
+vs Cross-encoder & Cur@1$\wedge$NoStale@10 & primary & 0.9190 & [0.9049, 0.9331] & <0.0001 & 0.0012 & 1384/0/122 \\
+vs Cross-encoder & Stale@10 & primary & -0.0631 & [-0.0659, -0.0602] & <0.0001 & 0.0012 & 910/0/596 \\
+vs Cross-encoder & gNDCG@10 & primary & 0.4756 & [0.4570, 0.4950] & <0.0001 & 0.0012 & 1200/3/303 \\
+vs Cross-encoder & MRR@10 & secondary & 0.4937 & [0.4724, 0.5159] & <0.0001 & -- & 942/1/563 \\
+vs Cross-encoder & NDCG@10 & secondary & 0.4290 & [0.4089, 0.4498] & <0.0001 & -- & 942/1/563 \\
+vs Cross-encoder & OutSupp@10 & secondary & 0.6004 & [0.5746, 0.6259] & <0.0001 & -- & 910/0/596 \\
+vs Cross-encoder & CurPres@10 & secondary & 0.2251 & [0.2038, 0.2472] & <0.0001 & -- & 339/0/1167 \\
+vs ChronoRank-Rule-Corpus & Cur@1$\wedge$NoStale@10 & primary & 0.1640 & [0.1450, 0.1831] & <0.0001 & 0.0012 & 248/1/1257 \\
+vs ChronoRank-Rule-Corpus & Stale@10 & primary & -0.0167 & [-0.0187, -0.0148] & <0.0001 & 0.0012 & 248/0/1258 \\
+vs ChronoRank-Rule-Corpus & gNDCG@10 & primary & -0.0036 & [-0.0046, -0.0026] & <0.0001 & 0.0012 & 0/106/1400 \\
+vs ChronoRank-Rule-Corpus & MRR@10 & secondary & -0.0003 & [-0.0010, 0.0000] & 0.7290 & -- & 0/1/1505 \\
+vs ChronoRank-Rule-Corpus & NDCG@10 & secondary & -0.0002 & [-0.0007, 0.0000] & 0.7290 & -- & 0/1/1505 \\
+vs ChronoRank-Rule-Corpus & OutSupp@10 & secondary & 0.1647 & [0.1456, 0.1837] & <0.0001 & -- & 248/0/1258 \\
+vs ChronoRank-Rule-Corpus & CurPres@10 & secondary & 0.0000 & [0.0000, 0.0000] & 1.0000 & -- & 0/0/1506 \\
+\bottomrule
+\end{tabular}}
+\end{table}

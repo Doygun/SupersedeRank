@@ -1,0 +1,142 @@
+Islenen dosya: 25/322
+Islenen dosya: 50/322
+Islenen dosya: 75/322
+Islenen dosya: 100/322
+Islenen dosya: 125/322
+Islenen dosya: 150/322
+Islenen dosya: 175/322
+Islenen dosya: 200/322
+Islenen dosya: 225/322
+Islenen dosya: 250/322
+Islenen dosya: 275/322
+Islenen dosya: 300/322
+Islenen dosya: 322/322
+
+Toplam change: 1,590,753
+
+BOS SIGNATURE NEDENLERI
+--------------------------------------------------------------------------------
+DETAILS_EMPTY_LIST	356,079
+
+EVENT NAME DAGILIMI
+--------------------------------------------------------------------------------
+DETAILS_EMPTY_LIST	CVE Modified	255,063
+DETAILS_EMPTY_LIST	CVE Status Change	94,219
+DETAILS_EMPTY_LIST	CVE Rejected	4,646
+DETAILS_EMPTY_LIST	Modified Analysis	1,852
+DETAILS_EMPTY_LIST	Reanalysis	205
+DETAILS_EMPTY_LIST	New CVE Received	54
+DETAILS_EMPTY_LIST	CVE Unrejected	40
+
+ORNEKLER
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45122",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "03AAC8CF-A5E6-4719-9CED-3AA7BD3EE0F2",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:08.703",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45123",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "FC4DBE10-9618-4EAF-ABF0-B5935EBA466F",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.017",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45124",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "39A79991-7316-4C67-955C-BC81C5B80FA5",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.090",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45125",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "EF2EF04B-74B7-4CCA-8AC1-FB7BF76B3659",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.163",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45126",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "5B4E1CD6-8873-445E-A606-DE92672A0E46",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.237",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-45127",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "409A987E-5F35-4B99-A280-724CC8E29F72",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.313",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-48686",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "736754F8-DF8B-4FAF-A79D-6EDBFDFC1E04",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.390",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-48688",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "D48B78CD-4223-4414-B380-6307B155FF13",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.473",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-48690",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "314C4D26-CD69-43D0-B572-8814C8B1EB2E",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T15:15:09.547",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------
+{
+  "file": "data\\raw\\nvd\\history\\20240101_20240429_0000000.json",
+  "cveId": "CVE-2023-44485",
+  "eventName": "CVE Rejected",
+  "cveChangeId": "30709C21-25EF-4196-9861-BA7807AA7407",
+  "sourceIdentifier": "help@fluidattacks.com",
+  "created": "2024-01-02T16:15:11.810",
+  "reason": "DETAILS_EMPTY_LIST",
+  "details": []
+}
+--------------------------------------------------------------------------------

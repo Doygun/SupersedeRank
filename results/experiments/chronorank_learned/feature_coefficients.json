@@ -1,0 +1,147 @@
+{
+  "learned_full": {
+    "C": 0.1,
+    "intercept": 0.916463,
+    "coefficients_standardised_inputs": {
+      "normalized_bm25_score": -0.08776,
+      "bm25_rank": -0.139233,
+      "cross_encoder_score": 0.169736,
+      "observed_age_days": -0.31304,
+      "newer_visible_same_chain_count": -2.538884,
+      "days_to_newest_visible_same_chain": -0.319426,
+      "chain_position_observed": 1.247296,
+      "newer_different_base_vector_exists": -1.384946,
+      "valid_from_censored": -0.057621,
+      "same_cve": 0.004789,
+      "same_source_key": 0.004789,
+      "same_cvss_version": 0.004789,
+      "base_vector_differs_from_chain_newest": -1.392254,
+      "template_base_vector": -0.006827,
+      "template_cvssb_score": -0.011734,
+      "template_base_severity": 0.082653,
+      "template_combined": -0.059303,
+      "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0": 0.071475,
+      "source_group_NVD": 0.044145,
+      "source_group_cna@vuldb.com": 0.006486,
+      "source_group_disclosure@vulncheck.com": 0.001462,
+      "source_group_secalert@redhat.com": -0.061588,
+      "source_group_secure@microsoft.com": -0.113815
+    },
+    "most_negative_toward_outdated": [
+      [
+        "newer_visible_same_chain_count",
+        -2.538884
+      ],
+      [
+        "base_vector_differs_from_chain_newest",
+        -1.392254
+      ],
+      [
+        "newer_different_base_vector_exists",
+        -1.384946
+      ],
+      [
+        "days_to_newest_visible_same_chain",
+        -0.319426
+      ],
+      [
+        "observed_age_days",
+        -0.31304
+      ]
+    ],
+    "most_positive_toward_current": [
+      [
+        "chain_position_observed",
+        1.247296
+      ],
+      [
+        "cross_encoder_score",
+        0.169736
+      ],
+      [
+        "template_base_severity",
+        0.082653
+      ],
+      [
+        "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0",
+        0.071475
+      ],
+      [
+        "source_group_NVD",
+        0.044145
+      ]
+    ]
+  },
+  "learned_no_rule_signal": {
+    "C": 0.1,
+    "intercept": 0.116477,
+    "coefficients_standardised_inputs": {
+      "normalized_bm25_score": -0.09302,
+      "bm25_rank": -0.154031,
+      "cross_encoder_score": 0.181368,
+      "observed_age_days": -0.355442,
+      "newer_visible_same_chain_count": -2.955546,
+      "days_to_newest_visible_same_chain": -0.362304,
+      "chain_position_observed": 1.327431,
+      "valid_from_censored": -0.06168,
+      "same_cve": 0.041002,
+      "same_source_key": 0.041002,
+      "same_cvss_version": 0.041002,
+      "base_vector_differs_from_chain_newest": -1.596118,
+      "template_base_vector": 0.003744,
+      "template_cvssb_score": -0.003721,
+      "template_base_severity": 0.105815,
+      "template_combined": -0.064835,
+      "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0": 0.095833,
+      "source_group_NVD": 0.068143,
+      "source_group_cna@vuldb.com": 0.010993,
+      "source_group_disclosure@vulncheck.com": 0.002066,
+      "source_group_secalert@redhat.com": -0.073264,
+      "source_group_secure@microsoft.com": -0.141145
+    },
+    "most_negative_toward_outdated": [
+      [
+        "newer_visible_same_chain_count",
+        -2.955546
+      ],
+      [
+        "base_vector_differs_from_chain_newest",
+        -1.596118
+      ],
+      [
+        "days_to_newest_visible_same_chain",
+        -0.362304
+      ],
+      [
+        "observed_age_days",
+        -0.355442
+      ],
+      [
+        "bm25_rank",
+        -0.154031
+      ]
+    ],
+    "most_positive_toward_current": [
+      [
+        "chain_position_observed",
+        1.327431
+      ],
+      [
+        "cross_encoder_score",
+        0.181368
+      ],
+      [
+        "template_base_severity",
+        0.105815
+      ],
+      [
+        "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0",
+        0.095833
+      ],
+      [
+        "source_group_NVD",
+        0.068143
+      ]
+    ]
+  }
+}

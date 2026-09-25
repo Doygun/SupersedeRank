@@ -1,0 +1,64 @@
+{
+  "query_family": "CURRENT_CVSS_BASE_ASSESSMENT",
+  "seed": 20260916,
+  "template_assignment": "seeded_uniform",
+  "query_time_rules": {
+    "post_replacement": {
+      "enabled": true,
+      "role": "POST_REPLACEMENT_MAIN",
+      "offset_days": 30,
+      "max_fraction_of_interval": 0.5,
+      "min_interval_seconds": 2
+    },
+    "pre_replacement_control": {
+      "enabled": true,
+      "role": "PRE_REPLACEMENT_CONTROL",
+      "offset_days": 30,
+      "max_fraction_of_interval": 0.5,
+      "min_interval_seconds": 2
+    }
+  },
+  "config_sha256": "d2751c40b13cbb5074ee9aae5011ac8fed4dfc307b281e8f64fd57558c1b818c",
+  "observation_window": {
+    "start": "2024-01-01T00:00:00+00:00",
+    "end": "2026-09-14T23:59:59+00:00"
+  },
+  "eligible_events": 3556,
+  "counts": {
+    "train": 3437,
+    "dev": 624,
+    "test": 3012,
+    "future_event": 38
+  },
+  "counts_by_role": {
+    "train": {
+      "POST_REPLACEMENT_MAIN": 1719,
+      "PRE_REPLACEMENT_CONTROL": 1718
+    },
+    "dev": {
+      "POST_REPLACEMENT_MAIN": 312,
+      "PRE_REPLACEMENT_CONTROL": 312
+    },
+    "test": {
+      "POST_REPLACEMENT_MAIN": 1506,
+      "PRE_REPLACEMENT_CONTROL": 1506
+    },
+    "future_event": {
+      "POST_REPLACEMENT_MAIN": 19,
+      "PRE_REPLACEMENT_CONTROL": 19
+    }
+  },
+  "counts_by_template": {
+    "base_severity": 1758,
+    "cvssb_score": 1872,
+    "combined": 1739,
+    "base_vector": 1742
+  },
+  "main_queries_total": 3537,
+  "control_queries_total": 3536,
+  "excluded": 1,
+  "excluded_by_reason": {
+    "TARGET_SCORE_UNAVAILABLE": 1
+  },
+  "test_usage_policy": "test/future_event queries are never used for model, template, threshold, feature or query-time offset selection"
+}

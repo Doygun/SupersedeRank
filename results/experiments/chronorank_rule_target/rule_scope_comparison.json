@@ -1,0 +1,111 @@
+{
+  "queries": 3537,
+  "same_list": 504,
+  "different_list": 3033,
+  "target_better_joint_or_stale": 284,
+  "corpus_better_joint_or_stale": 7,
+  "equal_joint_and_stale": 2742,
+  "target_better_graded_ndcg": 0,
+  "corpus_better_graded_ndcg": 318,
+  "equal_graded_ndcg": 2715,
+  "suppression": {
+    "target": {
+      "total": 3709,
+      "target_chain": 3709,
+      "non_target": 0,
+      "per_query": 1.0486
+    },
+    "corpus": {
+      "total": 50260,
+      "target_chain": 3709,
+      "non_target": 46551,
+      "per_query": 14.2098
+    }
+  },
+  "capacity_limitation_queries": {
+    "target": 0,
+    "corpus": 284
+  },
+  "current_loss": {
+    "target": 0,
+    "corpus": 0
+  },
+  "other_source_current_loss": {
+    "target": 0,
+    "corpus": 0
+  },
+  "graded_relevance_lost_from_top10": {
+    "target": 0,
+    "corpus": 0
+  },
+  "main_metrics": {
+    "rule_corpus": {
+      "mrr@10": 0.9986,
+      "ndcg@10": 0.999,
+      "ndcg@10_graded": 0.999,
+      "stale@10": 0.0082,
+      "outdated_suppression@10": 0.9191,
+      "current_preservation@10": 1.0,
+      "current_at1_and_no_stale@10": 0.9166,
+      "other_source_current_in_top10": 0.4987
+    },
+    "rule_target": {
+      "mrr@10": 0.9975,
+      "ndcg@10": 0.9981,
+      "ndcg@10_graded": 0.994,
+      "stale@10": 0.0001,
+      "outdated_suppression@10": 0.9994,
+      "current_preservation@10": 1.0,
+      "current_at1_and_no_stale@10": 0.9946,
+      "other_source_current_in_top10": 0.4987
+    }
+  },
+  "by_split": {
+    "rule_corpus": {
+      "train": {
+        "joint": 0.9791,
+        "stale@10": 0.0019,
+        "ndcg@10_graded": 0.999
+      },
+      "dev": {
+        "joint": 0.9712,
+        "stale@10": 0.0019,
+        "ndcg@10_graded": 0.9979
+      },
+      "test": {
+        "joint": 0.834,
+        "stale@10": 0.0167,
+        "ndcg@10_graded": 0.9993
+      }
+    },
+    "rule_target": {
+      "train": {
+        "joint": 0.9936,
+        "stale@10": 0.0001,
+        "ndcg@10_graded": 0.993
+      },
+      "dev": {
+        "joint": 0.984,
+        "stale@10": 0.0,
+        "ndcg@10_graded": 0.9914
+      },
+      "test": {
+        "joint": 0.998,
+        "stale@10": 0.0,
+        "ndcg@10_graded": 0.9957
+      }
+    }
+  },
+  "future_event": {
+    "rule_corpus": {
+      "joint": 0.8421,
+      "stale@10": 0.0263,
+      "mrr@10": 1.0
+    },
+    "rule_target": {
+      "joint": 1.0,
+      "stale@10": 0.0,
+      "mrr@10": 1.0
+    }
+  }
+}

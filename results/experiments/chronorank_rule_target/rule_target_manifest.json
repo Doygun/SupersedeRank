@@ -1,0 +1,26 @@
+{
+  "method": "ChronoRank-Rule-Target (RULE-INFERRED-TARGET-CHAIN-ONLY): parameter-free block ordering; the inferred-supersession signal is evaluated only for candidates in the query chain (cve_id, source_key, cvss_version); every other candidate keeps its BM25 position",
+  "signal": "newer visible same-chain witness with a different canonical Base vector; witness scope = main Base-query evidence minus cross-event ids (identical to Rule-Corpus)",
+  "corpus_variant": "ChronoRank-Rule-Corpus (RULE-INFERRED-CORPUS-WIDE) = src/rerank/rule_inferred.py, results/experiments/chronorank_rule (unchanged)",
+  "allowed_fields": [
+    "evidence_id",
+    "cve_id",
+    "source_key",
+    "cvss_version",
+    "observed_from",
+    "vector (Base part only)",
+    "valid_from_censored"
+  ],
+  "imports_label_package": false,
+  "witness_entries": 9005,
+  "cross_event_ids_excluded": 131,
+  "timing_seconds": {
+    "total": 8.4,
+    "rule_reranking_main_and_fe": 1.53
+  },
+  "dynamic_checks": {
+    "candidate_metadata_shuffled_identical": true,
+    "repeat_identical": true
+  },
+  "date": "2026-09-16"
+}

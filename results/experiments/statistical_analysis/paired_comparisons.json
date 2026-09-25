@@ -1,0 +1,527 @@
+{
+  "reference": "rule_target",
+  "comparisons": {
+    "bm25": {
+      "mrr@10": {
+        "mean_diff_ref_minus_other": 0.2778,
+        "ci95": [
+          0.265,
+          0.2903
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 829,
+        "losses_ref": 0,
+        "ties": 677,
+        "family": "secondary"
+      },
+      "ndcg@10": {
+        "mean_diff_ref_minus_other": 0.2052,
+        "ci95": [
+          0.1958,
+          0.2144
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 829,
+        "losses_ref": 0,
+        "ties": 677,
+        "family": "secondary"
+      },
+      "ndcg@10_graded": {
+        "mean_diff_ref_minus_other": 0.2025,
+        "ci95": [
+          0.1943,
+          0.2105
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1181,
+        "losses_ref": 0,
+        "ties": 325,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "stale@10": {
+        "mean_diff_ref_minus_other": -0.1048,
+        "ci95": [
+          -0.106,
+          -0.1036
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1506,
+        "losses_ref": 0,
+        "ties": 0,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "outdated_suppression@10": {
+        "mean_diff_ref_minus_other": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1506,
+        "losses_ref": 0,
+        "ties": 0,
+        "family": "secondary"
+      },
+      "current_preservation@10": {
+        "mean_diff_ref_minus_other": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": 1.0,
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 0,
+        "ties": 1506,
+        "family": "secondary"
+      },
+      "current_at1_and_no_stale@10": {
+        "mean_diff_ref_minus_other": 0.998,
+        "ci95": [
+          0.9954,
+          1.0
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1503,
+        "losses_ref": 0,
+        "ties": 3,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      }
+    },
+    "bm25_recency": {
+      "mrr@10": {
+        "mean_diff_ref_minus_other": 0.0113,
+        "ci95": [
+          0.0075,
+          0.0154
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 36,
+        "losses_ref": 2,
+        "ties": 1468,
+        "family": "secondary"
+      },
+      "ndcg@10": {
+        "mean_diff_ref_minus_other": 0.0083,
+        "ci95": [
+          0.0056,
+          0.0114
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 36,
+        "losses_ref": 2,
+        "ties": 1468,
+        "family": "secondary"
+      },
+      "ndcg@10_graded": {
+        "mean_diff_ref_minus_other": 0.0348,
+        "ci95": [
+          0.0317,
+          0.0381
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 728,
+        "losses_ref": 20,
+        "ties": 758,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "stale@10": {
+        "mean_diff_ref_minus_other": -0.1048,
+        "ci95": [
+          -0.106,
+          -0.1036
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1506,
+        "losses_ref": 0,
+        "ties": 0,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "outdated_suppression@10": {
+        "mean_diff_ref_minus_other": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1506,
+        "losses_ref": 0,
+        "ties": 0,
+        "family": "secondary"
+      },
+      "current_preservation@10": {
+        "mean_diff_ref_minus_other": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": 1.0,
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 0,
+        "ties": 1506,
+        "family": "secondary"
+      },
+      "current_at1_and_no_stale@10": {
+        "mean_diff_ref_minus_other": 0.998,
+        "ci95": [
+          0.9954,
+          1.0
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1503,
+        "losses_ref": 0,
+        "ties": 3,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      }
+    },
+    "cross_encoder": {
+      "mrr@10": {
+        "mean_diff_ref_minus_other": 0.4937,
+        "ci95": [
+          0.4724,
+          0.5159
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 942,
+        "losses_ref": 1,
+        "ties": 563,
+        "family": "secondary"
+      },
+      "ndcg@10": {
+        "mean_diff_ref_minus_other": 0.429,
+        "ci95": [
+          0.4089,
+          0.4498
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 942,
+        "losses_ref": 1,
+        "ties": 563,
+        "family": "secondary"
+      },
+      "ndcg@10_graded": {
+        "mean_diff_ref_minus_other": 0.4756,
+        "ci95": [
+          0.457,
+          0.495
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1200,
+        "losses_ref": 3,
+        "ties": 303,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "stale@10": {
+        "mean_diff_ref_minus_other": -0.0631,
+        "ci95": [
+          -0.0659,
+          -0.0602
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 910,
+        "losses_ref": 0,
+        "ties": 596,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "outdated_suppression@10": {
+        "mean_diff_ref_minus_other": 0.6004,
+        "ci95": [
+          0.5746,
+          0.6259
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 910,
+        "losses_ref": 0,
+        "ties": 596,
+        "family": "secondary"
+      },
+      "current_preservation@10": {
+        "mean_diff_ref_minus_other": 0.2251,
+        "ci95": [
+          0.2038,
+          0.2472
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 339,
+        "losses_ref": 0,
+        "ties": 1167,
+        "family": "secondary"
+      },
+      "current_at1_and_no_stale@10": {
+        "mean_diff_ref_minus_other": 0.919,
+        "ci95": [
+          0.9049,
+          0.9331
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 1384,
+        "losses_ref": 0,
+        "ties": 122,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      }
+    },
+    "rule_corpus": {
+      "mrr@10": {
+        "mean_diff_ref_minus_other": -0.0003,
+        "ci95": [
+          -0.001,
+          0.0
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": 0.729,
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 1,
+        "ties": 1505,
+        "family": "secondary"
+      },
+      "ndcg@10": {
+        "mean_diff_ref_minus_other": -0.0002,
+        "ci95": [
+          -0.0007,
+          0.0
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": 0.729,
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 1,
+        "ties": 1505,
+        "family": "secondary"
+      },
+      "ndcg@10_graded": {
+        "mean_diff_ref_minus_other": -0.0036,
+        "ci95": [
+          -0.0046,
+          -0.0026
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 106,
+        "ties": 1400,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "stale@10": {
+        "mean_diff_ref_minus_other": -0.0167,
+        "ci95": [
+          -0.0187,
+          -0.0148
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 248,
+        "losses_ref": 0,
+        "ties": 1258,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      },
+      "outdated_suppression@10": {
+        "mean_diff_ref_minus_other": 0.1647,
+        "ci95": [
+          0.1456,
+          0.1837
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 248,
+        "losses_ref": 0,
+        "ties": 1258,
+        "family": "secondary"
+      },
+      "current_preservation@10": {
+        "mean_diff_ref_minus_other": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_diff_gt_0": 0.0,
+        "p_two_sided_bootstrap": 1.0,
+        "favours_reference": false,
+        "wins_ref": 0,
+        "losses_ref": 0,
+        "ties": 1506,
+        "family": "secondary"
+      },
+      "current_at1_and_no_stale@10": {
+        "mean_diff_ref_minus_other": 0.164,
+        "ci95": [
+          0.145,
+          0.1831
+        ],
+        "p_diff_gt_0": 1.0,
+        "p_two_sided_bootstrap": "<0.0001",
+        "favours_reference": true,
+        "wins_ref": 248,
+        "losses_ref": 1,
+        "ties": 1257,
+        "family": "primary",
+        "holm": {
+          "p_raw": 0.0001,
+          "p_holm": 0.0012000000000000001,
+          "reject_at_alpha": true
+        }
+      }
+    }
+  },
+  "holm_primary_family": {
+    "bm25|ndcg@10_graded": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "bm25|stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "bm25|current_at1_and_no_stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "bm25_recency|ndcg@10_graded": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "bm25_recency|stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "bm25_recency|current_at1_and_no_stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "cross_encoder|ndcg@10_graded": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "cross_encoder|stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "cross_encoder|current_at1_and_no_stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "rule_corpus|ndcg@10_graded": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "rule_corpus|stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    },
+    "rule_corpus|current_at1_and_no_stale@10": {
+      "p_raw": 0.0001,
+      "p_holm": 0.0012000000000000001,
+      "reject_at_alpha": true
+    }
+  }
+}

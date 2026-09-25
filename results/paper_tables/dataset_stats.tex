@@ -1,0 +1,31 @@
+\begin{table}\centering\small
+\caption{Dataset construction and temporal split.}\label{tab:veri}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lr@{}}\toprule
+Stage & Count \\\midrule
+CVSS replacement candidates (Removed+Added in one change) & 3\,653 \\
+STRICT same-change candidates & 3\,651 \\
+Excluded at candidate level (no metric change) & 2 \\
+Timeline-eligible main events & 3\,649 \\
+Excluded at timeline level (chain ambiguity) & 2 \\
+Main train/dev/test events & 3\,630 \\
+Future-event cohort (secondary) & 19 \\
+Unique CVEs in main dataset & 3\,249 \\
+\midrule
+\multicolumn{2}{@{}l}{All eligible atomic events} \\
+\quad Split & CVEs / events (years; left-censored share) \\\midrule
+\quad Train & 1\,578 / 1\,768 (2024--2025; 12.8\%) \\
+\quad Dev (15\% of train-period CVEs) & 279 / 318 (2024--2025; 11.6\%) \\
+\quad Test (future-entity) & 1\,392 / 1\,544 (2026; 7.0\%) \\
+\quad Future-event (secondary, held out) & 18 / 19 (2026; 0.0\%) \\
+\midrule
+\multicolumn{2}{@{}l}{Base-query-eligible subset} \\
+\quad Split & CVEs / events (= main queries) \\\midrule
+\quad Excluded: threat-only / supplemental-only / environmental-only / mixed non-base & 70 / 15 / 7 / 1 \\
+\quad Train & 1\,533 / 1\,719 \\
+\quad Dev & 273 / 312 \\
+\quad Test (future-entity) & 1\,356 / 1\,506 \\
+\quad Future-event (secondary) & 18 / 19 \\
+\bottomrule
+\end{tabular}}
+\end{table}

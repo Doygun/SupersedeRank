@@ -1,0 +1,16 @@
+\begin{table}
+\centering
+\caption{Diagnostic results of the learned model.}
+\label{tab:learned_diagnostic}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & MRR@10 & gNDCG@10 & Stale@10 & OutSupp@10 & CurPres@10 & Cur@1$\wedge$NoStale@10 \\
+\midrule
+ChronoRank-Rule-Corpus & 1.000 & 1.000 & 0.007 & 0.933 & 1.000 & 0.933 \\
+Learned-Full (LR) & 1.000 & 0.997 & 0.000 & 1.000 & 1.000 & 1.000 \\
+Learned-NoRuleSignal (LR) & 1.000 & 0.997 & 0.000 & 1.000 & 1.000 & 1.000 \\
+\multicolumn{7}{l}{Decisions on the query's chain identical to ChronoRank-Rule-Target: 300/300; train/dev accuracy 1.000/1.000; C=0.1} \\
+\bottomrule
+\end{tabular}}
+\end{table}

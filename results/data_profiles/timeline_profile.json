@@ -1,0 +1,114 @@
+{
+  "ambiguity_reasons": {
+    "REMOVAL_OF_INACTIVE_VALUE": 15,
+    "REMOVAL_OF_UNOBSERVED_VALUE_AFTER_OTHER_EVENTS": 79
+  },
+  "ambiguous_chains": 94,
+  "base_score_available": 265964,
+  "base_score_missing_by_version": {
+    "3.1": 1
+  },
+  "chains": 254546,
+  "chains_first_event_added": 253454,
+  "chains_first_event_removed": 1092,
+  "chains_nvd_only": 55032,
+  "competing_active_events": 0,
+  "cross_event_candidates": {
+    "by_source_key": {
+      "134c704f-9b21-4f2e-91b3-4a467353bcc0": 73,
+      "audit@patchstack.com": 45,
+      "disclosure@vulncheck.com": 1,
+      "iletisim@usom.gov.tr": 1,
+      "meissner@suse.de": 1,
+      "secalert@redhat.com": 9,
+      "security@vmware.com": 1
+    },
+    "by_year": {
+      "2024": 2,
+      "2025": 78,
+      "2026": 51
+    },
+    "count": 131,
+    "gap_days": {
+      "max": 244.875,
+      "median": 21.959,
+      "min": 0.041,
+      "p25": 21.921,
+      "p75": 27.792,
+      "p90": 33.875
+    }
+  },
+  "cves": 164422,
+  "cves_by_source_count": {
+    "1": 112425,
+    "2": 51041,
+    "3+": 956
+  },
+  "cves_with_multiple_current_at_window_end": 63120,
+  "duplicate_readds": 5,
+  "duplicate_rewrites": 2,
+  "evidence_intervals": 265965,
+  "history_files": 322,
+  "left_censoring": {
+    "censored_intervals": 1225,
+    "censored_then_strict_replaced": 372,
+    "strict_replaced_by_year": {
+      "2024": 781,
+      "2025": 1306,
+      "2026": 1564
+    },
+    "strict_replaced_censored_by_year": {
+      "2024": 209,
+      "2025": 55,
+      "2026": 108
+    },
+    "strict_replaced_uncensored": 3279,
+    "uncensored_intervals": 264740
+  },
+  "observation_window": {
+    "end": "2026-09-14T23:59:59+00:00",
+    "start": "2024-01-01T00:00:00+00:00"
+  },
+  "reader_issues": 0,
+  "replacement_type_counts": {
+    "HIGH_CONFIDENCE_CROSS_EVENT": 131,
+    "STRICT_SAME_CHANGE": 3651
+  },
+  "reversals": 62,
+  "same_change": {
+    "candidates": 3653,
+    "excluded": 2,
+    "multi_removed_or_added": 0,
+    "source_prefix_change": 2,
+    "strict": 3651,
+    "version_change": 0
+  },
+  "same_timestamp_conflicts": 0,
+  "same_value_readds": 7672,
+  "source_alias_mapping_version": 1,
+  "source_conditioned_eligible_chains": 3475,
+  "source_keys_unmapped_count": 426,
+  "timeline_status_counts": {
+    "ACTIVE": 11018,
+    "INITIAL_ADDITION": 239115,
+    "REPLACED": 3782,
+    "WITHDRAWN_WITHOUT_REPLACEMENT": 12050
+  },
+  "top_source_keys": {
+    "134c704f-9b21-4f2e-91b3-4a467353bcc0": 45983,
+    "416baaa9-dc9f-4396-8d5f-8c081fb06d67": 5756,
+    "NVD": 55731,
+    "audit@patchstack.com": 23188,
+    "cna@vuldb.com": 40053,
+    "disclosure@vulncheck.com": 13292,
+    "psirt@adobe.com": 2446,
+    "psirt@us.ibm.com": 2080,
+    "secalert_us@oracle.com": 3127,
+    "secure@microsoft.com": 5791,
+    "security-advisories@github.com": 14819,
+    "security@wordfence.com": 10033
+  },
+  "total_changes": 1590753,
+  "unmatched_added": 0,
+  "unmatched_removed": 132
+}

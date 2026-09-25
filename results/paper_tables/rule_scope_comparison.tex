@@ -1,0 +1,30 @@
+\begin{table}
+\centering
+\caption{Comparison of suppression scopes.}
+\label{tab:rule_scope}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrr}
+\toprule
+ & ChronoRank-Rule-Corpus & ChronoRank-Rule-Target \\
+\midrule
+Suppressed candidates (total) & 50260 & 3709 \\
+\quad target chain & 3709 & 3709 \\
+\quad outside the target chain & 46551 & 0 \\
+Suppressed per query & 14.210 & 1.049 \\
+Queries with $<10$ preserved candidates & 284 & 0 \\
+CURRENT lost & 0 & 0 \\
+OTHER\_SOURCE\_CURRENT lost & 0 & 0 \\
+Graded relevance lost from top-10 & 0 & 0 \\
+Cur@1$\wedge$NoStale@10 & 0.917 & 0.995 \\
+Stale@10 & 0.008 & 0.000 \\
+OutSupp@10 & 0.919 & 0.999 \\
+gNDCG@10 & 0.999 & 0.994 \\
+MRR@10 & 0.999 & 0.998 \\
+\midrule
+Identical rankings (queries) & \multicolumn{2}{c}{504} \\
+Target better (queries) & \multicolumn{2}{c}{284} \\
+Corpus better (queries) & \multicolumn{2}{c}{7} \\
+Equal on joint/stale (queries) & \multicolumn{2}{c}{2742} \\
+\bottomrule
+\end{tabular}}
+\end{table}

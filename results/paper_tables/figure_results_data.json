@@ -1,0 +1,81 @@
+{
+  "axes": {
+    "x": [
+      "current_preservation@10",
+      "top1_current_rate"
+    ],
+    "y": [
+      "outdated_suppression@10",
+      "one_minus_stale@10"
+    ]
+  },
+  "ideal_region": "CURRENT preserved (x -> 1) and OUTDATED suppressed (y -> 1)",
+  "points": [
+    {
+      "method": "bm25",
+      "label": "BM25",
+      "current_preservation@10": 1.0,
+      "top1_current_rate": 0.4489,
+      "outdated_suppression@10": 0.0,
+      "one_minus_stale@10": 0.8952,
+      "current_at1_and_no_stale@10": 0.0,
+      "split": "test",
+      "queries": 1506
+    },
+    {
+      "method": "recency_only",
+      "label": "Recency-only",
+      "current_preservation@10": 0.6222,
+      "top1_current_rate": 0.3201,
+      "outdated_suppression@10": 0.5578,
+      "one_minus_stale@10": 0.9537,
+      "current_at1_and_no_stale@10": 0.0505,
+      "split": "test",
+      "queries": 1506
+    },
+    {
+      "method": "bm25_recency",
+      "label": "BM25+Recency",
+      "current_preservation@10": 1.0,
+      "top1_current_rate": 0.9754,
+      "outdated_suppression@10": 0.0,
+      "one_minus_stale@10": 0.8952,
+      "current_at1_and_no_stale@10": 0.0,
+      "split": "test",
+      "queries": 1506
+    },
+    {
+      "method": "cross_encoder",
+      "label": "Cross-encoder",
+      "current_preservation@10": 0.7749,
+      "top1_current_rate": 0.3738,
+      "outdated_suppression@10": 0.3996,
+      "one_minus_stale@10": 0.9369,
+      "current_at1_and_no_stale@10": 0.079,
+      "split": "test",
+      "queries": 1506
+    },
+    {
+      "method": "rule_corpus",
+      "label": "ChronoRank-Rule-Corpus",
+      "current_preservation@10": 1.0,
+      "top1_current_rate": 0.9987,
+      "outdated_suppression@10": 0.8353,
+      "one_minus_stale@10": 0.9833,
+      "current_at1_and_no_stale@10": 0.834,
+      "split": "test",
+      "queries": 1506
+    },
+    {
+      "method": "rule_target",
+      "label": "ChronoRank-Rule-Target",
+      "current_preservation@10": 1.0,
+      "top1_current_rate": 0.998,
+      "outdated_suppression@10": 1.0,
+      "one_minus_stale@10": 1.0,
+      "current_at1_and_no_stale@10": 0.998,
+      "split": "test",
+      "queries": 1506
+    }
+  ]
+}

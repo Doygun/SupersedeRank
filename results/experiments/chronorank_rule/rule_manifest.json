@@ -1,0 +1,61 @@
+{
+  "method": "RULE-INFERRED (main) — parameter-free block ordering over the BM25 top-50 pool",
+  "signal": "same chain key (cve_id, source_key, cvss_version); witness visible at query_time; witness observed_from > candidate observed_from; canonical Base vectors differ",
+  "witness_scope": {
+    "source": "data/processed/evidence/evidence.jsonl (main Base-query evidence scope membership only; roles/links unused)",
+    "cross_event_ids_excluded": 131,
+    "witness_entries": 9005,
+    "chains": 5435
+  },
+  "allowed_fields": [
+    "evidence_id",
+    "cve_id",
+    "source_key",
+    "cvss_version",
+    "observed_from",
+    "vector (Base part only)",
+    "valid_from_censored"
+  ],
+  "forbidden_fields": [
+    "valid_until",
+    "superseded_by_evidence_id",
+    "replaced_by_evidence_id",
+    "replaces_evidence_id",
+    "replacement_type",
+    "replacement_event_id",
+    "timeline_status",
+    "termination_event_id",
+    "label",
+    "class",
+    "relation"
+  ],
+  "imports_label_package": false,
+  "upper_bound": "RULE-DIRECT = Direct-Link Policy (Upper Bound): replaced_by link visible at query_time; separate module src/rerank/rule_direct.py",
+  "chain_index_cache": "data/processed/retrieval/chain_index.json",
+  "evidence_store_rows": 265965,
+  "timing_seconds": {
+    "chain_index": 4.2,
+    "rule_reranking_300_queries": 0.14
+  },
+  "dynamic_checks": {
+    "forbidden_fields_perturbed_identical": true,
+    "candidate_metadata_shuffled_identical": true,
+    "future_witness_injected_identical": true,
+    "repeat_identical": true
+  },
+  "full_run": {
+    "timing_seconds": {
+      "chain_index": 4.1,
+      "rule_reranking_main_3537": 2.03,
+      "rule_reranking_future_event": 0.01
+    },
+    "dynamic_checks": {
+      "forbidden_fields_perturbed_identical": true,
+      "candidate_metadata_shuffled_identical": true,
+      "future_witness_injected_identical": true,
+      "repeat_identical": true
+    },
+    "rule_code_unchanged_since_smoke": true,
+    "date": "2026-09-16"
+  }
+}

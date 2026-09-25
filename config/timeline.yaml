@@ -1,0 +1,17 @@
+observation_window:
+  start: "2024-01-01T00:00:00+00:00"
+  end: "2026-09-14T23:59:59+00:00"
+
+left_censoring:
+  enabled: true
+  preserve_censored_evidence: true
+  use_window_start_as_observed_from: true
+  generate_queries_before_window: false
+  include_in_main_dataset: true
+  report_uncensored_sensitivity_subset: true
+
+timeline:
+  chain_key: [cve_id, cvss_version, source_key]
+  supported_detail_types: ["CVSS V2", "CVSS V3", "CVSS V3.1", "CVSS V4.0"]
+  main_replacement_types: [STRICT_SAME_CHANGE]
+  cross_event_candidates_in_main_dataset: false

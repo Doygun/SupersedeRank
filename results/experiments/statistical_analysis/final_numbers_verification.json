@@ -1,0 +1,841 @@
+{
+  "main_queries": 3537,
+  "test_queries": 1506,
+  "test_cves": 1356,
+  "methods": {
+    "bm25": {
+      "source_file": "results/experiments/bm25_full/bm25_report.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.7116,
+          "source_json": 0.7116,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.787,
+          "source_json": 0.787,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.7852,
+          "source_json": 0.7852,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.1047,
+          "source_json": 0.1047,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 1.0466,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 1.4521,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.0,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.0003,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "top1_current_rate": {
+          "per_query": 0.43,
+          "source_json": 0.43,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.5655,
+          "source_json": 0.5655,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4984,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.7212,
+        "ndcg@10": 0.7941,
+        "ndcg@10_graded": 0.7931,
+        "stale@10": 0.1048,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 1.0,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 1.0,
+        "other_source_current_in_top10": 0.5179,
+        "top1_current_rate": 0.4489,
+        "top1_outdated_rate": 0.5478,
+        "current_outdated_score_tie_rate": 0.9077,
+        "current_outdated_mean_score_gap": -0.2857,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 1.0478,
+        "first_outdated_rank_mean": 1.4555,
+        "first_outdated_rank_median": 1.0,
+        "first_outdated_beyond_top10_rate": 0.0,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 0.0,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.0
+      }
+    },
+    "bm25_recency": {
+      "source_file": "results/experiments/reranking_baselines/baseline_comparison.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.98,
+          "source_json": 0.98,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.9852,
+          "source_json": 0.9852,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.9572,
+          "source_json": 0.9572,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.1047,
+          "source_json": 0.1047,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 1.0466,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 2.0102,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.0,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.0003,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "top1_current_rate": {
+          "per_query": 0.9601,
+          "source_json": 0.9601,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.0376,
+          "source_json": 0.0376,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4936,
+          "source_json": 0.4936,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.9877,
+        "ndcg@10": 0.9909,
+        "ndcg@10_graded": 0.9609,
+        "stale@10": 0.1048,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 1.0,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 1.0,
+        "other_source_current_in_top10": 0.5086,
+        "top1_current_rate": 0.9754,
+        "top1_outdated_rate": 0.0219,
+        "current_outdated_score_tie_rate": 0.0,
+        "current_outdated_mean_score_gap": 0.0823,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 1.0478,
+        "first_outdated_rank_mean": 2.0139,
+        "first_outdated_rank_median": 2.0,
+        "first_outdated_beyond_top10_rate": 0.0,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 0.0,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.0
+      }
+    },
+    "cross_encoder": {
+      "source_file": "results/experiments/reranking_baselines/baseline_comparison.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.5442,
+          "source_json": 0.5442,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.6049,
+          "source_json": 0.6049,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.5568,
+          "source_json": 0.5568,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.0632,
+          "source_json": 0.0632,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 0.6319,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 13.0783,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.3983,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_preservation@10": {
+          "per_query": 0.7959,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.0925,
+          "source_json": null,
+          "match": true,
+          "note": "metric not present in the source report (computed here from per-query)"
+        },
+        "top1_current_rate": {
+          "per_query": 0.4173,
+          "source_json": 0.4173,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.1233,
+          "source_json": 0.1233,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.1544,
+          "source_json": 0.1544,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.2041,
+          "source_json": 0.2041,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.5053,
+        "ndcg@10": 0.5702,
+        "ndcg@10_graded": 0.5201,
+        "stale@10": 0.0631,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.2251,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 0.6042,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 0.5797,
+        "other_source_current_in_top10": 0.1388,
+        "top1_current_rate": 0.3738,
+        "top1_outdated_rate": 0.1295,
+        "current_outdated_score_tie_rate": 0.0,
+        "current_outdated_mean_score_gap": 0.3328,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 0.6308,
+        "first_outdated_rank_mean": 12.595,
+        "first_outdated_rank_median": 6.0,
+        "first_outdated_beyond_top10_rate": 0.3958,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 0.3996,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 0.7749,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.079
+      }
+    },
+    "rule_corpus": {
+      "source_file": "results/experiments/chronorank_rule/full_report.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.9986,
+          "source_json": 0.9986,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.999,
+          "source_json": 0.999,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.999,
+          "source_json": 0.999,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.0082,
+          "source_json": 0.0082,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 0.082,
+          "source_json": 0.082,
+          "match": true
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 36.7789,
+          "source_json": 36.7789,
+          "match": true
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.9191,
+          "source_json": 0.9191,
+          "match": true
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.9166,
+          "source_json": 0.9166,
+          "match": true
+        },
+        "top1_current_rate": {
+          "per_query": 0.9972,
+          "source_json": 0.9972,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.0003,
+          "source_json": 0.0003,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4987,
+          "source_json": 0.4987,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.9993,
+        "ndcg@10": 0.9995,
+        "ndcg@10_graded": 0.9993,
+        "stale@10": 0.0167,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 0.1647,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 0.1647,
+        "other_source_current_in_top10": 0.5179,
+        "top1_current_rate": 0.9987,
+        "top1_outdated_rate": 0.0,
+        "current_outdated_score_tie_rate": 0.9077,
+        "current_outdated_mean_score_gap": -0.2857,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 0.1673,
+        "first_outdated_rank_mean": 34.5471,
+        "first_outdated_rank_median": 42.0,
+        "first_outdated_beyond_top10_rate": 0.8353,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 0.8353,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.834
+      }
+    },
+    "rule_target": {
+      "source_file": "results/experiments/chronorank_rule_target/rule_target_report.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.9975,
+          "source_json": 0.9975,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.9981,
+          "source_json": 0.9981,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.994,
+          "source_json": 0.994,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.0001,
+          "source_json": 0.0001,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 0.0006,
+          "source_json": 0.0006,
+          "match": true
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 49.9248,
+          "source_json": 49.9248,
+          "match": true
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.9994,
+          "source_json": 0.9994,
+          "match": true
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.9946,
+          "source_json": 0.9946,
+          "match": true
+        },
+        "top1_current_rate": {
+          "per_query": 0.9949,
+          "source_json": 0.9949,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.0003,
+          "source_json": 0.0003,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4987,
+          "source_json": 0.4987,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.999,
+        "ndcg@10": 0.9993,
+        "ndcg@10_graded": 0.9957,
+        "stale@10": 0.0,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 0.0,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 0.0,
+        "other_source_current_in_top10": 0.5179,
+        "top1_current_rate": 0.998,
+        "top1_outdated_rate": 0.0,
+        "current_outdated_score_tie_rate": 0.9077,
+        "current_outdated_mean_score_gap": -0.2857,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 0.0,
+        "first_outdated_rank_mean": 49.9509,
+        "first_outdated_rank_median": 50.0,
+        "first_outdated_beyond_top10_rate": 1.0,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 1.0,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.998
+      }
+    },
+    "rule_direct_upper_bound": {
+      "source_file": "results/experiments/chronorank_rule/full_report.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 0.9979,
+          "source_json": 0.9979,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 0.9984,
+          "source_json": 0.9984,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 0.9985,
+          "source_json": 0.9985,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.0081,
+          "source_json": 0.0081,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 0.0811,
+          "source_json": 0.0811,
+          "match": true
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 36.8012,
+          "source_json": 36.8012,
+          "match": true
+        },
+        "outdated_suppression@10": {
+          "per_query": 0.92,
+          "source_json": 0.92,
+          "match": true
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 0.9157,
+          "source_json": 0.9157,
+          "match": true
+        },
+        "top1_current_rate": {
+          "per_query": 0.9958,
+          "source_json": 0.9958,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4987,
+          "source_json": 0.4987,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 0.998,
+        "ndcg@10": 0.9985,
+        "ndcg@10_graded": 0.9984,
+        "stale@10": 0.0167,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 0.1647,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 0.1647,
+        "other_source_current_in_top10": 0.5179,
+        "top1_current_rate": 0.996,
+        "top1_outdated_rate": 0.0,
+        "current_outdated_score_tie_rate": 0.9077,
+        "current_outdated_mean_score_gap": -0.2857,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 0.1673,
+        "first_outdated_rank_mean": 34.5445,
+        "first_outdated_rank_median": 42.0,
+        "first_outdated_beyond_top10_rate": 0.8353,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 0.8353,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 0.8313
+      }
+    },
+    "oracle_temporal": {
+      "source_file": "results/experiments/chronorank_rule/full_report.json",
+      "main": {
+        "recall@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "recall@50": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "mrr@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "ndcg@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "ndcg@10_graded": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "stale@10": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        },
+        "outdated_count@10_mean": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        },
+        "first_outdated_rank_mean": {
+          "per_query": 49.9534,
+          "source_json": 49.9534,
+          "match": true
+        },
+        "outdated_suppression@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "current_preservation@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "current_at1_and_no_stale@10": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "top1_current_rate": {
+          "per_query": 1.0,
+          "source_json": 1.0,
+          "match": true
+        },
+        "top1_outdated_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        },
+        "other_source_current_in_top10": {
+          "per_query": 0.4993,
+          "source_json": 0.4993,
+          "match": true
+        },
+        "ranking_failure_rate": {
+          "per_query": 0.0,
+          "source_json": 0.0,
+          "match": true
+        }
+      },
+      "test": {
+        "queries": 1506,
+        "recall@10": 1.0,
+        "recall@50": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "ndcg@10_graded": 1.0,
+        "stale@10": 0.0,
+        "retrieval_failure_rate": 0.0,
+        "ranking_failure_rate": 0.0,
+        "outdated_same_chain_in_top50": 1.0,
+        "outdated_same_chain_in_top10": 0.0,
+        "current_and_outdated_in_top50": 1.0,
+        "other_source_current_in_top50": 0.5179,
+        "current_and_outdated_in_top10": 0.0,
+        "other_source_current_in_top10": 0.5179,
+        "top1_current_rate": 1.0,
+        "top1_outdated_rate": 0.0,
+        "current_outdated_score_tie_rate": 0.9077,
+        "current_outdated_mean_score_gap": -0.2857,
+        "current_outdated_both_in_list": 1506,
+        "outdated_count@10_mean": 0.0,
+        "first_outdated_rank_mean": 49.9522,
+        "first_outdated_rank_median": 50.0,
+        "first_outdated_beyond_top10_rate": 1.0,
+        "first_outdated_not_in_pool_rate": 0.0,
+        "outdated_suppression@10": 1.0,
+        "outdated_suppression@10_queries": 1506,
+        "current_preservation@10": 1.0,
+        "current_preservation@10_queries": 1506,
+        "current_at1_and_no_stale@10": 1.0
+      }
+    }
+  },
+  "mismatches": [],
+  "markdown_vs_json_rule_target": {
+    "MRR@10": {
+      "markdown": "0.9975",
+      "json": 0.9975,
+      "match": true
+    },
+    "NDCG@10 (dereceli)": {
+      "markdown": "0.994",
+      "json": 0.994,
+      "match": true
+    },
+    "StaleEvidenceRate@10": {
+      "markdown": "0.0001",
+      "json": 0.0001,
+      "match": true
+    },
+    "CurrentAt1AndNoStaleAt10": {
+      "markdown": "0.9946",
+      "json": 0.9946,
+      "match": true
+    },
+    "OutdatedSuppression@10": {
+      "markdown": "0.9994",
+      "json": 0.9994,
+      "match": true
+    },
+    "CurrentPreservation@10": {
+      "markdown": "1.0",
+      "json": 1.0,
+      "match": true
+    }
+  },
+  "all_match": true
+}

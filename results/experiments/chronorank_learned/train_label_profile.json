@@ -1,0 +1,104 @@
+{
+  "definition": "temporal example = target-chain candidate with class TARGET_CURRENT (positive) or TARGET_OUTDATED (negative) in the accepted BM25 top-50 pool",
+  "not_examples": [
+    "OTHER_CVE",
+    "OTHER_SOURCE_CURRENT",
+    "OTHER_SOURCE_INACTIVE",
+    "other cvss_version",
+    "unlabeled chain context"
+  ],
+  "test_and_future_event": "never opened in this profile",
+  "train": {
+    "queries": 1719,
+    "current_examples": 1719,
+    "outdated_examples": 1795,
+    "class_ratio_outdated_to_current": 1.0442,
+    "current_per_query": {
+      "mean": 1.0,
+      "min": 1,
+      "max": 1,
+      "dist": {
+        "1": 1719
+      }
+    },
+    "outdated_per_query": {
+      "mean": 1.0442,
+      "min": 0,
+      "max": 3,
+      "dist": {
+        "1": 1647,
+        "2": 65,
+        "3": 6,
+        "0": 1
+      }
+    },
+    "unique_evidence": 3367,
+    "evidence_repeat_distribution_queries_per_evidence": {
+      "1": 3232,
+      "2": 123,
+      "3": 12
+    },
+    "evidence_with_both_labels_across_queries": 70,
+    "example_cves": 1533,
+    "example_cve_split_membership": {
+      "train": 1533
+    },
+    "non_example_candidate_classes": {
+      "OTHER": 81405,
+      "OTHER_SOURCE_CURRENT": 1031
+    },
+    "rule_signal_on_examples": {
+      "TARGET_CURRENT|suppressed=False": 1719,
+      "TARGET_OUTDATED|suppressed=False": 2,
+      "TARGET_OUTDATED|suppressed=True": 1793
+    }
+  },
+  "dev": {
+    "queries": 312,
+    "current_examples": 312,
+    "outdated_examples": 329,
+    "class_ratio_outdated_to_current": 1.0545,
+    "current_per_query": {
+      "mean": 1.0,
+      "min": 1,
+      "max": 1,
+      "dist": {
+        "1": 312
+      }
+    },
+    "outdated_per_query": {
+      "mean": 1.0545,
+      "min": 1,
+      "max": 3,
+      "dist": {
+        "1": 297,
+        "2": 13,
+        "3": 2
+      }
+    },
+    "unique_evidence": 609,
+    "evidence_repeat_distribution_queries_per_evidence": {
+      "1": 581,
+      "2": 24,
+      "3": 4
+    },
+    "evidence_with_both_labels_across_queries": 15,
+    "example_cves": 273,
+    "example_cve_split_membership": {
+      "dev": 273
+    },
+    "non_example_candidate_classes": {
+      "OTHER_SOURCE_CURRENT": 196,
+      "OTHER": 14763
+    },
+    "rule_signal_on_examples": {
+      "TARGET_CURRENT|suppressed=False": 312,
+      "TARGET_OUTDATED|suppressed=True": 329
+    }
+  },
+  "cve_level_disjointness": {
+    "train_dev_cve_overlap": 0,
+    "train_example_cves_labelled_other_split": {},
+    "train_dev_evidence_overlap": 0
+  }
+}

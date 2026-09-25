@@ -1,0 +1,540 @@
+{
+  "selection_split": "dev",
+  "objective": "current_at1_and_no_stale@10",
+  "tie_breaker": "ndcg@10_graded",
+  "class_ratio_outdated_to_current_train": 1.0442,
+  "class_weight": null,
+  "class_weight_note": "classes are ~balanced (ratio ~1.04); class_weight=None by decision; 'balanced' not run as a second method",
+  "rule_inferred_dev_joint_reference": 0.9712,
+  "conditions": {
+    "learned_full": {
+      "feature_order": [
+        "normalized_bm25_score",
+        "bm25_rank",
+        "cross_encoder_score",
+        "observed_age_days",
+        "newer_visible_same_chain_count",
+        "days_to_newest_visible_same_chain",
+        "chain_position_observed",
+        "newer_different_base_vector_exists",
+        "valid_from_censored",
+        "same_cve",
+        "same_source_key",
+        "same_cvss_version",
+        "base_vector_differs_from_chain_newest",
+        "template_base_vector",
+        "template_cvssb_score",
+        "template_base_severity",
+        "template_combined",
+        "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0",
+        "source_group_NVD",
+        "source_group_cna@vuldb.com",
+        "source_group_disclosure@vulncheck.com",
+        "source_group_secalert@redhat.com",
+        "source_group_secure@microsoft.com"
+      ],
+      "C_table": [
+        {
+          "C": 0.1,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1789,
+              "0.1-0.2": 1,
+              "0.2-0.3": 2,
+              "0.3-0.4": 3,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 327,
+              "0.1-0.2": 0,
+              "0.2-0.3": 0,
+              "0.3-0.4": 2,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        },
+        {
+          "C": 1.0,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1794,
+              "0.1-0.2": 1,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 327,
+              "0.1-0.2": 2,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        },
+        {
+          "C": 10.0,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1795,
+              "0.1-0.2": 0,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 329,
+              "0.1-0.2": 0,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        }
+      ],
+      "selected_C": 0.1,
+      "block_policy_insufficient_on_dev": false,
+      "alpha_table": [],
+      "selected_policy": "block",
+      "selected_alpha": null
+    },
+    "learned_no_rule_signal": {
+      "feature_order": [
+        "normalized_bm25_score",
+        "bm25_rank",
+        "cross_encoder_score",
+        "observed_age_days",
+        "newer_visible_same_chain_count",
+        "days_to_newest_visible_same_chain",
+        "chain_position_observed",
+        "valid_from_censored",
+        "same_cve",
+        "same_source_key",
+        "same_cvss_version",
+        "base_vector_differs_from_chain_newest",
+        "template_base_vector",
+        "template_cvssb_score",
+        "template_base_severity",
+        "template_combined",
+        "source_group_134c704f-9b21-4f2e-91b3-4a467353bcc0",
+        "source_group_NVD",
+        "source_group_cna@vuldb.com",
+        "source_group_disclosure@vulncheck.com",
+        "source_group_secalert@redhat.com",
+        "source_group_secure@microsoft.com"
+      ],
+      "C_table": [
+        {
+          "C": 0.1,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1784,
+              "0.1-0.2": 5,
+              "0.2-0.3": 2,
+              "0.3-0.4": 1,
+              "0.4-0.5": 3,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 326,
+              "0.1-0.2": 1,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 2,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        },
+        {
+          "C": 1.0,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1792,
+              "0.1-0.2": 3,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 327,
+              "0.1-0.2": 2,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        },
+        {
+          "C": 10.0,
+          "dev_rerank": {
+            "mrr@10": 0.992,
+            "ndcg@10": 0.9941,
+            "ndcg@10_graded": 0.9914,
+            "stale@10": 0.0,
+            "current_preservation@10": 1.0,
+            "current_at1_and_no_stale@10": 0.984,
+            "outdated_suppression@10": 1.0
+          },
+          "train_clf": {
+            "n": 3514,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                1795,
+                0
+              ],
+              [
+                0,
+                1719
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 1795,
+              "0.1-0.2": 0,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 1719
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "dev_clf": {
+            "n": 641,
+            "accuracy": 1.0,
+            "balanced_accuracy": 1.0,
+            "precision_current": 1.0,
+            "recall_current": 1.0,
+            "f1_current": 1.0,
+            "roc_auc": 1.0,
+            "confusion_matrix_rows_true_outdated_current": [
+              [
+                329,
+                0
+              ],
+              [
+                0,
+                312
+              ]
+            ],
+            "probability_histogram": {
+              "0.0-0.1": 329,
+              "0.1-0.2": 0,
+              "0.2-0.3": 0,
+              "0.3-0.4": 0,
+              "0.4-0.5": 0,
+              "0.5-0.6": 0,
+              "0.6-0.7": 0,
+              "0.7-0.8": 0,
+              "0.8-0.9": 0,
+              "0.9-1.0": 312
+            },
+            "nan_or_inf_probabilities": 0
+          },
+          "convergence_warnings": []
+        }
+      ],
+      "selected_C": 0.1,
+      "block_policy_insufficient_on_dev": false,
+      "alpha_table": [],
+      "selected_policy": "block",
+      "selected_alpha": null
+    }
+  }
+}

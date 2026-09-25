@@ -1,0 +1,92 @@
+{
+  "candidate_count": 3653,
+  "changed_component_counts": {
+    "A": 1024,
+    "AC": 570,
+    "AR": 3,
+    "AT": 40,
+    "AU": 13,
+    "AV": 651,
+    "Au": 28,
+    "C": 946,
+    "CR": 3,
+    "E": 87,
+    "I": 1034,
+    "IR": 3,
+    "MAV": 1,
+    "MPR": 1,
+    "MSA": 4,
+    "MSC": 1,
+    "MSI": 5,
+    "MVA": 4,
+    "MVC": 4,
+    "MVI": 4,
+    "PR": 1172,
+    "R": 8,
+    "RE": 7,
+    "S": 530,
+    "SA": 51,
+    "SC": 74,
+    "SI": 67,
+    "U": 19,
+    "UI": 638,
+    "V": 5,
+    "VA": 91,
+    "VC": 72,
+    "VI": 81
+  },
+  "event_counts": {
+    "CVE Modified": 2954,
+    "Modified Analysis": 408,
+    "Reanalysis": 291
+  },
+  "event_tier_counts": {
+    "CVE Modified\tEXCLUDED": 2,
+    "CVE Modified\tSTRICT": 2952,
+    "Modified Analysis\tSTRICT": 408,
+    "Reanalysis\tSTRICT": 291
+  },
+  "exclusion_reason_counts": {
+    "NO_METRIC_CHANGE": 2,
+    "SOURCE_CHANGED_OR_MISSING": 2
+  },
+  "file_count": 322,
+  "read_error_count": 0,
+  "tier_counts": {
+    "EXCLUDED": 2,
+    "STRICT": 3651
+  },
+  "total_changes": 1590753,
+  "type_counts": {
+    "CVSS V2": 68,
+    "CVSS V3": 17,
+    "CVSS V3.1": 3181,
+    "CVSS V4.0": 387
+  },
+  "type_tier_counts": {
+    "CVSS V2\tSTRICT": 68,
+    "CVSS V3\tSTRICT": 17,
+    "CVSS V3.1\tEXCLUDED": 2,
+    "CVSS V3.1\tSTRICT": 3179,
+    "CVSS V4.0\tSTRICT": 387
+  },
+  "unique_cves_by_tier": {
+    "EXCLUDED": 2,
+    "STRICT": 3250
+  },
+  "year_counts": {
+    "2024": 783,
+    "2025": 1306,
+    "2026": 1564
+  },
+  "year_tier_counts": {
+    "EXCLUDED": {
+      "2024": 2
+    },
+    "STRICT": {
+      "2024": 781,
+      "2025": 1306,
+      "2026": 1564
+    }
+  }
+}

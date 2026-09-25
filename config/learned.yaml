@@ -1,0 +1,76 @@
+examples:
+  source: "accepted BM25 top-50 pool (results/experiments/bm25_full/{split}_top50.jsonl)"
+  positive: TARGET_CURRENT
+  negative: TARGET_OUTDATED
+  not_examples: [OTHER_CVE, OTHER_SOURCE_CURRENT, OTHER_SOURCE_INACTIVE, other_cvss_version, unlabeled_chain_context]
+  train_split: train
+  selection_split: dev
+  test_split: test
+  future_event: descriptive_only
+  class_weight: balanced
+  resampling: none
+
+features:
+  semantic:
+    - normalized_bm25_score             # min-max within the query's 50 candidates
+    - bm25_rank
+    - cross_encoder_score
+    - query_template_type
+  temporal:
+    - observed_age_days
+    - newer_visible_same_chain_count
+    - days_to_newest_visible_same_chain
+    - newer_different_base_vector_exists
+    - chain_position_observed
+    - valid_from_censored
+  structural:
+    - same_cve
+    - same_source_key
+    - same_cvss_version
+    - base_vector_differs_from_query_answer_chain_newest
+    - source_key_group
+  forbidden:
+    - CURRENT / OUTDATED as input
+    - temporal_label
+    - valid_until
+    - replaces_evidence_id
+    - replaced_by_evidence_id
+    - superseded_by_evidence_id
+    - replacement_type
+    - replacement_event_id
+    - termination_event_id
+    - timeline_status
+    - gold supersession relation
+    - events after query_time
+    - future revision counts
+    - statistics computed on test
+    - future-event information
+
+model:
+  family: logistic_regression
+  penalty: l2
+  solver: lbfgs
+  max_iter: 1000
+  random_state: 20260922
+  C_candidates: [0.1, 1.0, 10.0]
+  conditions: [learned_full, learned_no_rule_signal]
+
+combination:
+  primary: block_ordering_by_p_current
+  alternative: "final = normalized_bm25 + alpha * temporal_adjustment (target-chain only; 0 elsewhere; never a stale penalty for OTHER_SOURCE_CURRENT)"
+  alpha_candidates: [0.1, 0.3, 0.5, 1.0]
+  temporal_adjustment: "p_current(e,q) - 0.5 for target-chain candidates, 0 otherwise"
+
+preprocessing:
+  fit_on: train
+  dev_usage: [C_selection, condition_reporting, combination_choice]
+  test_usage: final_evaluation_once
+  guard: src.label.splits.assert_selection_split
+
+smoke:
+  queries: results/experiments/smoke_bm25/sampled_queries.json
+  methods: [bm25, bm25_recency, cross_encoder, rule_inferred, learned_full, learned_no_rule_signal]
+  upper_bounds: [rule_direct_upper_bound, oracle_temporal]
+  gates: [no_candidate_loss, recall50_equals_bm25, no_current_suppressed, no_other_source_current_penalised, test_not_used, no_forbidden_fields,
+          no_nan_inf, train_only_preprocessing, reproducible_seed, current_preservation_high, stale_reduced_vs_bm25, no_rule_signal_reported,
+          rule_only_contribution_flagged]

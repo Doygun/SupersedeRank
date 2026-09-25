@@ -1,0 +1,39 @@
+{
+  "candidates": 3653,
+  "detail_type_tier_counts": {
+    "EXCLUDED": {
+      "CVSS V3.1": 2
+    },
+    "STRICT": {
+      "CVSS V2": 68,
+      "CVSS V3": 17,
+      "CVSS V3.1": 3179,
+      "CVSS V4.0": 387
+    }
+  },
+  "exclusion_reason_counts": {
+    "NO_METRIC_CHANGE": 2,
+    "SOURCE_CHANGED_OR_MISSING": 2
+  },
+  "history_files": 322,
+  "reader_issues": 0,
+  "tier_counts": {
+    "EXCLUDED": 2,
+    "STRICT": 3651
+  },
+  "total_changes": 1590753,
+  "unique_cves_by_tier": {
+    "EXCLUDED": 2,
+    "STRICT": 3250
+  },
+  "year_tier_counts": {
+    "EXCLUDED": {
+      "2024": 2
+    },
+    "STRICT": {
+      "2024": 781,
+      "2025": 1306,
+      "2026": 1564
+    }
+  }
+}

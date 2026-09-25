@@ -1,0 +1,347 @@
+{
+  "suppression_audit": {
+    "suppressed_total": 50260,
+    "queries": 3537,
+    "queries_with_other_cve_suppression": 2925,
+    "categories": {
+      "TARGET_CHAIN_OUTDATED": {
+        "occurrences": 3700,
+        "share_of_all_suppressed": 0.0736,
+        "unique_evidence": 3535,
+        "unique_cves": 3160,
+        "suppressed_while_in_bm25_top10": 3700,
+        "same_cve_share": 1.0,
+        "other_cve_share": 0.0,
+        "left_censored": 390,
+        "left_censored_share": 0.1054,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {
+          "train": 1793,
+          "dev": 329,
+          "test": 1578
+        }
+      },
+      "OTHER_CVE_INFERRED_SUPERSEDED": {
+        "occurrences": 45998,
+        "share_of_all_suppressed": 0.9152,
+        "unique_evidence": 1188,
+        "unique_cves": 1084,
+        "suppressed_while_in_bm25_top10": 7404,
+        "same_cve_share": 0.0,
+        "other_cve_share": 1.0,
+        "left_censored": 42880,
+        "left_censored_share": 0.9322,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {
+          "train": 19724,
+          "dev": 3267,
+          "test": 23007
+        }
+      },
+      "SAME_CVE_OTHER_SOURCE_INFERRED_SUPERSEDED": {
+        "occurrences": 125,
+        "share_of_all_suppressed": 0.0025,
+        "unique_evidence": 115,
+        "unique_cves": 59,
+        "suppressed_while_in_bm25_top10": 125,
+        "same_cve_share": 1.0,
+        "other_cve_share": 0.0,
+        "left_censored": 25,
+        "left_censored_share": 0.2,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {
+          "train": 88,
+          "dev": 22,
+          "test": 15
+        }
+      },
+      "SAME_CVE_OTHER_VERSION_INFERRED_SUPERSEDED": {
+        "occurrences": 428,
+        "share_of_all_suppressed": 0.0085,
+        "unique_evidence": 318,
+        "unique_cves": 134,
+        "suppressed_while_in_bm25_top10": 428,
+        "same_cve_share": 1.0,
+        "other_cve_share": 0.0,
+        "left_censored": 24,
+        "left_censored_share": 0.0561,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {
+          "train": 216,
+          "dev": 36,
+          "test": 176
+        }
+      },
+      "UNLABELED_CHAIN_CONTEXT": {
+        "occurrences": 9,
+        "share_of_all_suppressed": 0.0002,
+        "unique_evidence": 9,
+        "unique_cves": 9,
+        "suppressed_while_in_bm25_top10": 9,
+        "same_cve_share": 1.0,
+        "other_cve_share": 0.0,
+        "left_censored": 0,
+        "left_censored_share": 0.0,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {
+          "train": 4,
+          "test": 5
+        }
+      },
+      "OTHER": {
+        "occurrences": 0,
+        "share_of_all_suppressed": 0.0,
+        "unique_evidence": 0,
+        "unique_cves": 0,
+        "suppressed_while_in_bm25_top10": 0,
+        "same_cve_share": null,
+        "other_cve_share": null,
+        "left_censored": 0,
+        "left_censored_share": null,
+        "graded_relevance_mass_suppressed": 0,
+        "graded_relevance_lost_from_top10": 0,
+        "by_split": {}
+      }
+    },
+    "graded_relevance": {
+      "lost_from_top10_total": 0,
+      "preserved_in_rule_top10_total": 9338,
+      "note": "relevance 2 = target CURRENT, 1 = other-source CURRENT, 0 otherwise; suppressed candidates carry 0 by the gates"
+    },
+    "answer": "RULE-INFERRED also moves other CVEs' own-chain superseded evidence (category OTHER_CVE_INFERRED_SUPERSEDED) to the second block; see the category shares. Target CURRENT and OTHER_SOURCE_CURRENT are never suppressed (gates)."
+  },
+  "test_split_by_preserved_candidates": {
+    "A_preserved_ge10": {
+      "queries": 1258,
+      "n_preserved_min": 10,
+      "n_preserved_max": 49,
+      "source_groups": {
+        "134c704f-9b21-4f2e-91b3-4a467353bcc0": 477,
+        "disclosure@vulncheck.com": 321,
+        "security@wordfence.com": 94,
+        "secalert@redhat.com": 62,
+        "NVD": 53,
+        "0b0ca135-0b70-47e7-9f44-1890c2a1c46c": 27
+      },
+      "methods": {
+        "bm25": {
+          "recall@50": 1.0,
+          "mrr@10": 0.7324,
+          "ndcg@10": 0.8023,
+          "ndcg@10_graded": 0.8015,
+          "stale@10": 0.1054,
+          "top1_current_rate": 0.4722,
+          "top1_outdated_rate": 0.5238,
+          "outdated_count@10_mean": 1.0541,
+          "first_outdated_rank_mean": 1.4801,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "recency_only": {
+          "recall@50": 1.0,
+          "mrr@10": 0.2858,
+          "ndcg@10": 0.3468,
+          "ndcg@10_graded": 0.351,
+          "stale@10": 0.0405,
+          "top1_current_rate": 0.2003,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.4046,
+          "first_outdated_rank_mean": 21.3839,
+          "outdated_suppression@10": 0.6176,
+          "current_preservation@10": 0.5477,
+          "current_at1_and_no_stale@10": 0.0151
+        },
+        "bm25_recency": {
+          "recall@50": 1.0,
+          "mrr@10": 0.9952,
+          "ndcg@10": 0.9965,
+          "ndcg@10_graded": 0.9653,
+          "stale@10": 0.1054,
+          "top1_current_rate": 0.9905,
+          "top1_outdated_rate": 0.0079,
+          "outdated_count@10_mean": 1.0541,
+          "first_outdated_rank_mean": 2.0326,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "cross_encoder": {
+          "recall@50": 1.0,
+          "mrr@10": 0.4231,
+          "ndcg@10": 0.4969,
+          "ndcg@10_graded": 0.4503,
+          "stale@10": 0.0591,
+          "top1_current_rate": 0.2798,
+          "top1_outdated_rate": 0.1296,
+          "outdated_count@10_mean": 0.5906,
+          "first_outdated_rank_mean": 13.7806,
+          "outdated_suppression@10": 0.4426,
+          "current_preservation@10": 0.7305,
+          "current_at1_and_no_stale@10": 0.0588
+        },
+        "rule_inferred": {
+          "recall@50": 1.0,
+          "mrr@10": 0.9992,
+          "ndcg@10": 0.9994,
+          "ndcg@10_graded": 0.9991,
+          "stale@10": 0.0,
+          "top1_current_rate": 0.9984,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.0,
+          "first_outdated_rank_mean": 40.1669,
+          "outdated_suppression@10": 1.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.9984
+        },
+        "rule_direct_upper_bound": {
+          "recall@50": 1.0,
+          "mrr@10": 0.9976,
+          "ndcg@10": 0.9982,
+          "ndcg@10_graded": 0.998,
+          "stale@10": 0.0,
+          "top1_current_rate": 0.9952,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.0,
+          "first_outdated_rank_mean": 40.1638,
+          "outdated_suppression@10": 1.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.9952
+        },
+        "oracle_temporal": {
+          "recall@50": 1.0,
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "ndcg@10_graded": 1.0,
+          "stale@10": 0.0,
+          "top1_current_rate": 1.0,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.0,
+          "first_outdated_rank_mean": 49.9459,
+          "outdated_suppression@10": 1.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 1.0
+        }
+      }
+    },
+    "B_preserved_lt10": {
+      "queries": 248,
+      "n_preserved_min": 1,
+      "n_preserved_max": 9,
+      "source_groups": {
+        "audit@patchstack.com": 126,
+        "NVD": 122
+      },
+      "methods": {
+        "bm25": {
+          "recall@50": 1.0,
+          "mrr@10": 0.6647,
+          "ndcg@10": 0.7524,
+          "ndcg@10_graded": 0.7505,
+          "stale@10": 0.1016,
+          "top1_current_rate": 0.3306,
+          "top1_outdated_rate": 0.6694,
+          "outdated_count@10_mean": 1.0161,
+          "first_outdated_rank_mean": 1.3306,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "recency_only": {
+          "recall@50": 1.0,
+          "mrr@10": 0.9528,
+          "ndcg@10": 0.9643,
+          "ndcg@10_graded": 0.9549,
+          "stale@10": 0.0762,
+          "top1_current_rate": 0.9274,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.7621,
+          "first_outdated_rank_mean": 11.129,
+          "outdated_suppression@10": 0.254,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.2298
+        },
+        "bm25_recency": {
+          "recall@50": 1.0,
+          "mrr@10": 0.9496,
+          "ndcg@10": 0.9628,
+          "ndcg@10_graded": 0.9385,
+          "stale@10": 0.1016,
+          "top1_current_rate": 0.8992,
+          "top1_outdated_rate": 0.0927,
+          "outdated_count@10_mean": 1.0161,
+          "first_outdated_rank_mean": 1.9194,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "cross_encoder": {
+          "recall@50": 1.0,
+          "mrr@10": 0.922,
+          "ndcg@10": 0.9423,
+          "ndcg@10_graded": 0.874,
+          "stale@10": 0.0835,
+          "top1_current_rate": 0.8508,
+          "top1_outdated_rate": 0.129,
+          "outdated_count@10_mean": 0.8347,
+          "first_outdated_rank_mean": 6.5806,
+          "outdated_suppression@10": 0.1815,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.1815
+        },
+        "rule_inferred": {
+          "recall@50": 1.0,
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "ndcg@10_graded": 1.0,
+          "stale@10": 0.1016,
+          "top1_current_rate": 1.0,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 1.0161,
+          "first_outdated_rank_mean": 6.0403,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "rule_direct_upper_bound": {
+          "recall@50": 1.0,
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "ndcg@10_graded": 1.0,
+          "stale@10": 0.1016,
+          "top1_current_rate": 1.0,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 1.0161,
+          "first_outdated_rank_mean": 6.0403,
+          "outdated_suppression@10": 0.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 0.0
+        },
+        "oracle_temporal": {
+          "recall@50": 1.0,
+          "mrr@10": 1.0,
+          "ndcg@10": 1.0,
+          "ndcg@10_graded": 1.0,
+          "stale@10": 0.0,
+          "top1_current_rate": 1.0,
+          "top1_outdated_rate": 0.0,
+          "outdated_count@10_mean": 0.0,
+          "first_outdated_rank_mean": 49.9839,
+          "outdated_suppression@10": 1.0,
+          "current_preservation@10": 1.0,
+          "current_at1_and_no_stale@10": 1.0
+        }
+      }
+    },
+    "remaining_stale_test": {
+      "outdated_in_top10_group_B": 252,
+      "outdated_in_top10_group_A": 0,
+      "joint_test_overall": 0.834
+    }
+  }
+}

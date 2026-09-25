@@ -1,0 +1,14 @@
+periods:
+  train_years: [2024, 2025]
+  test_years: [2026]
+
+cohorts:
+  main_test_cohort: future_entity
+
+dev:
+  fraction_of_train_cves: 0.15
+  seed: 20260915
+
+main_event_filter:
+  replacement_type: STRICT_SAME_CHANGE
+  exclude_ambiguous_chains: true

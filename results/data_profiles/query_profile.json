@@ -1,0 +1,72 @@
+{
+  "total_queries": 7111,
+  "by_split": {
+    "train": 3437,
+    "dev": 624,
+    "test": 3012,
+    "future_event": 38
+  },
+  "by_role": {
+    "POST_REPLACEMENT_MAIN": 3556,
+    "PRE_REPLACEMENT_CONTROL": 3555
+  },
+  "by_template": {
+    "base_severity": 1758,
+    "cvssb_score": 1872,
+    "combined": 1739,
+    "base_vector": 1742
+  },
+  "main_by_split": {
+    "train": 1719,
+    "dev": 312,
+    "test": 1506,
+    "future_event": 19
+  },
+  "multiple_current_targets": 0,
+  "queries_with_other_source_current": 3337,
+  "mean_visible_same_cve_evidence": 2.228,
+  "mean_visible_corpus_count": 4964.6,
+  "mean_outdated_same_chain_main": 1.051,
+  "by_source_key_top": {
+    "134c704f-9b21-4f2e-91b3-4a467353bcc0": 2200,
+    "NVD": 1397,
+    "disclosure@vulncheck.com": 756,
+    "secalert@redhat.com": 340,
+    "cna@vuldb.com": 266,
+    "audit@patchstack.com": 262,
+    "security@wordfence.com": 218,
+    "secure@microsoft.com": 180,
+    "psirt@adobe.com": 146,
+    "security-advisories@github.com": 110
+  },
+  "by_version": {
+    "3.1": 6353,
+    "4.0": 588,
+    "2.0": 136,
+    "3.0": 34
+  },
+  "answer_severity": {
+    "HIGH": 2747,
+    "CRITICAL": 1020,
+    "MEDIUM": 3092,
+    "LOW": 204,
+    "NONE": 48
+  },
+  "answer_score_histogram": {
+    "0": 48,
+    "1": 11,
+    "10": 101,
+    "2": 46,
+    "3": 147,
+    "4": 640,
+    "5": 1192,
+    "6": 1260,
+    "7": 1476,
+    "8": 1259,
+    "9": 931
+  },
+  "censored_target": {
+    "false": 6739,
+    "true": 372
+  }
+}

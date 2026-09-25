@@ -1,0 +1,515 @@
+NVD CVSS REPLACEMENT CANDIDATE REPORT
+====================================================================================================
+History dosya sayisi: 322
+Toplam incelenen change: 1,590,753
+CVSS Removed+Added adayi: 3,653
+STRICT aday: 3,651
+MODERATE aday: 0
+EXCLUDED aday: 2
+Dosya okuma hatasi: 0
+
+BENZERSIZ CVE SAYILARI
+----------------------------------------------------------------------------------------------------
+STRICT: 3,250
+MODERATE: 0
+EXCLUDED: 2
+
+====================================================================================================
+CONFIDENCE TIER DAGILIMI
+====================================================================================================
+STRICT	3,651
+EXCLUDED	2
+
+====================================================================================================
+DETAIL TYPE DAGILIMI
+====================================================================================================
+CVSS V3.1	3,181
+CVSS V4.0	387
+CVSS V2	68
+CVSS V3	17
+
+====================================================================================================
+DETAIL TYPE + TIER DAGILIMI
+====================================================================================================
+CVSS V3.1	STRICT	3,179
+CVSS V4.0	STRICT	387
+CVSS V2	STRICT	68
+CVSS V3	STRICT	17
+CVSS V3.1	EXCLUDED	2
+
+====================================================================================================
+EVENT NAME DAGILIMI
+====================================================================================================
+CVE Modified	2,954
+Modified Analysis	408
+Reanalysis	291
+
+====================================================================================================
+EVENT NAME + TIER DAGILIMI
+====================================================================================================
+CVE Modified	STRICT	2,952
+Modified Analysis	STRICT	408
+Reanalysis	STRICT	291
+CVE Modified	EXCLUDED	2
+
+====================================================================================================
+YIL DAGILIMI
+====================================================================================================
+2026	1,564
+2025	1,306
+2024	783
+
+====================================================================================================
+YIL + TIER DAGILIMI
+====================================================================================================
+2026	STRICT	1,564
+2025	STRICT	1,306
+2024	STRICT	781
+2024	EXCLUDED	2
+
+====================================================================================================
+ESKI DEGER KAYNAGI - ILK 100
+====================================================================================================
+	2,893
+NIST	298
+Red Hat, Inc.	81
+VulDB	49
+Spanish National Cybersecurity Institute, S.A. (INCIBE)	43
+CISA-ADP	43
+Microsoft Corporation	39
+Nozomi Networks Inc.	17
+GitHub, Inc.	16
+Juniper Networks, Inc.	15
+CERT VDE	13
+IBM Corporation	13
+huntr.dev	12
+Adobe Systems Incorporated	11
+Dutch Institute for Vulnerability Disclosure	9
+Wordfence	7
+TWCERT/CC	7
+Palo Alto Networks, Inc.	6
+Hitachi Energy	6
+Brocade Communications Systems, LLC	5
+Tenable Network Security, Inc.	4
+Indian Computer Emergency Response Team (CERT-In)	4
+ManageEngine	3
+Samsung Mobile	3
+PaperCut	3
+Patchstack	2
+QNAP Systems, Inc.	2
+VMware	2
+Israel National Cyber Directorate	2
+Eclipse Foundation	2
+ONEKEY GmbH	2
+LINE Corporation	2
+Dassault Systèmes	2
+Microchip Technology	2
+SUSE	2
+SolarWinds	1
+Dell	1
+GitLab Inc.	1
+Becton, Dickinson and Company (BD)	1
+Fedora Project	1
+Security Risk Advisors	1
+Snyk	1
+PostgreSQL	1
+Fluid Attacks	1
+directcyber	1
+HCL Software	1
+DirectCyber	1
+Checkmk GmbH	1
+Cybersecurity and Infrastructure Security Agency (CISA) U.S. Civilian Government	1
+Checkmarx	1
+Check Point Software Technologies Ltd.	1
+Baxter	1
+ICS-CERT	1
+Siemens AG	1
+Progress Software Corporation	1
+Sonatype	1
+CERT.PL	1
+OTRS AG	1
+Cato	1
+TianoCore.org	1
+Intel Corporation	1
+Samsung TV & Appliance	1
+Trellix	1
+Mautic	1
+Python Software Foundation	1
+ivanti	1
+Automotive Security Research Group (ASRG)	1
+Mitsubishi Electric Corporation	1
+
+====================================================================================================
+DEGISEN CVSS BILESENLERI
+====================================================================================================
+PR	1,172
+I	1,034
+A	1,024
+C	946
+AV	651
+UI	638
+AC	570
+S	530
+VA	91
+E	87
+VI	81
+SC	74
+VC	72
+SI	67
+SA	51
+AT	40
+Au	28
+U	19
+AU	13
+R	8
+RE	7
+V	5
+MSI	5
+MVA	4
+MVC	4
+MVI	4
+MSA	4
+AR	3
+CR	3
+IR	3
+MAV	1
+MPR	1
+MSC	1
+
+====================================================================================================
+DISLAMA NEDENLERI
+====================================================================================================
+SOURCE_CHANGED_OR_MISSING	2
+NO_METRIC_CHANGE	2
+
+====================================================================================================
+STRICT ORNEKLER
+====================================================================================================
+
+--- CVSS V2 ---
+Ornek 1
+  CVE: CVE-2006-2428
+  Event: Modified Analysis
+  Created: 2024-01-26T19:01:46.923
+  Source: NIST
+  Changed components: A
+  Old: AV:N/AC:L/Au:N/C:P/I:P/A:N
+  New: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Ornek 2
+  CVE: CVE-2005-0254
+  Event: Modified Analysis
+  Created: 2024-01-26T19:07:21.227
+  Source: NIST
+  Changed components: AC
+  Old: AV:N/AC:L/Au:N/C:N/I:P/A:N
+  New: AV:N/AC:M/Au:N/C:N/I:P/A:N
+Ornek 3
+  CVE: CVE-2004-2262
+  Event: Modified Analysis
+  Created: 2024-01-26T19:10:59.207
+  Source: NIST
+  Changed components: A,C
+  Old: AV:N/AC:L/Au:N/C:N/I:P/A:N
+  New: AV:N/AC:L/Au:N/C:P/I:P/A:P
+Ornek 4
+  CVE: CVE-2005-0253
+  Event: Modified Analysis
+  Created: 2024-01-26T19:16:36.767
+  Source: NIST
+  Changed components: Au
+  Old: AV:N/AC:L/Au:N/C:N/I:N/A:P
+  New: AV:N/AC:L/Au:S/C:N/I:N/A:P
+Ornek 5
+  CVE: CVE-2024-0918
+  Event: CVE Modified
+  Created: 2024-01-28T09:15:07.550
+  Source: VulDB
+  Changed components: A,C,I
+  Old: AV:N/AC:L/Au:M/C:P/I:P/A:P
+  New: AV:N/AC:L/Au:M/C:C/I:C/A:C
+Ornek 6
+  CVE: CVE-2024-0919
+  Event: CVE Modified
+  Created: 2024-01-28T09:15:08.090
+  Source: VulDB
+  Changed components: A,C,I
+  Old: AV:N/AC:L/Au:S/C:P/I:P/A:P
+  New: AV:N/AC:L/Au:S/C:C/I:C/A:C
+Ornek 7
+  CVE: CVE-2024-0920
+  Event: CVE Modified
+  Created: 2024-01-28T09:15:08.337
+  Source: VulDB
+  Changed components: A,C,I
+  Old: AV:N/AC:L/Au:M/C:P/I:P/A:P
+  New: AV:N/AC:L/Au:M/C:C/I:C/A:C
+Ornek 8
+  CVE: CVE-2008-1700
+  Event: Modified Analysis
+  Created: 2024-02-02T03:07:30.653
+  Source: NIST
+  Changed components: C,I
+  Old: AV:N/AC:M/Au:N/C:C/I:C/A:C
+  New: AV:N/AC:M/Au:N/C:N/I:N/A:C
+Ornek 9
+  CVE: CVE-2010-2941
+  Event: Modified Analysis
+  Created: 2024-02-02T16:35:18.633
+  Source: NIST
+  Changed components: AV
+  Old: AV:A/AC:M/Au:N/C:C/I:C/A:C
+  New: AV:N/AC:M/Au:N/C:C/I:C/A:C
+Ornek 10
+  CVE: CVE-2010-1437
+  Event: Modified Analysis
+  Created: 2024-02-02T16:38:32.467
+  Source: NIST
+  Changed components: C,I
+  Old: AV:L/AC:M/Au:N/C:N/I:N/A:P
+  New: AV:L/AC:M/Au:N/C:P/I:P/A:P
+
+--- CVSS V3 ---
+Ornek 1
+  CVE: CVE-2023-6909
+  Event: CVE Modified
+  Created: 2024-02-06T20:16:01.753
+  Source: huntr.dev
+  Changed components: I,S
+  Old: AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+Ornek 2
+  CVE: CVE-2023-6975
+  Event: CVE Modified
+  Created: 2024-02-06T20:16:02.677
+  Source: huntr.dev
+  Changed components: S
+  Old: AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+Ornek 3
+  CVE: CVE-2023-6831
+  Event: CVE Modified
+  Created: 2024-02-13T22:15:45.633
+  Source: huntr.dev
+  Changed components: PR,S
+  Old: AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H
+  New: AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H
+Ornek 4
+  CVE: CVE-2024-1163
+  Event: CVE Modified
+  Created: 2024-02-29T15:15:07.473
+  Source: huntr.dev
+  Changed components: A
+  Old: AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L
+  New: AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H
+Ornek 5
+  CVE: CVE-2024-0759
+  Event: CVE Modified
+  Created: 2024-03-07T20:15:50.480
+  Source: huntr.dev
+  Changed components: I
+  Old: AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N
+  New: AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N
+Ornek 6
+  CVE: CVE-2024-1738
+  Event: CVE Modified
+  Created: 2024-05-15T16:15:09.807
+  Source: huntr.dev
+  Changed components: A,I,S
+  Old: AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:L
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+Ornek 7
+  CVE: CVE-2024-5206
+  Event: CVE Modified
+  Created: 2024-06-17T19:15:59.190
+  Source: huntr.dev
+  Changed components: AV
+  Old: AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+  New: AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N
+Ornek 8
+  CVE: CVE-2024-5389
+  Event: CVE Modified
+  Created: 2024-07-09T19:15:13.853
+  Source: huntr.dev
+  Changed components: I,PR,S
+  Old: AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N
+  New: AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N
+Ornek 9
+  CVE: CVE-2024-6035
+  Event: CVE Modified
+  Created: 2024-07-15T18:15:05.840
+  Source: huntr.dev
+  Changed components: I
+  Old: AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N
+  New: AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N
+Ornek 10
+  CVE: CVE-2024-7923
+  Event: CVE Modified
+  Created: 2024-09-04T15:15:14.710
+  Source: Red Hat, Inc.
+  Changed components: A,AV,C,I,PR
+  Old: AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+
+--- CVSS V3.1 ---
+Ornek 1
+  CVE: CVE-2023-5764
+  Event: CVE Modified
+  Created: 2024-01-01T21:15:24.487
+  Source: Red Hat, Inc.
+  Changed components: UI
+  Old: AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N
+  New: AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N
+Ornek 2
+  CVE: CVE-2023-6277
+  Event: CVE Modified
+  Created: 2024-01-02T09:15:07.500
+  Source: Red Hat, Inc.
+  Changed components: UI
+  Old: AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+  New: AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
+Ornek 3
+  CVE: CVE-2023-40338
+  Event: Reanalysis
+  Created: 2024-01-02T19:53:57.600
+  Source: NIST
+  Changed components: C,PR
+  Old: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  New: AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N
+Ornek 4
+  CVE: CVE-2023-3961
+  Event: CVE Modified
+  Created: 2024-01-02T21:15:08.913
+  Source: Red Hat, Inc.
+  Changed components: A,AC
+  Old: AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H
+Ornek 5
+  CVE: CVE-2023-4320
+  Event: CVE Modified
+  Created: 2024-01-03T12:15:23.390
+  Source: Red Hat, Inc.
+  Changed components: PR
+  Old: AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:L
+  New: AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L
+Ornek 6
+  CVE: CVE-2023-4692
+  Event: CVE Modified
+  Created: 2024-01-03T12:15:23.617
+  Source: Red Hat, Inc.
+  Changed components: A,C
+  Old: AV:L/AC:H/PR:H/UI:N/S:C/C:N/I:H/A:N
+  New: AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H
+Ornek 7
+  CVE: CVE-2023-31417
+  Event: Modified Analysis
+  Created: 2024-01-03T19:02:34.447
+  Source: NIST
+  Changed components: AV,PR
+  Old: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+  New: AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N
+Ornek 8
+  CVE: CVE-2023-5215
+  Event: Modified Analysis
+  Created: 2024-01-03T19:03:11.583
+  Source: NIST
+  Changed components: AV,C,I
+  Old: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  New: AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+Ornek 9
+  CVE: CVE-2023-51385
+  Event: Modified Analysis
+  Created: 2024-01-03T19:40:07.667
+  Source: NIST
+  Changed components: A,C,I
+  Old: AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+  New: AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+Ornek 10
+  CVE: CVE-2023-40058
+  Event: CVE Modified
+  Created: 2024-01-04T14:15:39.237
+  Source: SolarWinds
+  Changed components: A,I
+  Old: AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L
+  New: AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+
+--- CVSS V4.0 ---
+Ornek 1
+  CVE: CVE-2024-4966
+  Event: CVE Modified
+  Created: 2024-05-16T16:15:11.130
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 2
+  CVE: CVE-2024-5116
+  Event: CVE Modified
+  Created: 2024-05-20T05:15:09.807
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 3
+  CVE: CVE-2024-5035
+  Event: CVE Modified
+  Created: 2024-05-29T05:16:08.793
+  Source: ONEKEY GmbH
+  Changed components: AT,AV,SC,SI
+  Old: AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:L/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 4
+  CVE: CVE-2024-5176
+  Event: CVE Modified
+  Created: 2024-06-05T15:15:12.620
+  Source: Baxter
+  Changed components: SA,UI
+  Old: AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 5
+  CVE: CVE-2024-5745
+  Event: CVE Modified
+  Created: 2024-06-08T04:15:10.027
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 6
+  CVE: CVE-2024-4927
+  Event: CVE Modified
+  Created: 2024-06-12T12:15:09.767
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 7
+  CVE: CVE-2024-5894
+  Event: CVE Modified
+  Created: 2024-06-13T06:15:14.033
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 8
+  CVE: CVE-2024-5976
+  Event: CVE Modified
+  Created: 2024-06-14T03:15:15.327
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 9
+  CVE: CVE-2024-5983
+  Event: CVE Modified
+  Created: 2024-06-14T08:15:42.550
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+Ornek 10
+  CVE: CVE-2024-5984
+  Event: CVE Modified
+  Created: 2024-06-14T08:15:42.843
+  Source: VulDB
+  Changed components: PR
+  Old: AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X
+  New: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X

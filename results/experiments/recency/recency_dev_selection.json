@@ -1,0 +1,114 @@
+{
+  "split": "dev",
+  "objective": "ndcg@10",
+  "tie_breaker": "stale@10",
+  "grid": {
+    "tau_days": [
+      30,
+      180,
+      365
+    ],
+    "lambda": [
+      0.1,
+      0.3,
+      0.5
+    ]
+  },
+  "table": [
+    {
+      "tau_days": 30,
+      "lambda": 0.1,
+      "queries": 312,
+      "ndcg@10": 0.953,
+      "mrr@10": 0.9364,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.875
+    },
+    {
+      "tau_days": 30,
+      "lambda": 0.3,
+      "queries": 312,
+      "ndcg@10": 0.972,
+      "mrr@10": 0.9621,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9263
+    },
+    {
+      "tau_days": 30,
+      "lambda": 0.5,
+      "queries": 312,
+      "ndcg@10": 0.9814,
+      "mrr@10": 0.9749,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9519
+    },
+    {
+      "tau_days": 180,
+      "lambda": 0.1,
+      "queries": 312,
+      "ndcg@10": 0.9601,
+      "mrr@10": 0.946,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.8942
+    },
+    {
+      "tau_days": 180,
+      "lambda": 0.3,
+      "queries": 312,
+      "ndcg@10": 0.9743,
+      "mrr@10": 0.9653,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9327
+    },
+    {
+      "tau_days": 180,
+      "lambda": 0.5,
+      "queries": 312,
+      "ndcg@10": 0.9799,
+      "mrr@10": 0.9728,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9455
+    },
+    {
+      "tau_days": 365,
+      "lambda": 0.1,
+      "queries": 312,
+      "ndcg@10": 0.9566,
+      "mrr@10": 0.9412,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.8846
+    },
+    {
+      "tau_days": 365,
+      "lambda": 0.3,
+      "queries": 312,
+      "ndcg@10": 0.9696,
+      "mrr@10": 0.9589,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9199
+    },
+    {
+      "tau_days": 365,
+      "lambda": 0.5,
+      "queries": 312,
+      "ndcg@10": 0.9747,
+      "mrr@10": 0.9658,
+      "stale@10": 0.1054,
+      "recall@50": 1.0,
+      "top1_current_rate": 0.9327
+    }
+  ],
+  "selected": {
+    "tau_days": 30,
+    "lambda": 0.5
+  },
+  "seconds": 0.4
+}
