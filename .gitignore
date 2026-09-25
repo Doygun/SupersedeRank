@@ -9,7 +9,6 @@ data/processed/retrieval/bm25_full_corpus.pkl
 data/processed/retrieval/learned/
 data/processed/cvss_evidence.jsonl
 data/processed/corpus/full_corpus.jsonl
-results/experiments/**/per_query.json
 results/experiments/**/*_top50.jsonl
 results/experiments/**/*_top100.jsonl
 *.log
